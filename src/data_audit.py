@@ -171,13 +171,6 @@ ROAST = [
 
 # ── 落选名单 ──────────────────────────────────────────────────────────
 CUTLIST = [
-    dict(name="Google Fi",
-         why="单线 Unlimited Standard $50 换算到手约 $62，在这张表里属于明显偏贵。"
-             "入门的 Unlimited Essentials $35 更麻烦：官方 Broadband Facts 写明 <b>No hotspot capability</b>（完全没有热点功能），"
-             "而且 support 页原文 Does not work outside the US——出美国直接不能用，等于把 Fi 唯一的核心卖点砍掉了。"
-             "当前 50% 促销确实有力（Essentials/Standard/Premium 三档都适用，$17.50/$25/$32.50），"
-             "但条件是<b>必须自带 Pixel + 必须是新客 + 只管 12 个月</b>，且官方页显示 2026-09-10 截止。"
-             "长驻哥伦布、不常出国的话，为它的国际能力付溢价不划算。"),
     dict(name="Spectrum Mobile",
          why="硬性要求你同时是 Spectrum 宽带客户（官方 FAQ 直接问答确认），否则每线加 $10。"
              "手机侧<b>零多线折扣</b>，$30/$40/$50 每线固定。所谓省钱完全来自「第 1 条无限线免费 1 年」这个捆绑补贴。"

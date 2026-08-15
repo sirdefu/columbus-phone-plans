@@ -68,6 +68,19 @@ BRANDS = [
                   "$199 首年价【只限新线】，第二年自动跳 $270（官方原文 Renews at full price）",
                   "该促销档期极短：官方 promo-archive 写明 2026-08-12 至 2026-08-18",
                   "年付需一次性付清，且这是本品牌唯一的价格杠杆（没有 AutoPay 折扣）"]),
+    dict(name="Google Fi", short="FI", net="T-Mobile", fee=0.0,
+         blurb="Google 自营的虚拟运营商。四档结构很清楚（一档按量付费 + 三档无限），阈值和降速数字是全表写得最直白的，"
+               "但美国本地使用偏贵，而且入门档被阉割得很厉害。",
+         gotchas=["【网络归属是第三方推断】fi.google.com 全篇不点名 T-Mobile 或任何运营商，只说 an ultra-reliable 5G network。"
+                  "本页为了能在价格轴上和同网竞品并排，仍按 T-Mobile 归类，但这不是官方表述",
+                  "【Unlimited Essentials 是个陷阱档】官方 Broadband Facts 逐字写 No hotspot capability——完全没有热点功能；"
+                  "support 页原文 Does not work outside the US——出美国直接不能用。等于把 Fi 唯一的核心卖点砍掉了",
+                  "【首次激活必须在美国境内】条款禁止境外首次激活，且要求先在美国实际使用至少 1 天才能在境外使用——"
+                  "「落地前在国内先开好号」这条路走不通",
+                  "【长住境外会被停国际数据】连续 90 天内若大部分用量发生在美国境外，Google 会停掉你的国际数据。"
+                  "靠 Fi 保号过完整暑假甚至休学一年，属于条款打击范围",
+                  "50% 促销条件很硬：必须自带 Google Pixel + 必须是新客 + 只管 12 个月，官网显示 Ends Sep 10",
+                  "税费另计（Monthly prices do not include taxes and gov't fees），且 Fi 本身即自动扣款，无 AutoPay 折扣可谈"]),
     dict(name="Metro", short="MET", net="T-Mobile", fee=0.0,
          blurb="T-Mobile 全资预付费品牌，是 Cricket 在 T-Mobile 侧的对位者。官网对 $30/$40/$50/$60 四档逐条写明 "
                "Taxes and fees included，并带 5 年价格保证——原表有 Cricket 却没有 Metro，是结构性缺口，本页补上。",
@@ -459,6 +472,61 @@ add(id="usm-prem", brand="US Mobile", name="Unlimited Premium", adv=32.50, promo
     notes="3 条以上 Premium 月付线可送 1 个 perk（最高价值 $15/月）——这是 US Mobile 唯一的多线好处。"
           "官方另有学生折扣页，需 AutoPay。",
     url="https://www.usmobile.com/plans", chips=[dict(t="三网可选", k="good"), dict(t="无限优先", k="good")])
+
+# ── Google Fi ──────────────────────────────────────────────────────────
+add(id="fi-flex", brand="Google Fi", name="Flexible（按量付费）", adv=20, promo=None, tax_inc=False, fee=0.0,
+    oneline="$20 只买通话短信，数据 $10/GB 另算——用一点点就不便宜了",
+    data="无固定额度，按 $10/GB 计费，有 Bill Protection 封顶（单人 6GB 后数据免费）",
+    depri="硬降速。Broadband Facts 原文：超过 15GB（跨本人所有设备）降至 256 kbps 直到下个账期",
+    hotspot="含高速热点，无单独 GB 上限，但【计入本人月度高速数据总量】（脚注 1：Hotspot tethering counts towards "
+            "your monthly high-speed data usage），所以实际上限就是 15GB。可同时分享给最多 10 台设备",
+    video="官网未标注（未找到）",
+    intl="支持 200+ 目的地漫游（中国大陆在覆盖列表内）。国际高速数据上限 15GB/人，之后 256 kbps，且计入月度总量",
+    prepay="月付", autopay="无 AutoPay 折扣——Fi 本身即通过 Google Pay 自动扣款",
+    cond="需兼容手机；Pixel 兼容性最好",
+    promo_terms="【本档不参加当前 50% 促销】——促销只适用于三个无限档。",
+    notes="只对每月 1–2GB 以内的极轻度用户成立。$20 是光杆通话短信价：用 1GB 就 $30，用 3GB 就 $50，"
+          "很快就被 Unlimited Standard 反超。打中国大陆按 voice.google.com 费率 $0.30/分钟（固话与手机同价），国际短信免费。",
+    url="https://fi.google.com/about/plans/flexible", chips=[dict(t="按量付费", k="warn"), dict(t="15GB 后 256kbps", k="warn")])
+add(id="fi-ess", brand="Google Fi", name="Unlimited Essentials", adv=35, promo=17.50, tax_inc=False, fee=0.0,
+    oneline="全表最被阉割的一档：没有热点功能，而且出美国直接不能用",
+    data="30GB 高速/人，之后降至 256 kbps 直到下个账期",
+    depri="硬降速到具体数字，不是仅拥堵降优先级。Broadband Facts 逐字给出 30GB → 256 kbps",
+    hotspot="【完全不支持】。官方 Broadband Facts 与套餐对比页均写 No hotspot capability——不是额度小，是没有这个功能",
+    video="官网未标注（未找到）",
+    intl="【完全不支持境外漫游】。support.google.com 原文：Unlimited Essentials: Does not work outside the US。"
+         "要出国得先升级到 Unlimited Premium",
+    prepay="月付", autopay="无 AutoPay 折扣", cond="需兼容手机；促销要求自带 Google Pixel",
+    promo_terms="Get 50% off for 12 months when you bring a Google Pixel phone。必须新客、必须自带 Pixel、"
+                "以每月账单抵扣形式发放（非直接改价），12 个月后回到 $35。官网显示 Ends Sep 10。",
+    notes="换算到手价约 $43.51，比 Visible+ 的 $35 含税还贵，却没有热点、不能出国、还要 30GB 就降速。"
+          "这一档的存在意义基本只是把你引到 Standard 去。打中国大陆 $0.30/分钟，国际短信免费。",
+    url="https://fi.google.com/about/plans/unlimited-essentials",
+    chips=[dict(t="无热点功能", k="bad"), dict(t="出美国不能用", k="bad"), dict(t="30GB 后 256kbps", k="warn")])
+add(id="fi-std", brand="Google Fi", name="Unlimited Standard", adv=50, promo=25, tax_inc=False, fee=0.0,
+    oneline="Fi 的主力档，阈值和热点都写得很清楚",
+    data="50GB 高速/人，之后降至 256 kbps。可按 $10/GB 购买额外高速数据恢复全速",
+    depri="硬降速到具体数字。官方原文给出 Flexible 15GB / Essentials 30GB / Standard 50GB / Premium 100GB 四档阈值",
+    hotspot="25GB 高速热点。【是否计入 50GB 总量：官网该页没有写明，本次未找到】——原表写「计入总量」属未核实",
+    video="官网未标注（未找到）", intl="含加拿大/墨西哥数据；200+ 目的地漫游",
+    prepay="月付", autopay="无 AutoPay 折扣", cond="需兼容手机；促销要求自带 Google Pixel",
+    promo_terms="同 Essentials：自带 Pixel + 新客，50% off 前 12 个月（$25/月），账单抵扣形式，官网显示 Ends Sep 10。",
+    notes="到手价约 $62.05。同价位的 AT&T Prepaid Ultra（$60 广告价 / 约 $78 到手）给的是不因用量降速 + 30GB 热点；"
+          "Fi 的优势不在价格，在阈值透明和账户体验。打中国只免费打加拿大墨西哥，中国仍按分钟计费。",
+    url="https://fi.google.com/about/plans/unlimited-standard", chips=[dict(t="50GB 后 256kbps", k="warn"), dict(t="25GB 热点", k="good")])
+add(id="fi-prem", brand="Google Fi", name="Unlimited Premium", adv=65, promo=32.50, tax_inc=False, fee=0.0,
+    oneline="真正为国际使用买的那一档",
+    data="100GB 高速/人，之后降至 256 kbps",
+    depri="硬降速到具体数字（100GB 阈值）",
+    hotspot="官网该页未单独列出 Premium 的热点额度（未找到）",
+    video="官网未标注（未找到）",
+    intl="含【从美国免费拨打 50+ 国家和地区】——但<b>那份 50+ 国清单官网没有公开，无法确认中国大陆是否在内</b>。"
+         "国际高速数据上限 50GB/人。200+ 目的地漫游",
+    prepay="月付", autopay="无 AutoPay 折扣", cond="需兼容手机；促销要求自带 Google Pixel",
+    promo_terms="自带 Pixel + 新客，50% off 前 12 个月（$32.50/月），官网显示 Ends Sep 10。",
+    notes="到手价约 $80.58。它值不值全看那份 50+ 国清单含不含你要打的地方——而 Google 没公开这份清单，"
+          "这在全表里是个相当离谱的信息缺失。经常出国的话 Fi 的漫游体验确实省心（落地自动连、不用买当地卡）。",
+    url="https://fi.google.com/about/plans/unlimited-premium", chips=[dict(t="100GB 后 256kbps", k="warn"), dict(t="国际最强", k="good")])
 
 # ── Metro by T-Mobile ──────────────────────────────────────────────────
 add(id="met-25", brand="Metro", name="$25 BYOD 档", adv=25, raw=30, promo=None, tax_inc=True,
