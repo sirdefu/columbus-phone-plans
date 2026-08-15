@@ -1,0 +1,59 @@
+name: 资费变更哨兵
+
+# 每周一 13:00 UTC（美东夏令时 9:00 / 冬令时 8:00）跑一次。
+# 资费变动实际上是月级的，每周足够；跑太勤只会把营销文案的微调也报出来。
+on:
+  schedule:
+    - cron: "0 13 * * 1"
+  workflow_dispatch:        # 也可以在 Actions 页面手动点一次
+
+permissions:
+  contents: write           # 需要把更新后的 baseline 提交回仓库
+  issues: write             # 需要在检测到变更时开 issue
+
+concurrency:
+  group: price-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # watch.py 只用标准库，没有 pip install 这一步——依赖越少越不容易烂
+      - name: 抓取并比对
+        id: watch
+        run: python3 watch/watch.py
+
+      - name: 有变更就开 issue
+        if: steps.watch.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create \
+            --title "资费变更检测 · $(date -u +%Y-%m-%d) · ${{ steps.watch.outputs.count }} 个页面有变动" \
+            --body-file watch/report.md \
+            --label "price-change" || \
+          gh issue create \
+            --title "资费变更检测 · $(date -u +%Y-%m-%d) · ${{ steps.watch.outputs.count }} 个页面有变动" \
+            --body-file watch/report.md
+          # 第二次调用是兜底：label 不存在时 gh 会失败，这时改用无 label 的方式重开
+
+      - name: 回写 baseline
+        run: |
+          git config user.name  "price-watch[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add watch/baseline.json watch/report.md
+          if git diff --cached --quiet; then
+            echo "baseline 无变化，跳过提交"
+          else
+            git commit -m "哨兵：更新 baseline（$(date -u +%Y-%m-%d)）[skip ci]"
+            git push
+          fi

@@ -50,6 +50,7 @@ for p in P:
         url=p.get("url", ""), chips=p.get("chips", []),
     ))
 DATA_JS = dict(
+    date=DATE,
     tax=dict(combined=TAX["combined"], ng911=TAX["ng911"]),
     brands=[dict(name=b["name"], short=b["short"], net=b["net"], blurb=b["blurb"],
                  gotchas=b.get("gotchas", [])) for b in BRANDS],
@@ -383,6 +384,7 @@ def build():
 <div class="seg"><button data-promo="0" aria-pressed="true">常规价</button><button data-promo="1" aria-pressed="false">促销价</button></div>
 <span class="lbl">同价位区间</span>
 <div class="seg"><button data-range="4" aria-pressed="false">±$4</button><button data-range="6" aria-pressed="true">±$6</button><button data-range="10" aria-pressed="false">±$10</button></div>
+<span class="fresh f-ok" id="fresh" title="正在计算…"><span class="dotled"></span>口径 {DATE}</span>
 </div>
 
 {VERDICT_LINE}

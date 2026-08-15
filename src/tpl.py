@@ -93,6 +93,16 @@ mark{background:color-mix(in srgb,var(--warn) 26%,transparent);color:inherit;pad
 .seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg);box-shadow:0 1px 3px rgba(0,0,0,.18)}
 .seg button:hover:not([aria-pressed="true"]){color:var(--ink)}
 .switchbar .lbl{font-size:11.5px;color:var(--ink3);font-family:var(--mono);letter-spacing:.03em}
+.fresh{margin-left:auto;display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:11.5px;
+  font-weight:640;padding:4px 11px;border-radius:20px;border:1.5px solid;white-space:nowrap;cursor:help}
+.fresh .dotled{width:7px;height:7px;border-radius:50%;background:currentColor;flex:none}
+.fresh.f-ok{color:var(--good);border-color:color-mix(in srgb,var(--good) 45%,transparent);background:var(--good-bg)}
+.fresh.f-warn{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 45%,transparent);background:var(--warn-bg)}
+.fresh.f-bad{color:var(--bad);border-color:color-mix(in srgb,var(--bad) 55%,transparent);background:var(--bad-bg)}
+.stalebox{border:2px solid var(--bad);background:var(--bad-bg);border-radius:12px;padding:16px 19px;margin:0 0 26px}
+.stalebox h3{margin:0 0 7px;font-size:15px;color:var(--bad);font-family:var(--mono);letter-spacing:.04em;text-transform:uppercase}
+.stalebox p{margin:0;font-size:14px;color:var(--ink2);line-height:1.72}
+@media (max-width:700px){.fresh{margin-left:0}}
 
 /* ── 价格轴 ── */
 .axis{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px 22px 14px;box-shadow:var(--shadow);overflow-x:auto}
@@ -355,7 +365,7 @@ function specHTML(p){
   var h='<dl class="spec">';
   rows.forEach(function(r){ if(r[1]) h+='<dt>'+r[0]+'</dt><dd>'+r[1]+'</dd>'; });
   h+='</dl>';
-  if(p.url) h+='<div class="muted" style="margin-top:9px">出处：<a href="'+p.url+'" target="_blank" rel="noopener">'+p.url+'</a></div>';
+  if(p.url) h+='<div class="muted" style="margin-top:9px">'+DATA.date+' 抓取 · 出处：<a href="'+p.url+'" target="_blank" rel="noopener">'+p.url+'</a></div>';
   return h;
 }
 function renderBrands(){
@@ -450,6 +460,34 @@ function initControls(){
     });
   });
 }
+/* ─── 保鲜度 ─── */
+function initFreshness(){
+  var el=document.getElementById("fresh"); if(!el||!DATA.date) return;
+  var d0=new Date(DATA.date+"T12:00:00Z");
+  var days=Math.floor((Date.now()-d0.getTime())/86400000);
+  if(isNaN(days)) return;
+  var cls, txt, why;
+  if(days<0){ cls="f-ok"; txt="口径日期 "+DATA.date; why="口径日期在未来，请检查本机时间。"; }
+  else if(days<=30){ cls="f-ok"; txt="数据 "+days+" 天前核对";
+    why="30 天内属新鲜。但促销随时会结束，下单前仍应在结账页确认总价。"; }
+  else if(days<=90){ cls="f-warn"; txt="数据 "+days+" 天前核对";
+    why="已超过 30 天。促销价大概率已变，常规价可能仍准。建议点开各档的出处链接抽查几个关键数字。"; }
+  else { cls="f-bad"; txt="数据已 "+days+" 天未核";
+    why="超过 90 天。美国资费在这个跨度里通常已经动过——本页数字请当作历史参考，不要直接拿去下单。"; }
+  el.className="fresh "+cls;
+  el.innerHTML='<span class="dotled"></span>'+txt;
+  el.title=why+"（口径日期 "+DATA.date+"）";
+
+  if(days>90){
+    var box=document.createElement("div");
+    box.className="stalebox";
+    box.innerHTML='<h3>这份数据可能已经过期</h3><p>口径日期是 <b>'+DATA.date+'</b>，距今 <b>'+days+
+      ' 天</b>。'+why+'<br>仓库里配了每周自动跑的变更哨兵，若它开过 issue，说明官网价格文本确实动过。</p>';
+    var host=document.querySelector(".wrap>.switchbar");
+    if(host&&host.nextSibling) host.parentNode.insertBefore(box,host.nextSibling);
+  }
+}
+
 /* ─── TOC ─── */
 function initTOC(){
   var secs=[].slice.call(document.querySelectorAll("section[id]"));
@@ -462,7 +500,7 @@ function initTOC(){
   secs.forEach(function(s){io.observe(s);});
 }
 document.addEventListener("DOMContentLoaded",function(){
-  initControls(); rerender(); initTOC();
+  initControls(); rerender(); initFreshness(); initTOC();
 });
 })();
 """
