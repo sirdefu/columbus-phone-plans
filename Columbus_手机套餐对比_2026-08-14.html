@@ -1,0 +1,726 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>哥伦布手机套餐对比 · 2026-08-14</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#f7f6f3; --bg2:#fffefb; --card:#ffffff; --ink:#1a1917; --ink2:#55524c; --ink3:#8a857c;
+  --line:#e5e1d8; --line2:#d3cec2;
+  --accent:#8a3324; --accent2:#c2410c; --accent-bg:#fdf2ee;
+  --good:#2f6b3e; --good-bg:#eef6f0; --warn:#8a6116; --warn-bg:#fdf6e7; --bad:#9c2c2c; --bad-bg:#fcefef;
+  --vz:#c2261c; --att:#0b6ba8; --tmo:#c8127f; --mvno:#6b5b95;
+  --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace;
+  --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --shadow:0 1px 2px rgba(26,25,23,.05),0 4px 14px rgba(26,25,23,.05);
+}
+@media (prefers-color-scheme:dark){
+ :root:not([data-theme="light"]){
+  --bg:#16151a; --bg2:#1c1b21; --card:#212027; --ink:#eceaf0; --ink2:#a8a4b0; --ink3:#78747f;
+  --line:#302e38; --line2:#3d3a46;
+  --accent:#ff9d7a; --accent2:#ffb694; --accent-bg:#2c1f1c;
+  --good:#7fd39a; --good-bg:#17291d; --warn:#e8c46a; --warn-bg:#2b2517; --bad:#ff8f8f; --bad-bg:#2e1a1a;
+  --vz:#ff6b60; --att:#5cb3e8; --tmo:#f76bc0; --mvno:#a898d8;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25);
+ }}
+:root[data-theme="dark"]{
+  --bg:#16151a; --bg2:#1c1b21; --card:#212027; --ink:#eceaf0; --ink2:#a8a4b0; --ink3:#78747f;
+  --line:#302e38; --line2:#3d3a46;
+  --accent:#ff9d7a; --accent2:#ffb694; --accent-bg:#2c1f1c;
+  --good:#7fd39a; --good-bg:#17291d; --warn:#e8c46a; --warn-bg:#2b2517; --bad:#ff8f8f; --bad-bg:#2e1a1a;
+  --vz:#ff6b60; --att:#5cb3e8; --tmo:#f76bc0; --mvno:#a898d8;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 4px 14px rgba(0,0,0,.25);
+}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+  font-size:15px;line-height:1.75;letter-spacing:.01em;
+  font-feature-settings:"tnum" 0;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px 120px}
+@media (max-width:700px){.wrap{padding:0 14px 80px}body{font-size:14.5px}}
+
+/* ── 头部 ── */
+header.top{padding:56px 0 28px;border-bottom:2px solid var(--ink);margin-bottom:34px}
+h1{font-size:clamp(26px,4.6vw,42px);line-height:1.2;margin:0 0 12px;letter-spacing:-.02em;font-weight:750}
+.sub{color:var(--ink2);font-size:15px;max-width:62ch;margin:0 0 18px}
+.meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:12.5px;color:var(--ink3);font-family:var(--mono)}
+.meta b{color:var(--ink2);font-weight:600}
+
+/* ── 通用 ── */
+section{margin:0 0 64px;scroll-margin-top:74px}
+h2{font-size:clamp(20px,3vw,27px);margin:0 0 6px;letter-spacing:-.015em;font-weight:700;
+   display:flex;align-items:baseline;gap:11px;flex-wrap:wrap}
+h2 .num{font-family:var(--mono);font-size:13px;color:var(--accent);font-weight:600;
+        border:1.5px solid var(--accent);border-radius:5px;padding:1px 7px;letter-spacing:0}
+h2 .num.plain{border:none;padding:0}
+h3{font-size:17px;margin:30px 0 10px;font-weight:680;letter-spacing:-.01em}
+h4{font-size:14.5px;margin:20px 0 7px;font-weight:650;color:var(--ink2)}
+.lede{color:var(--ink2);margin:0 0 22px;max-width:74ch;font-size:14.5px}
+p{margin:0 0 13px}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid color-mix(in srgb,var(--accent) 32%,transparent)}
+a:hover{border-bottom-color:var(--accent)}
+code,.mono{font-family:var(--mono);font-size:.9em}
+.card{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:19px 21px;box-shadow:var(--shadow)}
+.muted{color:var(--ink3);font-size:12.5px;line-height:1.65}
+.hl{background:var(--accent-bg);color:var(--accent);padding:.5px 5px;border-radius:4px;font-weight:600}
+mark{background:color-mix(in srgb,var(--warn) 26%,transparent);color:inherit;padding:.5px 3px;border-radius:3px}
+
+/* ── 结论条 ── */
+.verdict{background:var(--card);border:2px solid var(--ink);border-radius:13px;padding:22px 24px;margin:0 0 30px;
+  box-shadow:5px 5px 0 var(--accent)}
+.verdict h3{margin:0 0 9px;font-size:15px;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);font-family:var(--mono)}
+.verdict p{font-size:16.5px;line-height:1.72;margin:0 0 9px}
+.verdict p:last-child{margin-bottom:0}
+
+/* ── 徽章 ── */
+.tag{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;font-weight:640;padding:2px 8px;border-radius:20px;
+  border:1px solid var(--line2);color:var(--ink2);background:var(--bg2);white-space:nowrap;font-family:var(--mono);letter-spacing:.01em}
+.tag.good{color:var(--good);border-color:color-mix(in srgb,var(--good) 42%,transparent);background:var(--good-bg)}
+.tag.warn{color:var(--warn);border-color:color-mix(in srgb,var(--warn) 42%,transparent);background:var(--warn-bg)}
+.tag.bad{color:var(--bad);border-color:color-mix(in srgb,var(--bad) 42%,transparent);background:var(--bad-bg)}
+.tag.vz{color:var(--vz);border-color:color-mix(in srgb,var(--vz) 40%,transparent)}
+.tag.att{color:var(--att);border-color:color-mix(in srgb,var(--att) 40%,transparent)}
+.tag.tmo{color:var(--tmo);border-color:color-mix(in srgb,var(--tmo) 40%,transparent)}
+.tag.multi{color:var(--mvno);border-color:color-mix(in srgb,var(--mvno) 40%,transparent)}
+
+/* ── 开关 ── */
+.switchbar{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--bg) 93%,transparent);
+  backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);
+  border-bottom:1px solid var(--line);margin:0 -24px 30px;padding:11px 24px;
+  display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+@media (max-width:700px){.switchbar{margin:0 -14px 22px;padding:9px 14px;gap:9px}}
+.seg{display:inline-flex;background:var(--bg2);border:1px solid var(--line2);border-radius:9px;padding:2.5px;gap:2.5px}
+.seg button{font:inherit;font-size:12.5px;font-weight:640;border:0;background:transparent;color:var(--ink2);
+  padding:5.5px 13px;border-radius:6.5px;cursor:pointer;white-space:nowrap;font-family:var(--mono)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg);box-shadow:0 1px 3px rgba(0,0,0,.18)}
+.seg button:hover:not([aria-pressed="true"]){color:var(--ink)}
+.switchbar .lbl{font-size:11.5px;color:var(--ink3);font-family:var(--mono);letter-spacing:.03em}
+
+/* ── 价格轴 ── */
+.axis{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:24px 22px 14px;box-shadow:var(--shadow);overflow-x:auto}
+.axis-inner{min-width:1130px;position:relative}
+.axis-row{display:grid;grid-template-columns:112px 1000px;gap:12px;align-items:center;margin-bottom:9px}
+.axis-lab{font-size:12px;font-family:var(--mono);color:var(--ink2);text-align:right;font-weight:620;line-height:1.3}
+.axis-track{position:relative;border-left:1px solid var(--line);border-right:1px solid var(--line)}
+.axis-track::before{content:"";position:absolute;left:0;right:0;top:0;bottom:0;background:repeating-linear-gradient(to right,var(--line) 0 1px,transparent 1px 100px);opacity:.55}
+.dot{position:absolute;transform:translate(-50%,-50%);height:21px;border-radius:11px;padding:0 8px;
+  display:flex;align-items:center;font-size:11px;font-family:var(--mono);font-weight:660;cursor:pointer;
+  border:1.5px solid;white-space:nowrap;transition:transform .12s,box-shadow .12s;z-index:2}
+.dot:hover,.dot.on{transform:translate(-50%,-50%) scale(1.13);box-shadow:0 3px 12px rgba(0,0,0,.22);z-index:5}
+.dot.vz{background:var(--card);border-color:var(--vz);color:var(--vz)}
+.dot.att{background:var(--card);border-color:var(--att);color:var(--att)}
+.dot.tmo{background:var(--card);border-color:var(--tmo);color:var(--tmo)}
+.dot.multi{background:var(--card);border-color:var(--mvno);color:var(--mvno)}
+.axis-scale{display:grid;grid-template-columns:112px 1000px;gap:12px;margin-top:2px}
+.axis-ticks{position:relative;height:19px}
+.tick{position:absolute;transform:translateX(-50%);font-size:10.5px;font-family:var(--mono);color:var(--ink3)}
+.band{position:absolute;top:0;bottom:0;background:color-mix(in srgb,var(--accent) 12%,transparent);
+  border-left:1px dashed var(--accent);border-right:1px dashed var(--accent);z-index:1;pointer-events:none}
+
+/* ── 品牌抽屉 ── */
+.brandgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:10px;margin-bottom:22px}
+.brandbtn{background:var(--card);border:1.5px solid var(--line2);border-radius:10px;padding:13px 14px;cursor:pointer;
+  text-align:left;font:inherit;color:var(--ink);transition:border-color .13s,transform .13s,box-shadow .13s;display:block;width:100%}
+.brandbtn:hover{border-color:var(--ink3);transform:translateY(-2px);box-shadow:var(--shadow)}
+.brandbtn[aria-expanded="true"]{border-color:var(--accent);border-width:2px;background:var(--accent-bg)}
+.brandbtn .bn{font-weight:700;font-size:15px;display:block;margin-bottom:3px;letter-spacing:-.01em}
+.brandbtn .bm{font-size:11.5px;color:var(--ink3);font-family:var(--mono);display:block;line-height:1.5}
+
+.panel{display:none}
+.panel.open{display:block;animation:fade .22s ease}
+@keyframes fade{from{opacity:0;transform:translateY(-5px)}to{opacity:1;transform:none}}
+.panel-head{border-left:4px solid var(--accent);padding:3px 0 3px 15px;margin:0 0 18px}
+.panel-head h3{margin:0 0 5px;font-size:21px}
+.panel-head .pm{font-size:13px;color:var(--ink2);line-height:1.68}
+
+/* ── 套餐卡 ── */
+.plan{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:13px;overflow:hidden;box-shadow:var(--shadow)}
+.plan-main{display:grid;grid-template-columns:1fr auto;gap:16px;padding:16px 19px;align-items:start;cursor:pointer}
+.plan-main:hover{background:var(--bg2)}
+.plan-name{font-weight:700;font-size:16px;margin:0 0 5px;letter-spacing:-.01em}
+.plan-chips{display:flex;flex-wrap:wrap;gap:5px;margin:7px 0 0}
+.price-box{text-align:right;white-space:nowrap}
+.price{font-family:var(--mono);font-size:25px;font-weight:700;letter-spacing:-.03em;line-height:1.1}
+.price .cur{font-size:15px;vertical-align:.16em;margin-right:1px;font-weight:600}
+.price-sub{font-size:11px;color:var(--ink3);font-family:var(--mono);margin-top:3px;line-height:1.45}
+.price-was{font-size:12px;color:var(--ink3);text-decoration:line-through;font-family:var(--mono)}
+.promo{color:var(--good);font-weight:660}
+
+.plan-body{display:none;border-top:1px dashed var(--line2);padding:17px 19px 19px;background:var(--bg2)}
+.plan.open .plan-body{display:block}
+.spec{display:grid;grid-template-columns:88px 1fr;gap:5px 13px;font-size:13.2px;margin-bottom:5px;align-items:baseline}
+.spec dt{color:var(--ink3);font-size:11.5px;font-family:var(--mono);text-align:right;padding-top:2.5px;line-height:1.55}
+.spec dd{margin:0;color:var(--ink2);line-height:1.68}
+
+/* ── 同价位对手 ── */
+.rivals{margin-top:17px;border-top:2px solid var(--ink);padding-top:14px}
+.rivals-h{font-size:12px;font-family:var(--mono);font-weight:660;color:var(--accent);letter-spacing:.05em;
+  text-transform:uppercase;margin:0 0 11px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.rivals-h .rn{color:var(--ink3);font-weight:500;text-transform:none;letter-spacing:0}
+.rival{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:11px;align-items:center;padding:9px 11px;border-radius:8px;
+  background:var(--card);border:1px solid var(--line);margin-bottom:6px;font-size:13.2px}
+.rival.self{border-color:var(--accent);border-width:1.5px;background:var(--accent-bg)}
+.rival .rb{font-weight:660;white-space:nowrap}
+.rival .rd{display:block;color:var(--ink3);font-size:11.8px;line-height:1.55;min-width:0;margin-top:1px}
+.rival .rp{font-family:var(--mono);font-weight:700;font-size:15.5px;white-space:nowrap;text-align:right}
+.rival .delta{font-size:10.5px;font-family:var(--mono);display:block;font-weight:600;line-height:1.3}
+.d-up{color:var(--bad)} .d-dn{color:var(--good)} .d-eq{color:var(--ink3)}
+.empty{color:var(--ink3);font-size:13px;font-style:italic;padding:9px 0}
+
+/* ── 表格 ── */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:11px;background:var(--card);box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;font-size:13.2px;min-width:660px}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.62}
+thead th{background:var(--bg2);font-size:11.5px;font-family:var(--mono);font-weight:660;color:var(--ink2);
+  letter-spacing:.02em;position:sticky;top:0;z-index:2;border-bottom:1.5px solid var(--line2);white-space:nowrap}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:var(--bg2)}
+td.num,th.num{font-family:var(--mono);text-align:right;white-space:nowrap}
+td.best{color:var(--good);font-weight:700}
+.rowlab{font-weight:660;white-space:nowrap}
+
+/* ── 审计 ── */
+.finding{border-left:4px solid var(--line2);padding:2px 0 2px 15px;margin:0 0 19px}
+.finding.bad{border-color:var(--bad)} .finding.warn{border-color:var(--warn)} .finding.good{border-color:var(--good)}
+.finding h4{margin:0 0 5px;font-size:14.8px;color:var(--ink);font-weight:680;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.finding p{margin:0 0 6px;font-size:13.6px;color:var(--ink2);line-height:1.72}
+.finding .was{font-size:12.6px;color:var(--ink3);font-family:var(--mono);background:var(--bg2);
+  border:1px solid var(--line);border-radius:6px;padding:6px 10px;margin:6px 0;line-height:1.6}
+
+/* ── 锐评 ── */
+.roast{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);
+  border-radius:0 11px 11px 0;padding:16px 19px;margin:0 0 13px;box-shadow:var(--shadow)}
+.roast h4{margin:0 0 6px;font-size:15.5px;color:var(--ink);display:flex;gap:9px;align-items:baseline;flex-wrap:wrap;font-weight:700}
+.roast p{margin:0;font-size:14px;color:var(--ink2);line-height:1.78}
+.roast .kicker{font-family:var(--mono);font-size:11px;color:var(--accent);font-weight:660;letter-spacing:.04em;text-transform:uppercase}
+
+/* ── 推荐 ── */
+.rec{display:grid;grid-template-columns:auto 1fr;gap:16px;padding:17px 19px;border:1px solid var(--line);
+  border-radius:11px;background:var(--card);margin-bottom:12px;box-shadow:var(--shadow)}
+.rec .rank{font-family:var(--mono);font-size:31px;font-weight:750;color:var(--accent);line-height:1;padding-top:2px;letter-spacing:-.04em}
+.rec h4{margin:0 0 5px;font-size:16.5px;color:var(--ink);font-weight:700}
+.rec p{margin:0 0 6px;font-size:13.8px;color:var(--ink2);line-height:1.72}
+.rec .who{font-size:12.5px;color:var(--ink3);font-family:var(--mono);line-height:1.6}
+
+/* ── 来源 ── */
+.srclist{font-size:12.5px;color:var(--ink3);line-height:1.85}
+.srclist a{word-break:break-all}
+details.src{margin-top:11px}
+details.src summary{cursor:pointer;font-size:12px;font-family:var(--mono);color:var(--ink3);
+  padding:5px 0;list-style:none;user-select:none}
+details.src summary::-webkit-details-marker{display:none}
+details.src summary::before{content:"▸ ";color:var(--accent)}
+details.src[open] summary::before{content:"▾ "}
+
+/* ── TOC ── */
+nav.toc{position:fixed;right:20px;top:50%;transform:translateY(-50%);z-index:50;
+  background:color-mix(in srgb,var(--card) 94%,transparent);backdrop-filter:blur(12px);
+  border:1px solid var(--line);border-radius:11px;padding:10px 8px;box-shadow:var(--shadow);max-width:172px}
+nav.toc a{display:block;font-size:11.5px;color:var(--ink3);padding:3.5px 9px;border-radius:6px;border:0;
+  line-height:1.45;font-family:var(--mono);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+nav.toc a:hover{background:var(--bg2);color:var(--ink)}
+nav.toc a.active{color:var(--accent);background:var(--accent-bg);font-weight:660}
+@media (max-width:1420px){nav.toc{display:none}}
+
+footer{border-top:1px solid var(--line);padding-top:22px;margin-top:60px;font-size:12.5px;color:var(--ink3);line-height:1.8}
+.warnbox{background:var(--warn-bg);border:1px solid color-mix(in srgb,var(--warn) 38%,transparent);
+  border-radius:10px;padding:14px 17px;font-size:13.2px;color:var(--ink2);line-height:1.72;margin:0 0 18px}
+.warnbox b{color:var(--warn)}
+</style></head><body>
+<nav class="toc"><a href="#tax">01 口径换算</a><a href="#axis-sec">02 价格轴</a><a href="#brands">03 品牌逐档</a><a href="#multiline">04 多线拼卡</a><a href="#device">05 合约送机</a><a href="#coverage">06 本地覆盖</a><a href="#intl">07 国际·回国</a><a href="#audit">08 原表体检</a><a href="#rec">09 推荐排序</a><a href="#roast">10 锐评</a><a href="#limits">11 限制</a></nav>
+<div class="wrap">
+<header class="top">
+<h1>哥伦布手机套餐<br>严谨横向对比</h1>
+<p class="sub">9 个品牌 · 46 个套餐档位 · 全部价格换算成俄亥俄含税到手价后再比较。
+点品牌看全部档位，点档位看同价位所有竞品。</p>
+<div class="meta"><span><b>地点</b> Columbus, Ohio</span><span><b>口径日期</b> 2026-08-14</span>
+<span><b>范围</b> 单线 BYOD + 多线 + 合约购机</span><span><b>数据来源</b> 官网实抓</span></div>
+</header>
+
+<div class="switchbar">
+<span class="lbl">价格口径</span>
+<div class="seg"><button data-mode="landed" aria-pressed="true">到手价</button><button data-mode="adv" aria-pressed="false">广告价</button></div>
+<span class="lbl">用哪个价</span>
+<div class="seg"><button data-promo="0" aria-pressed="true">常规价</button><button data-promo="1" aria-pressed="false">促销价</button></div>
+<span class="lbl">同价位区间</span>
+<div class="seg"><button data-range="4" aria-pressed="false">±$4</button><button data-range="6" aria-pressed="true">±$6</button><button data-range="10" aria-pressed="false">±$10</button></div>
+</div>
+
+
+<div class="verdict">
+<h3>一句话结论</h3>
+<p>你那份表的<b>事实基本没错，但口径是乱的</b>——含税价和不含税价混在一起排名、AutoPay 折扣一家算一家不算、
+首月价当常规价、年付摊算价当月付促销价。把这些拉平之后，<b>排名会明显变样</b>。</p>
+<p>拉平后单线自带手机的答案很集中：<b>$25 这一档挤了五家税费全含的，三张网都有</b>——
+Total MAX 5G BYO 与 Visible（Verizon）、Cricket 年付（AT&amp;T）、Metro（T-Mobile）、US Mobile Starter（三网可选）。
+而三大直营在同一价位换算成到手价后要贵 $10–$11（同样标价 $25，到手是 $35.14–$36.14），
+Verizon Simplicity 标价 $45 更是要到 $59.86。
+除非你需要后付费账户、实体店或大额购机补贴，否则没有理由为直营多付这笔钱。</p>
+<p class="muted" style="font-size:13.5px">另外补一句原表没覆盖、但对选择影响很大的事实：在哥伦布，
+<b>2026 上半年 RootMetrics 路测的赢家是 AT&amp;T 和 T-Mobile，不是 Verizon</b>——Verizon 八个单项奖一项未得。
+所以「买 Verizon 网就等于买覆盖最好」这个默认前提，在这座城市并不成立。</p>
+</div>
+
+
+<section id="tax"><h2><span class="num">01</span>口径：把所有价格换算成「到手价」</h2>
+<p class="lede">这是整份对比的地基。原表最大的问题就是拿<b>含税价</b>和<b>不含税价</b>直接比大小排名。
+俄亥俄的话费税加运营商自收费不是小数——在低价档能吃掉 40%。不换算，「同价位对比」就是假的。</p>
+
+<div class="verdict"><h3>换算公式</h3>
+<p><span class="mono">到手价 = 广告价 × 1.2359 + 每线固定费 + $0.25</span></p>
+<p class="muted" style="margin-top:8px">政府税费 <b>23.59%</b>（俄亥俄州+地方 9.2% + 联邦 USF 14.39%）
+· 每线固定费 Verizon $3.99 / AT&amp;T $4.99 / T-Mobile $4.49 · 俄亥俄 NG911 $0.25/线/月</p></div>
+
+<div class="warnbox"><b>我对权威数据做了一处修正。</b> Tax Foundation 2025 版给俄亥俄的合计税率是 22.56%，
+但它用的是 2025 年三季度的联邦 USF 缴费系数（36.0%）。FCC 已在 2026-06-15 核准 Q3 2026 系数为
+<b>38.8%</b>（历史最高）。按 38.8% × 37.1% 安全港 = 14.39%，俄亥俄实际应为 <b>23.59%</b>。
+直接抄 Tax Foundation 会低估约 1 个百分点。</div>
+
+<h3>广告价 → 到手价对照</h3>
+<div class="tw"><table>
+<thead><tr><th class="num">广告价</th><th class="num">Verizon</th><th class="num">AT&amp;T</th><th class="num">T-Mobile</th>
+<th class="num">倍率</th><th class="num">税费已含品牌</th></tr></thead>
+<tbody><tr><td class='num rowlab'>$20</td><td class='num'>$28.96</td><td class='num'>$29.96</td><td class='num'>$29.46</td><td class='num'>×1.50</td><td class='num best'>$20</td></tr><tr><td class='num rowlab'>$25</td><td class='num'>$35.14</td><td class='num'>$36.14</td><td class='num'>$35.64</td><td class='num'>×1.45</td><td class='num best'>$25</td></tr><tr><td class='num rowlab'>$30</td><td class='num'>$41.32</td><td class='num'>$42.32</td><td class='num'>$41.82</td><td class='num'>×1.41</td><td class='num best'>$30</td></tr><tr><td class='num rowlab'>$35</td><td class='num'>$47.50</td><td class='num'>$48.50</td><td class='num'>$48.00</td><td class='num'>×1.39</td><td class='num best'>$35</td></tr><tr><td class='num rowlab'>$45</td><td class='num'>$59.86</td><td class='num'>$60.86</td><td class='num'>$60.36</td><td class='num'>×1.35</td><td class='num best'>$45</td></tr><tr><td class='num rowlab'>$50</td><td class='num'>$66.03</td><td class='num'>$67.03</td><td class='num'>$66.53</td><td class='num'>×1.34</td><td class='num best'>$50</td></tr><tr><td class='num rowlab'>$70</td><td class='num'>$90.75</td><td class='num'>$91.75</td><td class='num'>$91.25</td><td class='num'>×1.31</td><td class='num best'>$70</td></tr><tr><td class='num rowlab'>$90</td><td class='num'>$115.47</td><td class='num'>$116.47</td><td class='num'>$115.97</td><td class='num'>×1.29</td><td class='num best'>$90</td></tr></tbody></table></div>
+<p class="muted" style="margin-top:9px">倍率随档位递减，因为固定费不随价格缩放：本页实算（取 AT&amp;T 上界）$20档 ×1.50 / $25档 ×1.45 / $30档 ×1.41 / $35档 ×1.39 / $45档 ×1.35 / $50档 ×1.34 / $70档 ×1.31 / $90档 ×1.29。所以不存在单一的「×1.3」——套餐越便宜，税费咬得越狠。固定费必须单加，不能并入百分比。误差带 ±3~6 个百分点，最大误差源是联邦 USF 安全港口径。</p>
+
+<h3>每线固定费——比价时最常被漏掉的一块</h3>
+<div class="tw"><table><thead><tr><th>运营商</th><th class="num">每线每月</th><th>说明</th></tr></thead>
+<tbody><tr><td class='rowlab'>Verizon</td><td class='num'>$3.99</td><td>Administrative &amp; Telco Recovery $3.78 + Regulatory $0.21。两年累计涨约80%，官网刻意不公布金额。</td></tr><tr><td class='rowlab'>AT&T</td><td class='num'>$4.99</td><td>Administrative &amp; Regulatory Cost Recovery，2026-08-05 刚由 $3.99 涨到 $4.99，三大最高。八个月涨43%。</td></tr><tr><td class='rowlab'>T-Mobile</td><td class='num'>$4.49</td><td>Regulatory Programs $0.50 + Telco Recovery $3.99，2026-01-21 上调。第三方广传的 $3.99 是旧数。</td></tr></tbody></table></div>
+<p class="muted" style="margin-top:9px">这三笔<b>都不是税</b>，是运营商自收的。Tax Foundation 的税率<b>不覆盖</b>这部分，
+这正是多数比价文章算错的地方。AT&amp;T 的 $4.99 是 2026-08-05 刚涨的，八个月内从 $3.49 连涨两次到 $4.99，累计 43%。</p>
+
+<h3>一次性开卡费</h3>
+<div class="tw"><table><thead><tr><th>品牌</th><th>金额</th><th>说明</th><th>置信度</th></tr></thead>
+<tbody><tr><td class='rowlab'>Verizon</td><td>$0（但必须自己去 App 加入 Verizon Loyalty，不自动生效）</td><td>2026-06-16 起永久取消 $40 激活费/升级费，是2026年三大里唯一真取消的。不加入则仍收 $40/线。</td><td><span class='tag'>高</span></td></tr><tr><td class='rowlab'>AT&amp;T</td><td>$25–$35/线（口径冲突，未锁定）</td><td>后付费一说 $35 一说 $25，官网 403 无法直抓。预付费 $15，线上常免。学生/工会/AARP 可减免——签约前当场问清。</td><td><span class='tag'>低</span></td></tr><tr><td class='rowlab'>T-Mobile</td><td>$35/线 Device Connection Charge</td><td>后付费激活与升级均收，预付费豁免；2026-03 起通过 Apple 渠道购机也照收。</td><td><span class='tag'>中高</span></td></tr><tr><td class='rowlab'>Cricket</td><td>到店开通费最高 $25/线（线上办理常免）</td><td>一次性。</td><td><span class='tag'>中</span></td></tr><tr><td class='rowlab'>Metro</td><td>$0（当前促销免开卡费）</td><td>促销性质，可能变。</td><td><span class='tag'>中</span></td></tr></tbody></table></div>
+
+<details class="src"><summary>本节来源</summary><ul class="srclist"><li><a href='https://taxfoundation.org/data/all/state/wireless-taxes-cell-phone-tax-rates-by-state-2025/' target='_blank' rel='noopener'>Tax Foundation 2025 版无线税率表（俄亥俄行 9.20/13.36/22.56）</a></li><li><a href='https://broadbandbreakfast.com/usf-contribution-factor-hits-record-38-8-in-third-quarter/' target='_blank' rel='noopener'>FCC Q3 2026 USF 缴费系数升至历史最高 38.8%</a></li><li><a href='https://dam.assets.ohio.gov/image/upload/tax.ohio.gov/sales_and_use/information_releases/NG2023_Replacement_of_the_Wireless_9-1-1_Fee.pdf' target='_blank' rel='noopener'>俄亥俄州税务厅 NG911 费官方 PDF（2025-10-01 起 $0.25/线/月）</a></li><li><a href='https://www.salestaxhandbook.com/ohio/rates/columbus' target='_blank' rel='noopener'>哥伦布本地销售税 8.0%（州5.75+郡1.25+COTA1.0）</a></li></ul></details>
+</section>
+<section id="axis-sec"><h2><span class="num">02</span>价格轴：谁和谁在同一个价位</h2>
+<p class="lede">按当前口径把所有套餐排在一条轴上，按底层网络分三行。
+<b>点任意一个点</b>可跳到该套餐并展开它的同价位对手清单。</p>
+<div class="axis" id="axis"></div>
+<p class="muted" style="margin-top:11px">同一个网络里价格重叠得越密，说明这一档的竞争越充分、你越不该多付钱。
+注意 Verizon 行的两端差距——同样是 Verizon 的网，$25 和 $60 都能买到「无限」。</p>
+</section>
+<section id="brands"><h2><span class="num">03</span>按品牌逐档对比</h2>
+<p class="lede">点开任意品牌看它的<b>全部</b>套餐档位（原表每家只列了 1 个）。
+再点开任意套餐，会自动列出<b>所有品牌在这个价位区间内的竞品</b>，并在上方价格轴高亮该区间。</p>
+<div class="brandgrid" id="brandgrid"></div>
+<div class="panel" id="panel"></div>
+</section>
+<section id="multiline"><h2><span class="num">04</span>多线拼卡：每线到底多少</h2>
+<p class="lede">表里的数字是<b>每线每月</b>（不是账单总价），均为 BYOD、不含设备。
+先说结论：<b>有四家根本没有多线折扣</b>，官方自己承认——Mint、US Mobile、Spectrum、Visible 基础版。
+所谓「family plan」在这几家只是账号管理界面。</p>
+<h3>Verizon</h3>
+<div class="tw"><table><thead><tr><th>套餐</th><th class="num">1 线</th><th class="num">2 线</th>
+<th class="num">3 线</th><th class="num">4 线</th><th class="num">5 线</th></tr></thead><tbody><tr><td class='rowlab'>Unlimited Welcome</td><td class='num'>$65</td><td class='num'>$55</td><td class='num'>$36.67</td><td class='num best'>$27.50</td><td class='num'>$28</td></tr><tr><td class='rowlab'>Unlimited Plus</td><td class='num'>$80</td><td class='num'>$70</td><td class='num'>$51.67</td><td class='num best'>$42.50</td><td class='num'>$43</td></tr><tr><td class='rowlab'>Unlimited Ultimate</td><td class='num'>$95</td><td class='num'>$85</td><td class='num'>$66.67</td><td class='num best'>$57.50</td><td class='num'>$58</td></tr></tbody></table></div>
+<p class="muted" style="margin:8px 0 4px"><b>税费</b>：另计 · <b>AutoPay</b>：已含 AutoPay+无纸账单（不开每线+$10） · <b>混搭</b>：各线可选不同档，不要求同档</p>
+<div class="warnbox" style="margin:8px 0 26px"><b>坑：</b> 3+线的 $10/月 credit 是【账户级一份、不是每线】，36个月后到期。到期后 Welcome 4线从 $27.50/线 涨回 $30/线。另外广告价「4线 $25/线」的 tooltip 写明需 4 条全新线（转网/新开），老账户加线拿不到。
+<div style="margin-top:6px"><a href="https://www.verizon.com/plans/unlimited/myplan/" target="_blank" rel="noopener">出处</a></div></div><h3>AT&amp;T</h3>
+<div class="tw"><table><thead><tr><th>套餐</th><th class="num">1 线</th><th class="num">2 线</th>
+<th class="num">3 线</th><th class="num">4 线</th><th class="num">5 线</th></tr></thead><tbody><tr><td class='rowlab'>Value 2.0</td><td class='num'>$50</td><td class='num'>$45</td><td class='num'>$35</td><td class='num best'>$30</td><td class='num best'>$30</td></tr><tr><td class='rowlab'>Extra 2.0</td><td class='num'>$70</td><td class='num'>$60</td><td class='num'>$50</td><td class='num best'>$40</td><td class='num best'>$40</td></tr><tr><td class='rowlab'>Premium 2.0</td><td class='num'>$90</td><td class='num'>$80</td><td class='num'>$65</td><td class='num best'>$50</td><td class='num best'>$50</td></tr><tr><td class='rowlab'>Elite 2.0</td><td class='num'>$110</td><td class='num'>$100</td><td class='num'>$85</td><td class='num best'>$70</td><td class='num best'>$70</td></tr></tbody></table></div>
+<p class="muted" style="margin:8px 0 4px"><b>税费</b>：另计 · <b>AutoPay</b>：已含 $10/线 AutoPay+无纸账单 · <b>混搭</b>：唯一允许各线混搭不同档（Mix and match any of our best unlimited plans on any line）</p>
+<div class="warnbox" style="margin:8px 0 26px"><b>坑：</b> $10/线的 AutoPay 折扣只有绑【银行账户或 AT&amp;T Points Plus 信用卡】才给足额；普通借记卡只有 $5，多数信用卡是 $0。只刷普通信用卡的人 4线每年多付 $480。而且折扣「starts within 2 bills」——前两期先按原价收。
+<div style="margin-top:6px"><a href="https://www.att.com/plans/wireless/" target="_blank" rel="noopener">出处</a></div></div><h3>T-Mobile</h3>
+<div class="tw"><table><thead><tr><th>套餐</th><th class="num">1 线</th><th class="num">2 线</th>
+<th class="num">3 线</th><th class="num">4 线</th><th class="num">5 线</th></tr></thead><tbody><tr><td class='rowlab'>Essentials / Saver 2.0</td><td class='num'>$55</td><td class='num'>$45</td><td class='num muted'>未公布</td><td class='num best'>$30</td><td class='num best'>$30</td></tr><tr><td class='rowlab'>Experience More 2.0</td><td class='num'>$90</td><td class='num'>$75</td><td class='num'>$61.67</td><td class='num'>$55</td><td class='num best'>$51</td></tr><tr><td class='rowlab'>Experience Beyond 2.0</td><td class='num'>$105</td><td class='num'>$90</td><td class='num'>$76.67</td><td class='num'>$70</td><td class='num best'>$66</td></tr></tbody></table></div>
+<p class="muted" style="margin:8px 0 4px"><b>税费</b>：另计（2025-04 起 Experience 系列改为税费另计，历史「全包」卖点已终结） · <b>AutoPay</b>：已含 AutoPay+无纸账单 · <b>混搭</b>：允许混搭</p>
+<div class="warnbox" style="margin:8px 0 26px"><b>坑：</b> 「第3线免费」是 bill credit，官方原文：credits stop if you cancel any lines——砍任何一条线，credit 全停。另外每条语音线还有 $4.49/月恢复费。Essentials 的 4线 $30/线 是限时档，官网未列 3 线价。
+<div style="margin-top:6px"><a href="https://www.t-mobile.com/cell-phone-plans" target="_blank" rel="noopener">出处</a></div></div><h3>Google Fi</h3>
+<div class="tw"><table><thead><tr><th>套餐</th><th class="num">1 线</th><th class="num">2 线</th>
+<th class="num">3 线</th><th class="num">4 线</th><th class="num">5 线</th></tr></thead><tbody><tr><td class='rowlab'>Unlimited Essentials</td><td class='num'>$35</td><td class='num'>$30</td><td class='num'>$27</td><td class='num best'>$23</td><td class='num best'>$23</td></tr><tr><td class='rowlab'>Unlimited Standard</td><td class='num'>$50</td><td class='num'>$40</td><td class='num'>$30</td><td class='num best'>$25</td><td class='num best'>$25</td></tr><tr><td class='rowlab'>Unlimited Premium</td><td class='num'>$65</td><td class='num'>$55</td><td class='num'>$45</td><td class='num best'>$40</td><td class='num best'>$40</td></tr></tbody></table></div>
+<p class="muted" style="margin:8px 0 4px"><b>税费</b>：另计 · <b>AutoPay</b>：无需 AutoPay · <b>混搭</b>：允许混搭</p>
+<div class="warnbox" style="margin:8px 0 26px"><b>坑：</b> 阶梯是【真降价、不是 bill credit】，减线不会触发 credit 停发——这点比 T-Mobile 干净。但 Premium 从4线起锁死 $40/线不再降，Standard 从4线起锁 $25/线，所以人多时 Standard 性价比碾压 Premium。
+<div style="margin-top:6px"><a href="https://fi.google.com/about/plans/" target="_blank" rel="noopener">出处</a></div></div><h3>Cricket</h3>
+<div class="tw"><table><thead><tr><th>套餐</th><th class="num">1 线</th><th class="num">2 线</th>
+<th class="num">3 线</th><th class="num">4 线</th><th class="num">5 线</th></tr></thead><tbody><tr><td class='rowlab'>Sensible 10GB</td><td class='num'>$30</td><td class='num'>$30</td><td class='num'>$30</td><td class='num'>$30</td><td class='num'>$30</td></tr><tr><td class='rowlab'>Select Unlimited</td><td class='num'>$35</td><td class='num'>$32.50</td><td class='num'>$30</td><td class='num'>$25</td><td class='num best'>$24</td></tr><tr><td class='rowlab'>Smart Unlimited</td><td class='num'>$45</td><td class='num'>$37.50</td><td class='num'>$31.67</td><td class='num'>$27.50</td><td class='num best'>$26</td></tr><tr><td class='rowlab'>Supreme Unlimited</td><td class='num'>$55</td><td class='num'>$45</td><td class='num'>$36.67</td><td class='num'>$32.50</td><td class='num best'>$32</td></tr></tbody></table></div>
+<p class="muted" style="margin:8px 0 4px"><b>税费</b>：已包含 · <b>AutoPay</b>：已含 $5/月账户级 credit（不开则整单+$5） · <b>混搭</b>：要求全部线路同档（all lines must be on the same plan）</p>
+<div class="warnbox" style="margin:8px 0 26px"><b>坑：</b> Sensible 10GB 挂着「多线」的名义，实际 $30×线数、零折扣，别被套餐列表并排展示误导。真正的加线优惠只在三档 Unlimited：Select 逐线增量 +$30/+$25/+$10/+$20。
+<div style="margin-top:6px"><a href="https://www.cricketwireless.com/support/plans-and-features/family-plans.html" target="_blank" rel="noopener">出处</a></div></div><h3>Boost</h3>
+<div class="tw"><table><thead><tr><th>套餐</th><th class="num">1 线</th><th class="num">2 线</th>
+<th class="num">3 线</th><th class="num">4 线</th><th class="num">5 线</th></tr></thead><tbody><tr><td class='rowlab'>Unlimited ($25 档)</td><td class='num'>$25</td><td class='num'>$25</td><td class='num'>$25</td><td class='num'>$25</td><td class='num'>$25</td></tr><tr><td class='rowlab'>Unlimited+</td><td class='num'>$50</td><td class='num'>$40</td><td class='num'>$36.67</td><td class='num best'>$30</td><td class='num best'>$30</td></tr><tr><td class='rowlab'>Unlimited Premium</td><td class='num'>$60</td><td class='num'>$50</td><td class='num'>$46.67</td><td class='num best'>$40</td><td class='num best'>$40</td></tr></tbody></table></div>
+<p class="muted" style="margin:8px 0 4px"><b>税费</b>：另计 · <b>AutoPay</b>：已含（不开每线+$5） · <b>混搭</b>：所有线必须在 Unlimited+ / Premium 两档之内</p>
+<div class="warnbox" style="margin:8px 0 26px"><b>坑：</b> 天天打广告的「$25/mo Forever」入门档【完全不参加多线折扣】，5条线就是 $125。折扣结构本身很实在（第4线一次减 $40，是全表最激进的单线减免），但首单最多3线，想开4线拿 $30/线必须先激活3条再补第4条。
+<div style="margin-top:6px"><a href="https://www.boostmobile.com/plans/multiline" target="_blank" rel="noopener">出处</a></div></div><h3>Visible</h3>
+<div class="tw"><table><thead><tr><th>套餐</th><th class="num">1 线</th><th class="num">2 线</th>
+<th class="num">3 线</th><th class="num">4 线</th><th class="num">5 线</th></tr></thead><tbody><tr><td class='rowlab'>Visible ($25 基础)</td><td class='num'>$25</td><td class='num'>$25</td><td class='num'>$25</td><td class='num'>$25</td><td class='num'>$25</td></tr><tr><td class='rowlab'>Visible+ (Inner Circle)</td><td class='num'>$35</td><td class='num best'>$30</td><td class='num best'>$30</td><td class='num best'>$30</td><td class='num best'>$30</td></tr><tr><td class='rowlab'>Visible+ Pro (Inner Circle)</td><td class='num'>$45</td><td class='num best'>$40</td><td class='num best'>$40</td><td class='num best'>$40</td><td class='num best'>$40</td></tr></tbody></table></div>
+<p class="muted" style="margin:8px 0 4px"><b>税费</b>：已包含（Broadband Facts: Government Taxes Included / Provider Monthly Fees None） · <b>AutoPay</b>：无需 · <b>混搭</b>：每人独立账户各付各的</p>
+<div class="warnbox" style="margin:8px 0 26px"><b>坑：</b> 没有传统家庭套餐。基础版是纯线性、一分不省；Inner Circle 每人固定省 $5，最多7人，且【基础版不参加】。年付更便宜：Visible $275/年(≈$22.92) / Visible+ $375/年(≈$31.25) / Pro $450/年(≈$37.50)。
+<div style="margin-top:6px"><a href="https://www.visible.com/plans/inner-circle" target="_blank" rel="noopener">出处</a></div></div><h3>Total Wireless</h3>
+<div class="tw"><table><thead><tr><th>套餐</th><th class="num">1 线</th><th class="num">2 线</th>
+<th class="num">3 线</th><th class="num">4 线</th><th class="num">5 线</th></tr></thead><tbody><tr><td class='rowlab'>Total STARTER</td><td class='num'>$35</td><td class='num'>$37.50</td><td class='num'>$28.33</td><td class='num best'>$23.75</td><td class='num'>$25</td></tr><tr><td class='rowlab'>Total MAX 5G BYO</td><td class='num best'>$25</td><td class='num'>$27.50</td><td class='num'>$28.33</td><td class='num'>$26.25</td><td class='num'>$27</td></tr><tr><td class='rowlab'>Total MAX 5G</td><td class='num'>$50</td><td class='num'>$40</td><td class='num'>$31.67</td><td class='num best'>$26.25</td><td class='num'>$27</td></tr><tr><td class='rowlab'>Total ALL ACCESS</td><td class='num'>$60</td><td class='num'>$45</td><td class='num'>$35</td><td class='num best'>$28.75</td><td class='num'>$29</td></tr></tbody></table></div>
+<p class="muted" style="margin:8px 0 4px"><b>税费</b>：页面未明示 · <b>AutoPay</b>：已含 $5 账户级折扣（第一个月拿不到） · <b>混搭</b>：要求全账户同档（All phone lines will be on the same new plan）</p>
+<div class="warnbox" style="margin:8px 0 26px"><b>坑：</b> 阶梯【不单调】，这是全表最反常的一家：STARTER 2线每线 $37.50 比单线 $35 还贵；MAX 5G BYO 从3线起每线价不再下降（3线$28.33→4线$26.25→5线$27）。真要拼卡，这家最优解是 STARTER 4线 $23.75/线，不是看着最便宜的 MAX 5G BYO。
+<div style="margin-top:6px"><a href="https://www.totalwireless.com/shop/plans" target="_blank" rel="noopener">出处</a></div></div><h3>Mint Mobile</h3>
+<div class="tw"><table><thead><tr><th>套餐</th><th class="num">1 线</th><th class="num">2 线</th>
+<th class="num">3 线</th><th class="num">4 线</th><th class="num">5 线</th></tr></thead><tbody><tr><td class='rowlab'>Unlimited</td><td class='num'>$30</td><td class='num'>$30</td><td class='num'>$30</td><td class='num'>$30</td><td class='num'>$30</td></tr><tr><td class='rowlab'>6GB</td><td class='num'>$15</td><td class='num'>$15</td><td class='num'>$15</td><td class='num'>$15</td><td class='num'>$15</td></tr><tr><td class='rowlab'>17GB</td><td class='num'>$20</td><td class='num'>$20</td><td class='num'>$20</td><td class='num'>$20</td><td class='num'>$20</td></tr><tr><td class='rowlab'>23GB</td><td class='num'>$25</td><td class='num'>$25</td><td class='num'>$25</td><td class='num'>$25</td><td class='num'>$25</td></tr></tbody></table></div>
+<p class="muted" style="margin:8px 0 4px"><b>税费</b>：另计（Recovery Fee $1.88–$2.29/月 + FUSF + 州税） · <b>AutoPay</b>：无需，但要一次性预付整期 · <b>混搭</b>：可混搭不同档</p>
+<div class="warnbox" style="margin:8px 0 26px"><b>坑：</b> 官方 FAQ 白纸黑字自认没有多线折扣：「although there aren't any discounts」。所谓 Modern Family Plan 只是把2-5条独立线放进一个管理界面，价格一分不变——别被「family plan」四个字骗到。另外 3个月短约的常规价比 12个月档贵 $10–$20/月。
+<div style="margin-top:6px"><a href="https://www.mintmobile.com/family-phone-plans/" target="_blank" rel="noopener">出处</a></div></div><h3>US Mobile</h3>
+<div class="tw"><table><thead><tr><th>套餐</th><th class="num">1 线</th><th class="num">2 线</th>
+<th class="num">3 线</th><th class="num">4 线</th><th class="num">5 线</th></tr></thead><tbody><tr><td class='rowlab'>Unlimited Starter(年付)</td><td class='num'>$16.60</td><td class='num'>$16.60</td><td class='num'>$16.60</td><td class='num'>$16.60</td><td class='num'>$16.60</td></tr><tr><td class='rowlab'>Unlimited Flex(年付)</td><td class='num'>$17.50</td><td class='num'>$17.50</td><td class='num'>$17.50</td><td class='num'>$17.50</td><td class='num'>$17.50</td></tr><tr><td class='rowlab'>Unlimited Premium(年付)</td><td class='num'>$24.90</td><td class='num'>$24.90</td><td class='num'>$24.90</td><td class='num'>$24.90</td><td class='num'>$24.90</td></tr></tbody></table></div>
+<p class="muted" style="margin:8px 0 4px"><b>税费</b>：部分档已包含（非全包档 recovery fee 约 $1–$5/线） · <b>AutoPay</b>：无需 · <b>混搭</b>：可混搭</p>
+<div class="warnbox" style="margin:8px 0 26px"><b>坑：</b> 官方原话：「we do not have multi-line discounts (we just lowered our prices so that even a single line costs what one used to get after a multi-line discount)」。定位就是「单线也给你多线价」，人多不会再便宜。唯一多线好处：3条以上 Premium 月付线送1个 perk（最高 $15/月）。注意列价是【年付首年价】，续年价官网未说明。
+<div style="margin-top:6px"><a href="https://www.usmobile.com/plans" target="_blank" rel="noopener">出处</a></div></div><h3>Metro</h3>
+<div class="tw"><table><thead><tr><th>套餐</th><th class="num">1 线</th><th class="num">2 线</th>
+<th class="num">3 线</th><th class="num">4 线</th><th class="num">5 线</th></tr></thead><tbody><tr><td class='rowlab'>$25 BYOD 档</td><td class='num'>$25</td><td class='num'>$25</td><td class='num'>$25</td><td class='num'>$25</td><td class='num'>$25</td></tr><tr><td class='rowlab'>$30 档</td><td class='num'>$30</td><td class='num'>$30</td><td class='num'>$30</td><td class='num'>$30</td><td class='num'>$30</td></tr><tr><td class='rowlab'>$60 Premium</td><td class='num'>$60</td><td class='num muted'>未公布</td><td class='num muted'>未公布</td><td class='num best'>$48</td><td class='num muted'>未公布</td></tr></tbody></table></div>
+<p class="muted" style="margin:8px 0 4px"><b>税费</b>：已包含 + 5年锁价（talk/text/5G数据，有除外条款） · <b>AutoPay</b>：已含 · <b>混搭</b>：未公布</p>
+<div class="warnbox" style="margin:8px 0 26px"><b>坑：</b> Metro【没有一张公开的多线阶梯表】——查过7个官方页面（/phone-plans、/plan-benefits、/deals、/deals/40period、/deals/one-line-for-25-phone-plan、/deals/4-lines-for-100、/onlineplans）均未刊登 2/3/5 线价。它的「4线$100」就是单线价 $25 原样复制4份，且写明【只能到店办】。也就是说 Metro 的多线优惠在数字上并不比单线促销价更便宜。
+<div style="margin-top:6px"><a href="https://www.metrobyt-mobile.com/phone-plans" target="_blank" rel="noopener">出处</a></div></div><h3>Spectrum Mobile</h3>
+<div class="tw"><table><thead><tr><th>套餐</th><th class="num">1 线</th><th class="num">2 线</th>
+<th class="num">3 线</th><th class="num">4 线</th><th class="num">5 线</th></tr></thead><tbody><tr><td class='rowlab'>Unlimited</td><td class='num'>$30</td><td class='num'>$30</td><td class='num'>$30</td><td class='num'>$30</td><td class='num'>$30</td></tr><tr><td class='rowlab'>Unlimited Plus</td><td class='num'>$40</td><td class='num'>$40</td><td class='num'>$40</td><td class='num'>$40</td><td class='num'>$40</td></tr><tr><td class='rowlab'>Unlimited Plus Premium</td><td class='num'>$50</td><td class='num'>$50</td><td class='num'>$50</td><td class='num'>$50</td><td class='num'>$50</td></tr></tbody></table></div>
+<p class="muted" style="margin:8px 0 4px"><b>税费</b>：服务税费已含，激活费与设备税另计 · <b>AutoPay</b>：强制 · <b>混搭</b>：可混搭</p>
+<div class="warnbox" style="margin:8px 0 26px"><b>坑：</b> 手机侧【零多线折扣】，每线固定价。省钱完全来自「必须先买 Spectrum 宽带、第1条无限线免费1年」的捆绑补贴。把宽带算进去：4线36个月手机 $3,960 + 宽带约 $2,160 = 约 $6,120。为了这个价去买宽带就不划算了。
+<div style="margin-top:6px"><a href="https://www.spectrum.com/mobile/plans" target="_blank" rel="noopener">出处</a></div></div>
+</section>
+<section id="device"><h2><span class="num">05</span>合约送手机：把净账算给你看</h2>
+<p class="lede">「免费 iPhone」是本次调研里<b>翻车最多</b>的一块。判断只有一条算式：
+<span class="mono">为拿补贴多付的套餐月差价 × 返还月数</span> 是否小于 <span class="mono">补贴总额</span>。
+超了就是净亏，而且你还被锁 36 个月。</p>
+
+<div class="verdict"><h3>三条与主流攻略相反的实抓结论</h3>
+<p>① <b>Verizon 现在的免费手机不需要以旧换新</b>——机型页 Available offers 面板里根本没有 trade-in 选项。
+第三方（WhistleOut 等 2026-08-13 更新）仍在写「需以旧换新」，与官网当前落地页不符。</p>
+<p>② <b>AT&amp;T Build-A-Plan 完全不能参与任何设备促销</b>——官方文档逐条写明 NO promotional offers、NO bill credits、
+不能分期买机、不能以旧换新。想要补贴手机只能走传统 Unlimited 2.0。</p>
+<p>③ <b>Boost 已经没有自建网络了</b>——EchoStar 2025-08-26 把频谱卖给 AT&amp;T，Boost 用户 2025-11-15 全部迁到 AT&amp;T 网络。
+今天的 Boost 实质是跑 AT&amp;T 的混合 MVNO，而且它并没有在做激进旗舰补贴（旗舰全部原价）。</p></div>
+
+<h3>Verizon：升档成本 vs 手机抵扣</h3>
+<p>硬条件：必须开【新线路】（New line req'd. 写在每条优惠标题里） / 必须上指定档位：$830以下机器要 Plus 或 Ultimate；$830以上旗舰【一律只认最贵的 Ultimate】 / 抵扣分 36 个月按月返，不是立减 / Simplicity 套餐拿不到这些大额抵扣。<b>每升一档固定 +$15/月/线 = $540/36个月；Welcome 直跳 Ultimate = +$30/月 = $1,080/36个月</b>。</p>
+<div class="tw"><table><thead><tr><th>机型</th><th class="num">零售价</th><th class="num">抵扣</th>
+<th>要求档位</th><th>从 Welcome 出发的净账</th><th>判断</th></tr></thead><tbody><tr><td class='rowlab'>iPhone 17 (256GB)</td><td class='num'>$829.99</td><td class='num'>$830</td><td>Plus 或 Ultimate</td><td>+$540 → 净省 $290</td><td><span class='tag good'>值</span></td></tr><tr><td class='rowlab'>Galaxy S26+</td><td class='num'>—</td><td class='num'>—</td><td>Plus</td><td>净省 $560</td><td><span class='tag good'>值</span></td></tr><tr><td class='rowlab'>iPhone Air</td><td class='num'>$999.99</td><td class='num'>$1000</td><td>只认 Ultimate</td><td>+$1,080 → 倒亏 $80</td><td><span class='tag bad'>坑</span></td></tr><tr><td class='rowlab'>iPhone 17 Pro</td><td class='num'>$1099.99</td><td class='num'>$1000</td><td>只认 Ultimate</td><td>+$1,080 → 倒亏 $80</td><td><span class='tag bad'>坑</span></td></tr><tr><td class='rowlab'>iPhone 17 Pro Max</td><td class='num'>$1199.99</td><td class='num'>$1000</td><td>只认 Ultimate</td><td>+$1,080 → 倒亏 $80</td><td><span class='tag bad'>坑</span></td></tr><tr><td class='rowlab'>Galaxy S26 Ultra</td><td class='num'>$1299.99</td><td class='num'>$1119.99</td><td>只认 Ultimate</td><td>只省 $39.99，基本白折腾</td><td><span class='tag bad'>坑</span></td></tr><tr><td class='rowlab'>Pixel 11 Pro</td><td class='num'>$1099.99</td><td class='num'>$739.99</td><td>只认 Ultimate</td><td>+$1,080 → 倒亏 $340（最坑）</td><td><span class='tag bad'>坑</span></td></tr></tbody></table></div>
+<div class="warnbox" style="margin-top:12px"><b>离网/降档：</b>无 ETF（Broadband Facts: Early Termination Fee: None），但降档/取消/提前付清/提前升级 → 抵扣立即全停。例：iPhone 17 Pro Max 第18个月走人 → 只拿到约 $500 抵扣，剩余设备欠款 $600 一次性付清，另 $500 抵扣作废。等于被锁36个月。
+<div style="margin-top:7px"><b>更大的隐藏成本：</b>「New line req'd.」意味着如果为拿机去开一条你根本用不到的线，那条线36个月的费用（Plus第4线 $45×36=$1,620）远超任何一台手机的价值。</div></div>
+
+<h3>T-Mobile：盈亏平衡线 = 补贴 ÷ 36</h3>
+<p>补贴已从传统24个月拉长到36个月按月返还，等于把你锁进套餐3年。判断只有一条算式：【盈亏平衡月差价 = 补贴总额 ÷ 36】。$1,100 补贴对应 $30.56/月，$1,300 对应 $36.11/月——为拿补贴多付的套餐月差价一旦超过这个数，就是净亏。</p>
+<div class="tw"><table><thead><tr><th>升档路径</th><th>成本</th><th>结果</th><th>判断</th></tr></thead><tbody><tr><td class='rowlab'>Essentials $70 → Experience More $90</td><td>多付 $20×36=$720，换 $1,100 机器</td><td>净赚 $380（唯一真划算的一档）</td><td><span class='tag good'>值</span></td></tr><tr><td class='rowlab'>Essentials $70 → Experience Beyond $105</td><td>多付 $35×36=$1,260</td><td>净亏 $160</td><td><span class='tag bad'>坑</span></td></tr><tr><td class='rowlab'>Essentials Saver $55 → Experience Beyond $105</td><td>多付 $50×36=$1,800</td><td>净亏 $700（最亏）</td><td><span class='tag bad'>坑</span></td></tr><tr><td class='rowlab'>Experience More $90 → Beyond $105（为 Pixel 11 Pro XL 的 $1,300）</td><td>多付 $15×36=$540，只多拿 $200 补贴</td><td>净亏 $340</td><td><span class='tag bad'>坑</span></td></tr></tbody></table></div>
+<div class="warnbox" style="margin-top:12px"><b>官网两处口径打架，下单页必须复核：</b>官网两处口径打架，务必在下单页复核：① 以旧换新是否必需——/offers 写 iPhone 17 Pro「无需以旧换新、需转网」，机型页却写「new line, port, and any condition trade-in」三者都要。② 「零首付」——/offers 写「No taxes. No fees. No money down.」，但通用条款写「plus tax &amp; $35 device connection charge」，iPhone 17 更明写「Tax on pre-credit price due at sale」（按未抵扣前全价当场交税）。③ 返还月数：官方多处写36个月，Galaxy Z Flip8 细则写「24 or 36 monthly bill credits, depending on finance agreement term」——这直接决定盈亏平衡线是 $45.83/月还是 $30.56/月，签约前必须确认。</div>
+<p class="muted">Essentials Saver 几乎只能拿到 BYOD 优惠：官网 /offers 上唯一明确挂它的设备类优惠是「自带手机返 $720」（需携号转网，$20/月×36）。旗舰 On Us 全部要求 Experience More/Beyond。官网套餐页自己承认这条分层：「Popular plans unlock better device offers than discounted plans.」</p>
+<p class="muted"><b>离网条款：</b>① 取消服务时 all remaining EIP balances become due immediately，且不能用没返完的补贴抵剩余分期；② 2024-07-01 后参加的活动，【提前一次性付清分期也会作废剩余补贴】；③ 降档套餐等于自己掐断返还。例：iPhone 17 Pro 满12个月离网，已返约 $366，剩余分期约 $733 立刻全额到期，补贴归零。</p>
+
+<h3>AT&amp;T：三个反直觉发现</h3>
+<ul><li>iPhone 17 Pro Max「最高 $1,100 off」是最大的坑：抵扣要 Extra 2.0（单线$80/月），改用 Value 2.0 只给 $500，但36个月话费省 $720 &gt; 抵扣少拿 $600 → 【Value 2.0 净成本反而低 $120.09】（$2,624.99 vs $2,745.08），旧机门槛还从 TiV≥$290 降到 ≥$130。</li><li>Galaxy Z Fold8「$0」不是免费：机器净价确实 $0，但强制加买 Next Up Anytime（$10/月×36=$360，条款写明不冲抵机器余额且不退）+ 预付税约 $142.50 + 激活 $35 + 交出 TiV≥$290 旧机 ≈ 实付 $828，并锁在 Premium 2.0 $100/月上36个月。</li><li>Pixel 11 Pro XL $1,350 off 是本次最优：Extra 2.0 路线比 Value 2.0 便宜 $129.99，真实机器成本约 $336 换 $1,349.99 的机器，且有「任何年份任何成色 Pixel」的低门槛档。</li></ul>
+<div class="warnbox"><b>Build-A-Plan vs 传统促销的净账：</b>同一台 iPhone 17 Pro Max 256GB，36个月：Build-A-Plan 无限SD（$35/月）+ 自购裸机 = $2,549.99 且旧机留在手上；AT&amp;T Extra 2.0 + $1,100抵扣 = $2,745.08 且要交出 TiV≥$290 旧机 → 【前者省 $195.09，算上保住的旧机实际优势约 $485】。代价是 SD 串流（5G 上限 2Mbps）、无热点、仅1条线、仅线上办理。</div>
+<p class="muted"><b>隐藏变量：</b>所有净账里的 $10/月自动扣款折扣需绑【银行账户】；绑借记卡只有 $5，绑其他信用卡为 $0——只用信用卡的人36个月多付 $360，吃掉「$1,100抵扣」的三分之一。另外 BYOD 的 $5/月抵扣与「在 AT&amp;T 分期买机」结构性互斥：想要补贴手机就拿不到最低月费。</p>
+<p class="muted"><b>离网条款：</b>离网→抵扣立停且分期余额立即到期；降档→抵扣停发或缩水，收到通知后30天内换回才能救；开新线后90天内取消同账号任何其他线→抵扣停发。实算：iPhone 17 Pro Max 第12个月离网，剩余余额 $799.91 立即到期，这台机器共实付 $833.27 外加已交出的旧机，而原价买只要 $1,199.99。</p>
+
+<h3>预付费 / MVNO 阵营</h3>
+<p><b>结构上的关键差异：</b>【最该看的一点】Boost / Cricket / Total Wireless / Metro 用的是「购机立减 + 预付2–3个月话费」，钱一次性省掉，没有24/36个月账单返还，提前走人不倒扣——这是本组最干净的结构。Spectrum Mobile 则相反：所谓「免费旗舰」是36个月账单返还 + 必须以旧换新 + 必须一直有 Spectrum 宽带，官网原文「Disconnecting service or upgrading early forfeits remaining credits」，是本组最深的坑。</p>
+<p class="muted">真正在砍旗舰的是 Cricket（S26 省$500、S26 Ultra 省$600）、US Mobile（Pixel 11 系列省 $360–530，解锁机、立减不返还）、Mint（S26 立减$500）。</p>
+<p class="muted"><b>Mint 的标题夸大：</b>Mint 的「GET SAMSUNG GALAXY S26 ON US」标题夸大：实际只立减 $500（S26 $900→$400），要真到 $0 得再拿 iPhone 16 以上 / Galaxy S25 以上 / Pixel 10 以上去换，那些机器市价远高于 $400，而且退款是 Allstate 开支票、不是当场抵扣。</p>
+<div class="warnbox">【一条重要的「查无此物」】Visible 官网 /deals 页今天（浏览器实载）完全没有任何手机促销，只有资费促销（SAVEHALF、SAVE6、Apple Watch、Inner Circle、Back Market 翻新机）。抓取工具先拿到的那份 Visible「Pixel 10 五折 / Galaxy S26 送 $480 / iPhone 17e 送 $600」是缓存旧页，截止日写着 2026年4月，全部早已过期，不能采信。</div>
+<h4>本组最省钱的三个真实答案</h4><ul><li>纯自带机最省：Total Wireless MAX 5G BYO 首月 $30 之后 $20/月，36个月 $730，官网明示税费已含 + 5年价格保证。</li><li>要一台免费安卓机：Metro Galaxy A37 5G $0 + $40/月，36个月共 $1,440，免开卡费。</li><li>要旗舰且不想被锁：US Mobile Pixel 11 立减到 $539，解锁机、无账单返还、无倒扣，配 Unlimited Premium 年付 $299。</li></ul>
+<p class="muted"><b>转网/保号条件：</b>必须携号转入：Cricket 的 A17 5G / A37 5G / edge 2026 / iPhone 16e；Metro 的 16e / A37 / A17 / NXTPAPER / 17e；Boost 全部线下专享。不需转网、开新线即可：Cricket 的 moto g power 2026 / moto g 2026 / A16 5G / moto g play / Icon 系列；Metro 的 moto g–2026；Boost 线上单；US Mobile 与 Mint 全线。</p>
+<p class="muted"><b>最短保号期：</b>最短保号期：Boost 预付2个月｜Cricket 16e 需买满3个月 $60 套餐｜Metro 需连续3个月出账才能拿 $100 返卡｜Mint 12个月预付｜Spectrum 36个月返还期｜Visible 年付锁12个月。</p>
+<div class="warnbox"><b>官网自身的两处缺陷：</b>Cricket 促销位挂着「this deal ends 8/4」，但同段倒计时代码显示「355 days」（即 2027-08-04），是 Cricket 自己的页面 bug，建议下单前截图留证。Total Wireless 首页大字「iPhone 16e ON US」与同页商品卡「$199.99 w/ Total ALL ACCESS 3-mo plan」互相打架，「ON US」实际挂钩 Glow Financial Services 的 0% APR 分期，不是白送。</div>
+</section>
+<section id="coverage"><h2><span class="num">06</span>哥伦布本地实际覆盖</h2>
+<p class="lede">2026 上半年哥伦布路测：AT&amp;T 与 T-Mobile 并列第一，Verizon 第三且八个单项奖一项未得。</p>
+
+<h3>RootMetrics 驱车路测（2026/3/25–4/4 驱车路测，覆盖人口 1,567,254）</h3>
+<div class="tw"><table><thead><tr><th>运营商</th><th class="num">RootScore</th><th class="num">中位下载</th>
+<th class="num">中位上传</th><th>单项奖</th></tr></thead><tbody><tr><td class='rowlab'>AT&amp;T</td><td class='num'>99.7</td><td class='num'>369.0 Mbps</td><td class='num'>33.7 Mbps</td><td>Overall / Reliability / Speed(独得) / Data / Call(掉话0) / Text / Video —— 七项在手</td></tr><tr><td class='rowlab'>T-Mobile</td><td class='num'>99.6</td><td class='num'>480.9 Mbps（最快）</td><td class='num'>19.1 Mbps</td><td>Overall / Reliability / Data / Call / Text / Video / Responsiveness(独得)</td></tr><tr><td class='rowlab'>Verizon</td><td class='num'>99.1</td><td class='num'>334.1 Mbps（较上轮 379.7 下滑）</td><td class='num'>未列</td><td>本轮 0 项获奖</td></tr></tbody></table></div>
+<p class="muted" style="margin-top:8px"><a href="https://rootmetrics.com/en-US/rootscore/map/metro/columbus-oh/2026/1H" target="_blank" rel="noopener">出处：RootMetrics Columbus OH 1H2026</a></p>
+
+<h3>FCC 官方覆盖地图</h3>
+<p class="muted">FCC National Broadband Map，数据截止 2025-12-31，2026-08-04 发布。口径为「任一移动技术、面积覆盖」。</p>
+<div class="tw"><table><thead><tr><th>运营商</th><th class="num">室外静止</th><th class="num">行车中</th></tr></thead>
+<tbody><tr><td class='rowlab'>Verizon</td><td class='num'>98.77%</td><td class='num'>78.27%</td></tr><tr><td class='rowlab'>AT&amp;T</td><td class='num'>97.29%</td><td class='num'>85.38%</td></tr><tr><td class='rowlab'>T-Mobile</td><td class='num'>86.35%</td><td class='num'>52.50%</td></tr></tbody></table></div>
+<p class="muted" style="margin-top:8px">Columbus 市界内 5G(7/1) 面积覆盖 100%、5G(35/3) 99.89%；都会区 86.51% 面积可达 35/3 级 5G（全美仅 39.45%）。</p>
+
+<h3>已知弱覆盖点</h3>
+<div class='finding'><h4>OSU 校园 <span class='tag'>官方报道</span></h4><p>曾经确实弱。校报 The Lantern 2024/9 报道，因在校人数增长与新建筑 shadowing，Verizon 以 neutral host 方式扩建 DAS：2022年8个 + 2024年9个共17个小基站，覆盖 Ohio Stadium、Bowen/Raney/Scott 宿舍、Ohio Union、Schottenstein Center。2024–25 学年起已大幅补强。</p></div><div class='finding'><h4>北郊（T-Mobile 弱） <span class='tag'>FCC 官方</span></h4><p>FCC「行车中」口径：Worthington 68.42%、Upper Arlington 76.42%、Dublin 79.90%、Delaware County（Polaris 北侧）61.90%；同区 AT&amp;T/Verizon 普遍 96–100%。</p></div><div class='finding'><h4>Grandview Heights <span class='tag'>FCC 官方</span></h4><p>三家均 100%，无差异。</p></div><div class='finding'><h4>High St / Short North / Clintonville / Easton <span class='tag'>未找到</span></h4><p>未找到任何有出处的弱覆盖记录——不代表没有，只代表本次查不到可引用证据。</p></div>
+
+<div class="warnbox"><b>别为 mmWave 买单。</b> 把 mmWave 当哥伦布选网理由不成立。Verizon 2019 年底就把 Columbus 列入 5G UW 城市，但今天的 UW 是 mmWave+C-band 混称且不公布街区清单；AT&amp;T 官网（©2026）明写高频 5G+ 只铺「高流量场所、大型场馆和机场」，全页无 Columbus/Ohio 字样；T-Mobile 本地 Ultra Capacity 等于 2.5GHz 中频。你日常看到的高速全部来自中频。</div>
+<div class="warnbox"><b>没查到的部分（如实说明）：</b> Ookla 的 Columbus 城市级排名——未找到（ookla.com/speedtest.net 在本环境被封）。Opensignal 只有全国/大区视角（全国 T-Mobile 12/16 奖，Reliability 942 vs AT&amp;T 939 vs Verizon 932）。Reddit r/Columbus 口碑——未找到（三条访问路径全被封），因此本页不含任何论坛传闻。众包站 CoverageMap 给出与专业路测相反的结果（AT&amp;T 251 &gt; T-Mobile 206 &gt; Verizon 143），但样本量 29000:4700:3300 严重失衡且未标数据期，只能当旁证。</div>
+</section>
+<section id="intl"><h2><span class="num">07</span>国际、打回中国、以及回国怎么保号</h2>
+<p class="lede">这一块原表完全没覆盖，但它决定了「便宜的卡到底能不能用」。
+先说最反直觉的一条：<b>能确证「套餐自带打中国大陆」的只有两家</b>，其余全是加装包、有分钟上限、或者官网根本查不出来。</p>
+<div class='finding good'><h4>打中国大陆通话 <span class='tag good'>已核实</span></h4><p>本次<b>唯一</b>抓到官方费率表白纸黑字含中国大陆（固话+手机都含）的只有两家：<b>Verizon Global Calling Plus</b> 加装包——官方费率表中国大陆一行是 <span class='mono'>China | $0 | $0</span>，即加装后打中国固话与手机均不限量（注意这是加装包，基础套餐不含）；以及 <b>Lycamobile</b>——法务清单里 China 位于 Include Landline &amp; Mobile 组。</p></div><div class='finding warn'><h4>Cricket 打中国 <span class='tag warn'>部分未找到</span></h4><p>200+ 国家是<b>可加购范围</b>不是自带，按国家单买 $10/月起且有分钟上限。低价的 Sensible 10GB 与 Select Unlimited <b>连国际短信都不可用</b>。中国大陆的具体月费与分钟数需用官网国家查询工具查，本次抓不出来。</p></div><div class='finding good'><h4>T-Mobile 预付费打中国 <span class='tag good'>已核实</span></h4><p>预付费线上<b>根本没有面向中国的通话产品</b>——能买到的国际加装包只有 Mexico &amp; Canada +$5/月 和 North America international calling +$15/月。国际短信到 215+ 国仅 Unlimited Plus 与 Unlimited Promo 两档自带，Starter 与 Unlimited 基础档连国际短信都不含。</p></div><div class='finding bad'><h4>T-Mobile 后付费 Stateside International Talk <span class='tag bad'>无法核实</span></h4><p>该产品页在 t-mobile.com 上已找不到，多个历史 URL 全部 404，主国际页被重定向到卖套餐的页面。<b>不能确认该 $15 加装包在 2026-08 是否仍在售。</b></p></div><div class='finding bad'><h4>Metro / Boost 打中国 <span class='tag bad'>无法核实</span></h4><p>两家的国际加装包清单都抓到了（Metro $10/月 Global Voice 覆盖 210+ 国家与地区；Boost $10/月 Global Talk &amp; Text 宣称 100+ 国家不限量），但<b>中国大陆是否在覆盖内、含多少分钟，页面用动态查询工具，抓不出结果</b>。Metro 官网自己也提示要打电话确认。</p></div><div class='finding bad'><h4>AT&amp;T 打中国 <span class='tag bad'>无法核实</span></h4><p>抓不到官方费率。att.com/international/ 是 JS 壳页面，只有栏目导航没有价格；国际通话子页多个路径全部 404。不用第三方博客价格冒充官网价，故留空——需到店或致电确认。</p></div><div class='finding warn'><h4>Google Fi 打中国 <span class='tag warn'>部分未找到</span></h4><p>结构已核实：Unlimited Premium 含从美国免费打 50+ 国家和地区；Flexible 与 Standard 只免费打加拿大和墨西哥、其余按分钟计费；<b>Unlimited Essentials 完全不支持国际</b>。全部套餐国际短信免费。但那份 50+ 国清单官网没有公开，<b>无法确认中国大陆是否在内</b>。（另：Fi 打中国按 voice.google.com 费率表为 $0.30/分钟）</p></div><div class='finding good'><h4>回国期间保号 · Verizon <span class='tag good'>已核实</span></h4><p><b>网传的 vacation hold 是错的。</b>官方 FAQ 直接否认长期出国可以挂起。只有两种挂起：Lost or Stolen（最长 30 天，每线每 12 个月仅一次，到期未恢复会自动断线并丢失号码）与 Military Deployment（需资格）。回国期间只能继续全额付费保号，或转成便宜的预付费档。</p></div><div class='finding good'><h4>回国期间保号 · Lycamobile <span class='tag good'>已核实</span></h4><p>条款写明 SIM 与号码<b>停用 60 天后作废</b>。回国过暑假（通常 2–3 个月）如果不继续充值，号码会被回收，绑在这个号上的银行、学校、Zelle 等验证短信会全部失效。</p></div><div class='finding good'><h4>回国长住 · Google Fi <span class='tag good'>已核实</span></h4><p>Fi 有明确的境外使用比例条款：<b>连续 90 天内若大部分用量发生在美国境外，Google 会停掉你的国际数据。</b>靠 Fi 保号过完整暑假甚至休学一年，属于条款打击范围。</p></div><div class='finding good'><h4>落地前在国内先激活 eSIM <span class='tag good'>部分已核实</span></h4><p><b>这条常见建议至少对两家已确证不成立</b>：Verizon Prepaid 激活时 My Verizon app 会调用定位验证你人在美国境内；Google Fi 条款明确禁止境外首次激活，且要求先在美国实际使用至少 1 天才能在境外使用。其余品牌（Visible、Total、US Mobile、T-Mobile、AT&amp;T、Metro、Boost、Lyca）的 eSIM 页面本次<b>均未写明</b>是否允许境外激活，属未明示，不能默认可以。安全做法是把「落地当天靠机场 Wi-Fi 激活」当基准方案。</p></div><div class='finding bad'><h4>无 SSN 能否开卡 <span class='tag bad'>重要限定</span></h4><p><b>本次核查的所有品牌官网，没有任何一家写过「无需 SSN」或「可用护照/I-20 代替」。</b>能确证的只是「预付费不查信用」这一件事——而不查信用<b>不等于</b>不要 SSN，更不等于接受护照。准确的表述是「官网未把 SSN 列为条件」，不能升级成「官方承诺不需要」。Verizon 后付费的信用审核/押金政策更是完全查不到：专门的 credit-check FAQ 已下线（302 后 404），押金开卡的说法只见于社区论坛旧帖，不能作为 2026 年现行政策。</p></div>
+</section>
+<section id="audit"><h2><span class="num">08</span>原表体检：哪些对、哪些错</h2>
+<p class="lede">逐条核对你那份 xlsx 的每一个价格与条款。分四类：<b>正确</b>（照抄没问题）、
+<b>过时</b>（当时对、现在变了）、<b>错误</b>（当时就不对）、<b>有误导</b>（数字对但口径会让人选错）。</p>
+<div class='finding bad'><h4>AutoPay 口径两套标准，直接扭曲了排名 <span class='tag bad'>有误导</span><span class='tag'>严重度 高</span></h4><div class='was'><b>原表：</b>Verizon Simplicity 填 $45（表内自注：不用 AutoPay 是 $55）；T-Mobile Essentials Saver 填 $55（表内自注：未含 AutoPay）。然后按数字 1–10 排名。</div><p><b>实际：</b>一家按折后算、一家按折前算。T-Mobile 的 AutoPay 价是 $50，与 Verizon 的 $45 只差 $5，而不是表面上的 $10。T-Mobile 被排到第 10 名，有相当一部分是这个口径造成的。</p><p class='muted'>本页统一按「愿意开 AutoPay」计算——这是绝大多数人的实际情况；不开 AutoPay 的牌价单列在每个套餐的详情里。</p></div><div class='finding bad'><h4>含税价与不含税价直接比大小 <span class='tag bad'>有误导</span><span class='tag'>严重度 高</span></h4><div class='was'><b>原表：</b>排名按价格数字排，但 Visible / Total / US Mobile / Spectrum / Cricket 是税费已含，Verizon / Mint / Google Fi / AT&amp;T / T-Mobile 是税费另计。</div><p><b>实际：</b>俄亥俄的政府税费是 23.59%，再加每线固定的运营商自收费。在 $25–$30 这个档位，倍率高达 1.38–1.40。所以「$30 另计」和「$30 已含」根本不是同一个价位——前者到手约 $41–$42。</p><p class='muted'>典型翻转：Mint Unlimited $30 看着比 Visible+ $35 便宜，到手价却是 $39 对 $35，反了。</p></div><div class='finding bad'><h4>Cricket 的常规价与促销价填反了 <span class='tag bad'>错误</span><span class='tag'>严重度 高</span></h4><div class='was'><b>原表：</b>Cricket Select Unlimited：常规价 40 / 促销价 35。</div><p><b>实际：</b>联网复核确认：$35 才是长期常在的 AutoPay 价，$40 只存在第一个月（$5 AutoPay credit 自第 2 个月起生效）。把只存在一个月的首月价当常规价，系统性高估了 Cricket，把它压到第 8 名。</p><p class='muted'>同一个错误方向在整张表里只出现在 Cricket 身上，别家用的都是长期价。</p></div><div class='finding bad'><h4>Spectrum：没有宽带根本开不了，不是「多付 $10 就能买」 <span class='tag bad'>有误导</span><span class='tag'>严重度 高</span></h4><div class='was'><b>原表：</b>Spectrum Mobile Unlimited $30/线，需 Spectrum Internet，否则每线 +$10。排名第 5。</div><p><b>实际：</b>官网开户区块原文：Spectrum Internet is required for new Mobile service.——没有宽带<b>根本无法开通</b>，不存在「多付 $10 就能买」的选项。那个 $10 是<b>事后违约性加价</b>：条款写的是你把宽带断掉之后，才会被加收 $10.00 per-month per-line。另外 $30 是「每条附加线」的价格，官网同时写着第 1 条 Unlimited 线首年免费，表里也没写。</p><p class='muted'>对住宿舍、短租、不会单独装 Spectrum 宽带的人，这一档实际上是拿不到的，却被排进了十家对比的第 5 名。</p></div><div class='finding warn'><h4>Spectrum：30GB 后的降速数字张冠李戴 <span class='tag warn'>错误</span><span class='tag'>严重度 中</span></h4><div class='was'><b>原表：</b>30GB 后降至 1 Mbps 下载 / 512 Kbps 上传，并降低数据优先级。</div><p><b>实际：</b>官方宽带披露对住宅版 Unlimited 的原文是<b>纯降优先级、不给任何固定速率数字</b>：After a line uses 30 GB of data it may experience speeds slower than other customers due to data prioritization。表里那组 1 Mbps / 512 Kbps 出自完全不相干的条款——Business Unlimited Plus 的<b>国际漫游</b>超 10GB 之后。</p><p class='muted'>体感差别很大：降优先级只在基站拥堵时慢，不拥堵仍是全速；而不是被硬锁在 1 Mbps。</p></div><div class='finding bad'><h4>T-Mobile：整份表没出现学生档 <span class='tag bad'>有误导</span><span class='tag'>严重度 高</span></h4><div class='was'><b>原表：</b>T-Mobile 代表档为 Essentials Saver 2.0，$55，排名第 10（最后一名）。</div><p><b>实际：</b>$55 这个数字本身准确，但官网<b>同一页</b>的 Broadband Facts 列表里就有 Essentials Saver Student 2.0：1 线 $35 / 2 线 $70，AutoPay 后 $30。配置同级，却便宜 $20/月（一年 $240）。</p><p class='muted'>只报 $55 会让人直接把 T-Mobile 判为最贵而排除掉。学生档需在 45 天内完成学籍验证并按要求复验。</p></div><div class='finding warn'><h4>Total Wireless：现在有更低的 $20/月在售 <span class='tag warn'>过时</span><span class='tag'>严重度 中</span></h4><div class='was'><b>原表：</b>Total MAX 5G BYO $25，促销价栏留空。</div><p><b>实际：</b>官网当前横幅：Bring your phone for $20/mo ... First month $30, then $20/mo after。按 $25 做预算会比实际每月多算 $5（一年 $60）。</p><p class='muted'>另外要补两个条件：首月是 $30（AutoPay 折扣次月才生效），且 $5 AutoPay 折扣是<b>每账户一个</b>（one per account），拼卡时不能按每人减 $5 算。</p></div><div class='finding warn'><h4>Total Wireless：有条件价占了「无条件常规价」的位置 <span class='tag warn'>有误导</span><span class='tag'>严重度 中</span></h4><div class='was'><b>原表：</b>常规价填 $25，促销价栏留空，注释里才说明需 BYO + AutoPay。</div><p><b>实际：</b>官网<b>只印 AutoPay 价</b>，非 AutoPay 牌价本次遍查未获。所以严格说这一栏无法核实为「常规价」。同时它要求 BYO <b>和</b> AutoPay 两个条件同时成立。</p><p class='muted'>排名表只吃数字不吃注释——注释救不了排序。</p></div><div class='finding warn'><h4>核对日期写成了未来时间 <span class='tag warn'>错误</span><span class='tag'>严重度 中</span></h4><div class='was'><b>原表：</b>「结论与排序」页：已于 2026-08-15 按当时可访问的官方页面联网核对。</div><p><b>实际：</b>今天是 2026-08-14（美东）。声称的核对日期比当前日期晚一天，这个核对不可能已经发生。</p><p class='muted'>价格新鲜度的承诺是选卡决策的前提，日期写错会让人误以为数据比实际更新。</p></div><div class='finding warn'><h4>多处「热点无限」漏掉了限速上限 <span class='tag warn'>有误导</span><span class='tag'>严重度 中</span></h4><div class='was'><b>原表：</b>Visible+「手机热点无限」；Total MAX「热点无限」；T-Mobile「手机热点无限」。</div><p><b>实际：</b>三个都是「无限量但锁速」：Visible+ 全程锁 10 Mbps（基础版 5、Pro 15，且限 1 台设备）；Total MAX 锁 5 Mbps（ALL ACCESS 10 Mbps）；T-Mobile Essentials 全程 3G，Open Internet 政策给出的数字是最高 600 kbps。</p><p class='muted'>「无限热点」和「能当宽带用」是两回事。600 kbps 基本只够收邮件。</p></div><div class='finding bad'><h4>T-Mobile「50GB premium data」抄了卖点没抄脚注 <span class='tag bad'>有误导</span><span class='tag'>严重度 高</span></h4><div class='was'><b>原表：</b>Essentials Saver 2.0：50GB premium data。</div><p><b>实际：</b>官方套餐卡确实写 50GB of premium data，但它挂的<b>脚注 1</b> 原文是：<span class='mono'>Essentials 2.0 customers may notice speeds lower than other customers and further reduction if using &gt;50GB/month, due to data prioritization.</span>——也就是<b>没超 50GB 就已经可能比其他 T-Mobile 用户慢</b>，超过 50GB 是「再降一档」。T-Mobile 自己在同页 FAQ 对 Premium Data 的定义也只承诺「高于重度用户」，不承诺「与高价套餐同级」。</p><p class='muted'>这和 Visible+ 那种「premium data = 不因优先级降速」不是同一个东西，不能并列比较。</p></div><div class='finding warn'><h4>Total MAX 的「无降优先级」表述过于绝对 <span class='tag warn'>有误导</span><span class='tag'>严重度 中</span></h4><div class='was'><b>原表：</b>Total MAX 5G BYO：无降优先级。（原表注释：官方 BYOP 页面称该 BYO 行无网络降优先级或限速）</div><p><b>实际：</b>这句话的官方依据只有两处，<b>都不是售卖页的法务承诺</b>：① totalwireless.com/facts 竞品对比表，该页自带免责 <span class='mono'>Chart does not depict an exhaustive list… Data verified as of 5/13/2026</span>；② Verizon 新闻稿的 won't slow you down。而 /plans/ 与 /m/plans/smartphone 两个实际售卖页<b>完全没有</b>deprioritization / premium data 字样；服务总条款则明确保留兜底权：跑进全网前 0.5% 会被压到 1.5 Mbps，且 certain Plans 内不同流量可被区别优先级。</p><p class='muted'>建议的准确写法是「官方营销页称不降优先级（对比数据核验日 2026-05-13）；条款保留对全网前 0.5% 重度用户降至 1.5 Mbps 的权利」。</p></div><div class='finding warn'><h4>三家品牌的底层网络归属，官方从未点名 <span class='tag warn'>有误导</span><span class='tag'>严重度 中</span></h4><div class='was'><b>原表：</b>表中把 Spectrum Mobile 当作跑 Verizon、US Mobile 三网映射到三大、Google Fi 跑 T-Mobile，均作为事实陈述。</div><p><b>实际：</b><b>Spectrum、US Mobile、Google Fi 三家官网全站不点名任何底层运营商。</b>Spectrum 的统一措辞是 America's most reliable 5G network；US Mobile 的 /networks 与 /plans 页从不出现 Verizon、AT&amp;T、T-Mobile 任何一个名字，只给 Warp / Dark Star / Light Speed 三个代号与能力描述；Google Fi 只说 an ultra-reliable 5G network。反过来，Cricket 官方点名 AT&amp;T、Visible 与 Total Wireless 官方点名 Verizon，这三家可以当事实写。</p><p class='muted'>差别不是文字游戏：官方没点名，意味着覆盖出问题时你没有可援引的依据。</p></div><div class='finding bad'><h4>Cricket 的「200+ 国家」是可加购范围，不是套餐自带 <span class='tag bad'>有误导</span><span class='tag'>严重度 高</span></h4><div class='was'><b>原表：</b>按 Cricket 营销信息，Select Unlimited 含拨打/短信至墨西哥和加拿大；Supreme 有更多国际功能。</div><p><b>实际：</b>原表这句本身没错，但漏了更重要的一层：Cricket 宣传的 200+ 国家指的是<b>可加购范围</b>，不是套餐自带、也不是不限量。基础套餐自动含的只有墨西哥和加拿大；打其它国家需按国家单买加装包，$10/月起，而且是 <span class='mono'>a set amount of calling minutes</span>——<b>有分钟上限</b>。更关键的是低价档被阉割：<b>Sensible 10GB 与 Select Unlimited 连国际短信都不可用</b>。</p><p class='muted'>预算敏感的人若选这两档，等于完全放弃了国际功能。</p></div><div class='finding warn'><h4>Mint 这一行本次存在核实冲突 <span class='tag warn'>无法核实</span><span class='tag'>严重度 中</span></h4><div class='was'><b>原表：</b>Mint Unlimited：常规 30 / 促销 15 / 税费另计 / 50GB 后拥堵时降优先级 / 热点 20GB / 480p。</div><p><b>实际：</b>两个审计 agent 结果不一致：价格审计成功抓到 mintmobile.com/plans 并<b>逐字引用</b>了促销条款与 3/6/12 个月价目网格；网络审计对同域名的两次尝试（WebFetch 与带完整浏览器 UA 的 curl）<b>均返回 HTTP 403</b>，help.mintmobile.com 域名解析失败。</p><p class='muted'>所以本页对 Mint 的资费与促销按已核实处理，但<b>网络归属与 50GB 阈值标为未取得官网原文</b>。历史上 Mint 的无限档阈值曾是 35GB/40GB，口径变动频繁——下单前建议自己打开官网 fine print 页确认。</p></div><div class='finding '><h4>US Mobile 的 $16.58 标注正确 <span class='tag '>正确</span><span class='tag'>严重度 低</span></h4><div class='was'><b>原表：</b>月付 25；首年年付 199 即 16.58，续费 270 即 22.50。</div><p><b>实际：</b>没有被当成月付，标注方式与官网一致（官网卡片逐字：$16.58/mo First year $199, renews at $270）。$199÷12=16.58、$270÷12=22.50 均对。70GB 说法也出自官网 FAQ 原文。</p><p class='muted'>但两处要补：热点 20GB 官网写的是 20 GB hotspot on Dark Star，<b>跟网络绑定</b>；以及「税费已包含」官网自身前后矛盾——卡片写 included，同页 FAQ 却写可能另收 $2 Service Fee 与 $1–$5/线 Recovery Fee。</p></div><div class='finding '><h4>Verizon 的 $30 确实标注了是转网价 <span class='tag '>正确</span><span class='tag'>严重度 低</span></h4><div class='was'><b>原表：</b>常规 45（需 AutoPay+无纸化），无 AutoPay 基础价 55；促销 30（转网）。</div><p><b>实际：</b>三档价格与条件全部准确，官方 FAQ 逐条确认。$30 需要 $15 Switch &amp; Save（从竞对转入，要交当前账单）或 $15 Bring a Number（携号转入）。</p><p class='muted'>表格没写的一层：<b>刚落地、没有可携旧号、也不是从合资格运营商转入的人拿不到这 $15，实付就是 $45</b>。另有一条可行路径——官方把「从 Verizon Prepaid 转到 Simplicity」也算作 Bring a Number。</p></div><div class='finding '><h4>AT&amp;T 的 $35 不是拼算出来的 <span class='tag '>正确</span><span class='tag'>严重度 低</span></h4><div class='was'><b>原表：</b>AT&amp;T Build-A-Plan with Unlimited SD $35（表内注明：按 $15 基础 + $20 数据选项计算）。</div><p><b>实际：</b>$35 就是 AT&amp;T 官方价目矩阵里 Unlimited SD 的<b>总价</b>，官方表格逐行：Unlimited SD | Unlimited | +$20/mo. | $35/mo.。完整矩阵：无热点 $35 / 5GB 热点 $40 / 25GB $50 / 50GB $55。AutoPay 亦确认：AutoPay is REQUIRED. There is NO AutoPay discount.</p><p class='muted'>但三个关键的坑表格没写：<b>每账户限 1 条线</b>（室友拼卡完全用不了）；Unlimited SD 的视频被硬限在 SD 且标注 max 2 Mbps（5G）/ 1.5 Mbps（4G）；该产品线 NO promotional offers、NO switcher credits，且门店买不到。</p></div><div class='finding '><h4>Google Fi 的促销没有过期 <span class='tag '>正确</span><span class='tag'>严重度 低</span></h4><div class='was'><b>原表：</b>促销 25（自带 Pixel 12 个月 5 折，9 月 10 日结束）。</div><p><b>实际：</b>今天 2026-08-14 仍在售，截止日 Sep 10 尚在未来。官网原文：Get 50% off for 12 months when you bring a Google Pixel phone. Join any unlimited plan ... Ends Sep 10.。$50 单线价、50GB 后 256 kbps、25GB 热点、税费另计，全部逐字吻合。</p><p class='muted'>两项官网未写、无法确认：「热点 25GB 计入 50GB 总量」与「480p」——官网既未说明热点是否计入总额度，也未标注视频清晰度上限。</p></div><div class='finding '><h4>Mint 全部字段与官网一致 <span class='tag '>正确</span><span class='tag'>严重度 低</span></h4><div class='was'><b>原表：</b>常规 30（12 个月预付）；促销 15（首个周期）；税费另计；50GB 后拥堵时降优先级；热点 20GB；480p。</div><p><b>实际：</b>逐字吻合官网促销条款与 3/6/12 个月价目网格。</p><p class='muted'>要补的两点：$15 要<b>一次性预付整期</b>（12 个月 = $180 一次付清）且仅限新客；「480p」官网只写 Video streams in SD，没有给出具体分辨率数字。</p></div><div class='finding '><h4>Visible+ 的价格与税费口径完全正确 <span class='tag '>正确</span><span class='tag'>严重度 低</span></h4><div class='was'><b>原表：</b>常规 35 / 促销 29（SAVE6 首年）/ 税费已包含 / 无限 premium 数据 / 1080p。</div><p><b>实际：</b>官网套餐卡逐字：Best value Visible+ $29/mo Taxes &amp; fees included Reg. $35/mo Use code SAVE6。</p><p class='muted'>一处表述不完整：<b>1080p 只在 5G Ultra Wideband 覆盖下成立</b>，脚注写明 5G/LTE 下只有 720p。另外同页还有并存的 SUMMER 码——Visible+ 用 SAVE6 更划算（$29 vs $30），但 Visible+ Pro 用 SUMMER（$35）比 SAVE6（$39）一年省 $48，结账时两个码都值得试。</p></div><div class='finding '><h4>T-Mobile 的 $55 数字与口径本身都对 <span class='tag '>正确</span><span class='tag'>严重度 低</span></h4><div class='was'><b>原表：</b>$55（Broadband Facts，未含 AutoPay）；税费另计；50GB premium data；热点无限但 3G 速度；SD 视频。</div><p><b>实际：</b>官方 Broadband Facts 逐字确认，并给了税费明细：Regulatory programs / Telco recovery fee $4.49/线，联邦与地方附加费典型 $0.36–$4.79/线，另有一次性 Device connection charge $35/线。</p><p class='muted'>问题不在这个数字准不准，而在它和表里别家的口径不一致（见本节第一条）。</p></div>
+</section>
+<section id="rec"><h2><span class="num">09</span>推荐排序</h2>
+<p class="lede">口径统一为：单线、自带手机、开 AutoPay、换算成含税到手价。促销价不参与排序（因为都会到期）。</p>
+<div class='rec'><div class='rank'>1</div><div><h4>Total Wireless — MAX 5G BYO　$25 到手（官网当前促销 $20）</h4><p>每块钱买到的东西最多的一档：跑 Verizon 网络且含 5G Ultra Wideband，热点无限（锁速 5 Mbps），税费全含，新客有 5 年锁价，官网当前横幅还挂着首月 $30、之后 $20/月。同价位的其他四家各缺一块：Cricket 年付完全禁热点、Metro $25 档不含热点、Visible 基础版会被降优先级、US Mobile 要看你选到哪张网——只有它没有明显短板。</p><div class='who'>适合：自带解锁手机、愿意开 AutoPay、想要一个便宜且不折腾的长期号</div><div class='who' style='margin-top:4px'>注意：<b>我必须把这条的证据强度说清楚，因为它和大多数攻略写的不一样：</b>「No network deprioritization or throttling」这句<b>只出现在官方竞品对比营销页 /facts</b>（该页自带免责 Data verified as of 5/13/2026），两个实际售卖页完全没有这个字样；服务总条款还保留兜底权——跑进全网前 0.5% 重度用户会被压到 1.5 Mbps。所以它是「官方营销页这么说」，不是「合同这么保证」。如果你要的是白纸黑字的保证，往下看 Visible+。另外：官网只印 AutoPay 价，非 AutoPay 牌价查不到；$5 AutoPay 折扣是每账户一个不是每线；多线阶梯反常，别拿它拼卡；国际 200+ 目的地清单未渲染，中国是否在内无法确认。</div></div></div><div class='rec'><div class='rank'>2</div><div><h4>Cricket — 12-Month Unlimited　$25 到手（$300 一次付清）</h4><p>唯一一个「AT&amp;T 网络 + 税费全含 + 官方标明这不是促销价」的组合。而 AT&amp;T 恰好是哥伦布 2026 上半年 RootMetrics 路测的综合并列第一、速度单项独得冠军。Broadband Facts 白纸黑字写 This Monthly Price is not an introductory rate——不会到期跳价，这点比任何促销都值钱。</p><div class='who'>适合：确定要在哥伦布待满一年、手机上网为主、不需要给笔记本开热点的人</div><div class='who' style='margin-top:4px'>注意：代价很硬：官方原文 tethering is prohibited，完全禁止热点且不可加购；$300 不退款；仅限线上办理、必须新开单线账户、必须自带手机；转成月付后回不去。</div></div></div><div class='rec'><div class='rank'>3</div><div><h4>Visible+ — $35 到手（促销码 SAVE6 首年 $29）　【条款最硬的一档】</h4><p>如果你要的是<b>写在条款里、不是写在营销页上</b>的保证，选它。本次十家里官方措辞最硬的一条就是它的脚注 5：<span class='mono'>Premium data means no data slowdowns due to prioritization.</span>——直接定义了 premium data 等于不因优先级降速。而且它的底层网络是<b>官方点名 Verizon</b>，不像 US Mobile / Spectrum / Google Fi 那样只能靠第三方推断。再加上真月付、随时走、税费全含、无 AutoPay 折腾、10 Mbps 无限热点。基础版 $25 便宜 $10，但买到的是「拥堵时排在别人后面」+ 不含 UW，这 $10 该花。</p><div class='who'>适合：不愿预付、要一个能对着条款讲道理的保证、需要 10 Mbps 无限热点的人</div><div class='who' style='margin-top:4px'>注意：客服只有线上，哥伦布<b>没有实体店</b>——出问题不能走进店里解决。热点虽无限但锁速 10 Mbps 且限 1 台设备，多设备同连会更慢。另外「1080p」只在 5G Ultra Wideband 覆盖下成立，5G/LTE 下是 720p。</div></div></div><div class='rec'><div class='rank'>4</div><div><h4>Metro — $25 BYOD 档　$25 到手　【$25 档里唯一的 T-Mobile】</h4><p>$25 这一档挤了五家，但前四家全在 Verizon 或 AT&amp;T 上。Metro 是唯一一个「跑 T-Mobile 网 + 税费全含 + 5 年锁价」的选项——而 T-Mobile 在哥伦布的中位下载速度是三家最快（480.9 Mbps）。原表有 Cricket（AT&amp;T 侧的对位品牌）却没有 Metro，是个结构性缺口。</p><div class='who'>适合：想要 T-Mobile 的速度、又不想付 T-Mobile 直营价的人；主要在市区活动</div><div class='who' style='margin-top:4px'>注意：$25 这一档<b>不含热点</b>，要热点得上 $30 档。另外 Metro 在北郊偏弱——FCC「行车中」口径 T-Mobile 在 Worthington 只有 68.42%、Dublin 79.90%、Delaware County 61.90%，而同区 AT&amp;T/Verizon 普遍 96–100%。常跑外县要谨慎。还有：官网<b>没有任何一张公开的多线阶梯表</b>，那个「4 线 $100」只是单线价复制四份且只能到店办。</div></div></div><div class='rec'><div class='rank'>5</div><div><h4>US Mobile — Unlimited Starter　$25 到手</h4><p>唯一能在三张网之间挑的品牌，税费全含。落地初期不确定住处信号如何时，这个灵活性很实在。官方那句「我们没有多线折扣，因为单线价已经是别人多线折扣后的水平」也算诚实。</p><div class='who'>适合：还不确定哪张网在你住处/教室信号最好、想先试再定的人</div><div class='who' style='margin-top:4px'>注意：<b>三网归属是第三方推断</b>——usmobile.com 的 /networks 与 /plans 页从不出现 Verizon、AT&amp;T、T-Mobile 任何一个名字。而且<b>选哪张网直接决定套餐质量</b>：Dark Star 流量不设阈值且热点 20GB，Warp 与 Light Speed 只给 70GB 然后降速、热点砍半到 10GB。官方只对 Warp 用了 Priority Data 一词；Dark Star 的优先级是<b>付费加购项</b>，Light Speed 只写 High Speed Data。降速后的具体速率官网完全没公布。热点数字官方两处还打架（帮助页 10GB vs /plans 页 20GB）。另外 $199 首年促销仅限新线、档期 2026-08-12 至 08-18、第二年跳 $270。</div></div></div><div class='rec'><div class='rank'>6</div><div><h4>T-Mobile — Essentials Saver + 学生优惠　$30 广告价 / 约 $42 到手</h4><p>如果你要的是直营后付费账户（建信用记录、能分期买机、有实体店），这是 T-Mobile 全线最便宜的入口，比同档非学生版便宜 $20/月。T-Mobile 在哥伦布的中位下载速度是三家最快（480.9 Mbps）。</p><div class='who'>适合：在读学生、想要直营后付费账户、市区活动为主的人</div><div class='who' style='margin-top:4px'>注意：三重代价：Essentials 系列<b>常态优先级就低于</b> Experience 用户，超 50GB 再降一档；热点是「无限但全程 3G」，Open Internet 政策给的数字是最高 600 kbps；AutoPay 折扣要求银行账户或借记卡，信用卡不算。另需 45 天内完成学籍验证并按要求复验。</div></div></div><div class='rec'><div class='rank'>7</div><div><h4>AT&amp;T — Prepaid Unlimited Ultra　$60 广告价 / 约 $78 到手</h4><p>重度用户的答案。预付费里<b>唯一</b>承诺「不因用量降速」的一档（卡片原文 Data that can't slow down based on how much you use），30GB 高速热点，不查信用不需 SSN。同档后付费 Extra 2.0 要 $70 AutoPay 且要查信用。</p><div class='who'>适合：每月流量很大、要给笔记本开热点、不想跑信用的人</div><div class='who' style='margin-top:4px'>注意：贵。而且 AT&amp;T 预付费每次缴费另收 $2.63 管理费。如果你的用量其实到不了 100GB，Extra 2.0 的 100GB 高速保护 + 50GB 热点性价比更高。</div></div></div><h3>落选名单：为什么没进主表</h3><div class='finding'><h4>Google Fi</h4><p>单线 Unlimited Standard $50 换算到手约 $62，在这张表里属于明显偏贵。入门的 Unlimited Essentials $35 更麻烦：官方 Broadband Facts 写明 <b>No hotspot capability</b>（完全没有热点功能），而且 support 页原文 Does not work outside the US——出美国直接不能用，等于把 Fi 唯一的核心卖点砍掉了。当前 50% 促销确实有力（Essentials/Standard/Premium 三档都适用，$17.50/$25/$32.50），但条件是<b>必须自带 Pixel + 必须是新客 + 只管 12 个月</b>，且官方页显示 2026-09-10 截止。长驻哥伦布、不常出国的话，为它的国际能力付溢价不划算。</p></div><div class='finding'><h4>Spectrum Mobile</h4><p>硬性要求你同时是 Spectrum 宽带客户（官方 FAQ 直接问答确认），否则每线加 $10。手机侧<b>零多线折扣</b>，$30/$40/$50 每线固定。所谓省钱完全来自「第 1 条无限线免费 1 年」这个捆绑补贴。把宽带算进去，4 线 36 个月是手机 $3,960 + 宽带约 $2,160 ≈ <b>$6,120</b>。只有「本来就要装 Spectrum 宽带」的人才成立；为了这个手机价去买宽带是倒因为果。另外它的购机促销是本组最深的坑：36 个月账单返还 + 必须以旧换新 + 必须一直留着宽带，官网原文 Disconnecting service or upgrading early forfeits remaining credits。</p></div><div class='finding'><h4>Boost Mobile —— 值得知道，但已不是你以为的那家</h4><p><b>$25/月（AutoPay）拿 30GB 优质数据，官网写「$25/mo Forever」</b>，新客 $10/月 × 3 个月是本轮最低的短期入口价。税费另计。哥伦布门店密度很高（本次抓到 14 处以上，含离 OSU 较近的 1168 E Weber Rd、1300 Bethel Rd、3250 S High St），但多为授权代理点，政策执行可能不统一。<b>最重要的更正：Boost 已经没有自建网络了。</b>EchoStar 2025-08-26 把 3.45GHz + 600MHz 共 50MHz 全国频谱以约 230 亿美元卖给 AT&amp;T，Boost 自有 5G 无线接入网关停，全部用户 2025-11-15 迁到 AT&amp;T 网络，只保留自己的云原生 5G 核心网，T-Mobile 作为次级/漫游层。没进主表是因为它在 $25 档相对 Cricket（同为 AT&amp;T 网、且税费全含）没有优势。</p></div><div class='finding'><h4>Tello —— 小流量真空的答案</h4><p>主表最低档基本是 $25 起的无限量，但如果你主要靠校园和公寓 Wi-Fi，那些流量根本用不到。Tello 跑 T-Mobile 网：<b>2GB $10 / 10GB $15 / 20GB $20</b>，未用完的流量还能结转，每档都送 60+ 国家免费拨打 + 欧洲免费漫游（限时到 2026-09-30）。没进主表只是因为主表按「无限量单线」这条主线组织；如果你的真实用量在 10GB 以内，Tello 的 $15/10GB 会比主表任何一档都省。注意：它的无限量 $15×3 个月促销官网写着 8/24 截止。</p></div><div class='finding'><h4>Red Pocket —— 年付超低价 + 三网自选</h4><p>年付 Essentials 3GB <b>首年 $80</b>（官网折算 $9.17/月），续费 $110/年；GSMA / GSMT / CDMA 三网可随时切换（CoverageGenius），这一点全表只有 US Mobile 有对标。适合「只要有个号、流量很少、又想压到最低」的场景。税费口径官网未写明，本次标为未找到。</p></div><div class='finding'><h4>TextNow —— 唯一的零月费选项</h4><p><b>$0/月</b>的全美 5G 通话短信 + 550MB，只付一次性 $3.99 SIM 费；往上 $18.99/月 20GB。作为落地过渡卡、备用卡、或长期只用来收验证码的第二号码，有不可替代性。没进主表是因为它不构成一个「主力号」的答案，但值得单独知道。</p></div><div class='finding'><h4>Lycamobile —— 打中国大陆的唯一确证选项</h4><p><b>这是本次核查里唯一一家把中国大陆写进套餐自带国际通话清单、且明确固话与手机都含的品牌。</b>法务清单里 China 位于 Include Landline &amp; Mobile 组（同组还有 Hong Kong、Macau、South Korea；Taiwan 与 Japan 只在 Landline Only 组）。如果「能直接拨打国内手机」是你的刚需，它的性价比结构和其它家完全不同。<b>但有三个硬伤</b>：① 促销价是全场最低（18GB 只要 $7.50/30 天），但官网明写 Promo Price for 6 Months，6 期后回到 $33，是 2–4 倍的价格悬崖；② 官网购买另收 <b>5% regulatory recovery fee</b>，不是税费全含，标价要再乘 1.05；③ 条款写明 SIM 与号码在<b>停用 60 天后作废</b>——回国过暑假不续费，号码会被回收，绑在这个号上的银行、学校、Zelle 验证短信全部失效。</p></div><div class='finding'><h4>Ultra Mobile —— 只在四线时有意义</h4><p>单线不划算，真正的点是 <b>4 条无限量线共 $100/月</b>，且每档都含 90+ 国家无限拨打。与主表内 Mint 同集团。单人选卡用不上，列在这里是为了在你将来要和室友拼卡时有个对照。</p></div><div class='finding'><h4>Xfinity Mobile —— 在哥伦布可用性存疑，且你多半没资格</h4><p>Mobile Select $30/月、新客首年 $0，两档都含 215+ 国家的无限通话短信数据，看着很好。但<b>硬前提是必须先有 Xfinity 家庭宽带</b>——它不是独立可办的手机业务，是宽带会员的附属权益。住宿舍、住包网公寓、或短租一年不打算自己装宽带的话，实际上没有资格。另外哥伦布可用性也存疑：官网确有 /local/oh/columbus 页且可下单，但同页 Ohio 城市清单其余几乎全在俄亥俄东部（Steubenville、Youngstown 等），必须按具体门牌地址查，不能默认可装。</p></div><div class='finding'><h4>Straight Talk / Tracfone —— 全面被主表压制</h4><p>Straight Talk 同跑 Verizon，无限量 $45 + 税，而主表内 Visible 已是 $25 且税费全含，全面劣势。Tracfone 同属 Verizon 体系，$30 换 10GB（Tello 同量只要 $15）、$50 无限量（Boost $25），全线无优势。Tracfone 唯一值得提的是 $125 管 365 天的备用机场景。</p></div><div class='finding'><h4>Gen Mobile / Helium Mobile —— 各有一个小理由，都不够强</h4><p>Gen Mobile：12 个月预付 8GB $16/月锁价，但每一档都被 Tello 压住，只有「锁一年不涨价」有差异化。Helium Mobile：官网当前只有 Air $15/10GB 与 Infinity $30 无限两档——<b>中文攻略里流传的「$0 免费套餐」本次在官网套餐区完全查不到</b>，如果你在别处看到过，请以官网为准。</p></div><div class='finding'><h4>Consumer Cellular —— 有年龄门槛，不要被 $35 骗了</h4><p>它的 <b>$35 无限量仅限 50 岁以上且需年龄验证</b>；18–49 岁的无限量档是 <b>$60/月</b>，另加每月 $3.99 运营商合规费 + $0.88 USF + 每线 $10 开通费 + 税。任何把它列进「省钱清单」而不写年龄门槛的说法都是有误导的。</p></div><div class='finding'><h4>Mobile X —— 官网已经不存在了</h4><p>mobilex.com 已 <b>301 跳转到 mobilexec.com</b>（Mobile Executive，一家做 Outlook 日历软件和 HCL BigFix 的企业软件公司），TLS 证书 altnames 也只剩 www.mobilexec.com；备用域名 mobilexglobal.com 是「Launching Soon」占位页。在拿不到任何官方价格的前提下不能进表，也不该出现在任何 2026 年的推荐清单里。</p></div>
+</section>
+<section id="roast"><h2><span class="num">10</span>锐评</h2>
+<p class="lede">以下是把营销话术剥掉之后的实话。</p>
+<div class='roast'><h4><span class='kicker'>词义通胀</span>「无限」这个词在美国手机套餐里已经不含信息量了</h4><p>这次实抓到的「无限」至少有五种互不相同的意思：AT&amp;T 预付费 $25 的无限，是 30GB 且这 30GB 本身就被封顶在 3 Mbps，用完再降到 1.5 Mbps；Cricket 年付的无限，是给你无限流量但<b>明令禁止</b>开热点；T-Mobile Essentials 的无限，是「你可以一直用，但拥堵时你常态排在别人后面」；Google Fi Unlimited Essentials 的无限，是 30GB 后砍到 256 kbps <b>而且完全没有热点功能、出美国直接不能用</b>；而真正敢把话写死的只有两家：Visible+ 的脚注 5 直接定义 <span class='mono'>Premium data means no data slowdowns due to prioritization</span>，AT&amp;T Prepaid Ultra 的卡片写 <span class='mono'>Data that can't slow down based on how much you use</span>。至于 Total MAX 那句被到处引用的「无降优先级」——我核到的实情是：它<b>只出现在官方竞品对比营销页</b>，两个实际售卖页一个字都没有，服务总条款还留着「全网前 0.5% 重度用户压到 1.5 Mbps」的兜底权。看到「Unlimited」四个字请直接跳过，去找降速条款的原文，并且注意那句话印在哪一页上。</p></div><div class='roast'><h4><span class='kicker'>口径即定价</span>「税费另计」是完全合法的价格操纵，而且在便宜档位杀伤力最大</h4><p>俄亥俄的政府税费是 23.59%，再加每线固定的运营商自收费（AT&amp;T $4.99 / T-Mobile $4.49 / Verizon $3.99）。因为固定费不随价格缩放，<b>套餐越便宜，倍率越高</b>：$25 档要乘 1.41–1.45，$90 档只乘 1.28–1.29。结果就是 Mint Unlimited 标价 $30 看着比 Visible+ 的 $35 便宜 $5，换算成到手价却是 <b>$39 对 $35——反过来了</b>。你那份原表把这两个数字放进同一列排名，正好踩在这个陷阱上。</p></div><div class='roast'><h4><span class='kicker'>自相残杀</span>Verizon 最大的对手是 Verizon</h4><p>Visible 和 Total Wireless 都是 Verizon 全资，跑同一张网，都含 5G Ultra Wideband，都税费全包，$25–$35。而 Verizon 直营的 Simplicity 标价 $45（还得开 AutoPay），换算到手约 <b>$60</b>。为这 $25–$35 的差价，你买到的是后付费账户、实体店和大额购机补贴的<b>资格</b>——注意是资格，因为 Simplicity 本身<b>拿不到</b>那些免费 iPhone，那些促销一律要求 Unlimited Plus 或 Ultimate。所以 Simplicity 用户付了直营的价，却既没拿到子品牌的便宜，也没拿到旗舰套餐的补贴。</p></div><div class='roast'><h4><span class='kicker'>锁三年</span>「免费 iPhone」的真实标价是你 36 个月的选择权</h4><p>Verizon 现在的旗舰抵扣一律只认最贵的 Unlimited Ultimate。如果你本来只想要 Welcome，为拿机升到 Ultimate 是 +$30/月 × 36 = <b>$1,080</b>——iPhone Air、17 Pro、17 Pro Max 三台全部<b>倒亏约 $80</b>，Pixel 11 Pro 更是倒亏 $340（抵扣只有 $739.99 却和 iPhone Pro 一样强制 Ultimate）。而且每条优惠标题里都写着 New line req'd.——为拿机去开一条你用不到的线，那条线 36 个月要 $1,620 起。更狠的是退出成本：没有 ETF，但降档、离网、甚至<b>提前把手机分期一次性付清</b>，都会让剩余抵扣立即作废、欠款一次性到期。这不是买手机，是用三年的自由换一台机器。</p></div><div class='roast'><h4><span class='kicker'>绕过价格锁</span>管理费是运营商绕开「价格锁」加价的正规通道</h4><p>AT&amp;T 的 Administrative &amp; Regulatory Cost Recovery Fee 在八个月内涨了两次：2025-12 从 $3.49 到 $3.99，2026-08-05 再到 <b>$4.99</b>，累计 43%。T-Mobile 2026-01-21 从 $3.99 涨到 $4.49。Verizon 的两年涨了约 80%，而且官网<b>刻意不公布金额</b>（我抓了 verizon.com/support/surcharges，页面只解释用途、不给数字）。这些都不是税，是运营商自收的；它们<b>不受任何价格保证条款保护</b>。所以「5 年锁价」锁的是月费那一栏，附加费那一栏想涨随时涨。</p></div><div class='roast'><h4><span class='kicker'>卖了网还在讲故事</span>Boost 把自己的 5G 网卖了，Metro 从来没公布过多线价目表</h4><p>EchoStar 在 2025-08-26 把 3.45GHz + 600MHz 共 50MHz 全国频谱以约 230 亿美元卖给 AT&amp;T，Boost 自有的 5G 无线接入网关停，全部用户在 2025-11-15 迁到 AT&amp;T 网络。今天的 Boost 实质是跑 AT&amp;T 的混合 MVNO——而且它并没有在做激进旗舰补贴，实抓其苹果列表页全部原价。Metro 这边则是另一种：我查了它 7 个官方页面，<b>找不到任何 2/3/5 线的每线价目表</b>，它那个「4 线 $100」就是把单线价 $25 原样复制四份，而且写明只能到店办。所谓多线优惠，在数字上并不比它的单线促销价更便宜。</p></div><div class='roast'><h4><span class='kicker'>用词欺骗</span>Mint 的「family plan」不省一分钱，而且它自己承认</h4><p>Mint 官方 FAQ 的原话是：<span class='mono'>although there aren't any discounts</span>。所谓 Modern Family Plan 只是把 2–5 条独立线放进同一个管理界面，价格分毫不动。同一类问题还有 US Mobile（官方直说没有多线折扣，但至少它把单线价降下来了，算诚实）、Spectrum（每线固定价，省钱全靠捆绑宽带）、和 Visible 基础版（纯线性，Inner Circle 只对中高档生效）。四家里只有 Mint 一边说没折扣、一边把功能叫做 family plan。</p></div><div class='roast'><h4><span class='kicker'>被低估的档位</span>这次翻出来最值的两个档，原表一个都没有</h4><p>其一是 <b>Cricket 12-Month Unlimited</b>：$300 一年、含税、AT&amp;T 网络、Broadband Facts 明写这不是促销价。其二是 <b>AT&amp;T Prepaid 12-Month Unlimited</b>：$240 一年（$20/月等效），16GB 高速后降 1.5 Mbps、含 10GB 热点。这两档都藏在官网的多月预付页面里，主套餐页不会展示，比价网站也基本不收录。代价都是同一个：钱不退、走人就作废。但如果你确定要在哥伦布待满一年，这是全表最划算的两个选项。</p></div><div class='roast'><h4><span class='kicker'>查无实据</span>有三家连自己跑谁的网都不肯说</h4><p>Cricket 官方点名 AT&amp;T，Visible 和 Total Wireless 官方点名 Verizon——这三家可以当事实写。但 <b>Spectrum Mobile、US Mobile、Google Fi 三家官网全站不点名任何底层运营商</b>。Spectrum 的统一措辞是 America's most reliable 5G network；US Mobile 只给 Warp / Dark Star / Light Speed 三个代号；Google Fi 只说 an ultra-reliable 5G network。所以你在任何攻略里看到的「Spectrum = Verizon」「Warp = Verizon」，全部是第三方推断，而不是可以拿去跟客服讲道理的官方承诺。这不是文字游戏——它意味着<b>覆盖出问题时你没有依据</b>。US Mobile 更进一步：官方只对 Warp 用了 Priority Data 这个词，Dark Star 的优先级是<b>付费加购项</b>，Light Speed 只写 High Speed Data——「高速」是流量口径，不是优先级口径，这两件事经常被混为一谈。</p></div><div class='roast'><h4><span class='kicker'>传闻辟谣</span>三条在中文攻略里流传、但这次核不出来的说法</h4><p>① <b>Helium Mobile 的「$0 免费套餐」</b>：官网当前套餐区只有 Air $15/10GB 和 Infinity $30 无限两档，免费档本次完全查不到。② <b>Mobile X</b>：mobilex.com 已 301 跳转到 mobilexec.com——一家做 Outlook 日历软件的<b>企业软件公司</b>，TLS 证书 altnames 也只剩 www.mobilexec.com，备用域名是「Launching Soon」占位页。拿不到官方价格，不能进表。③ <b>「落地前在国内先激活 eSIM」</b>：至少两家已确证不成立——Verizon Prepaid 激活时会用定位验证你人在美国境内；Google Fi 条款明确禁止境外首次激活。其余品牌官网均未写明是否允许境外激活，属未明示，不能默认可以。</p></div><div class='roast'><h4><span class='kicker'>年龄陷阱</span>Consumer Cellular 是这次最容易让人多花钱的一家</h4><p>它那个到处被引用的「$35 无限量」<b>仅限 50 岁以上并需年龄验证</b>。18–49 岁的无限量档是 <b>$60/月</b>，另加每月 $3.99 运营商合规费 + $0.88 USF + 每线 $10 开通费 + 税。也就是说同样的服务，年轻人要付将近两倍。任何把它列进「省钱清单」而不写年龄门槛的说法，都是有误导的。同类还有 AT&amp;T 55+ 和 T-Mobile Essentials Choice 55——资格不符会被每线加收 $20/月。</p></div><div class='roast'><h4><span class='kicker'>口径不一致</span>回到你那份表：它最大的问题不是错，是不公平</h4><p>Verizon 填的 $45 是<b>含 AutoPay</b> 的价，T-Mobile 填的 $55 是<b>不含 AutoPay</b> 的 Broadband Facts 价，然后按数字排名——T-Mobile 垫底有相当一部分是这么来的。Cricket 填的 $40 是只存在一个月的首月价，$35 那个长期常在价反而被标成「促销价」，于是 Cricket 被压到第 8。US Mobile 的 $16.58 是年付摊算、只管第一年，却和别家的月付促销并列。这些单看每一条都有注释说明，但排名表只吃数字不吃注释——<b>注释救不了排序</b>。</p></div></section>
+
+<section id="limits"><h2><span class="num">11</span>限制与免责</h2>
+<div class="warnbox">
+<b>价格会变，而且变得比你想象的快。</b> 本页所有数字来自 2026-08-14 当天实际抓取的官方页面。
+运营商页面会按地址、登录状态、是否携号转入、设备、AutoPay、付款方式和宽带绑定动态变化——
+<b>真正下单前必须在结账页再确认一次总价</b>。
+</div>
+<div class="warnbox">
+<b>到手价是估算，不是账单。</b> 换算公式的误差带是 ±3~6 个百分点。最大误差源是联邦 USF：
+Tax Foundation 假设运营商全额采用 37.1% 安全港，但运营商可改用自家流量研究，实际账单上的 FUSC 常低于 14.39%。
+其次是 USF 系数每季度变（Q2→Q3 2026 就跳了 1.8 个点）、哥伦布实际销售税 8.0% 与全州加权 9.2% 的差异、
+以及 AutoPay 折扣在税前还是税后计算。保守可用 ×1.19，激进用 ×1.24。
+</div>
+<div class="warnbox">
+<b>覆盖是逐街区的事。</b> 都会区级别的路测和 FCC 面积覆盖<b>不能</b>替代你实际去住处、教室、办公室和通勤路线上测。
+室内覆盖可能按建筑差异极大。最稳的做法是先用支持免费试用/eSIM 试用的品牌实测再定。
+</div>
+<div class="warnbox">
+<b>凡是本页写「未找到」的地方，就是真的没查到。</b> 我没有用记忆或常识去填补任何一个数字。
+最典型的几处：Total Wireless 的非 AutoPay 牌价、Total 的 200+ 国际目的地是否含中国、
+US Mobile 热点超额后的速度、Metro 的 2/3/5 线官方每线价、T-Mobile Experience 系列的具体优先数据阈值。
+</div>
+<footer>
+生成于 2026-08-14 · 数据来自各运营商官网、FCC National Broadband Map、RootMetrics、Tax Foundation、俄亥俄州税务厅。
+每个数字旁的链接都可点开核对原始出处。<br>
+本页不含任何论坛传闻——Reddit 在抓取环境中不可访问，因此宁可留空也没有凭记忆补写。
+</footer>
+</section>
+</div>
+<script>const DATA = {"tax": {"combined": 23.59, "ng911": 0.25}, "brands": [{"name": "Visible", "short": "VIS", "net": "Verizon", "blurb": "Verizon 全资的纯线上品牌。全线税费已含、无 AutoPay 差价、无合约，牌价即到手价——在这张表里这点含金量极高。客服只有线上，没有实体店。", "gotchas": ["基础版 Visible 走的是【会被降优先级】的那条队列，Visible+ 才有优先数据", "基础版不含 5G Ultra Wideband，Broadband Facts 里下行只有 34–149 Mbps", "热点是「无限但锁速」：基础 5 Mbps / Visible+ 10 Mbps / Pro 15 Mbps，且限 1 台设备", "年付不参加 SAVE6 / SUMMER 促销码，且激活后不退款"]}, {"name": "Total Wireless", "short": "TOT", "net": "Verizon", "blurb": "Verizon 旗下预付费价值品牌。官网只印 AutoPay 价，税费已含，并对新客提供 5 年锁价。$25 的 MAX 5G BYO 是全表最强的「Verizon 网络 + 含税」组合。", "gotchas": ["官网【不公布非 AutoPay 牌价】，所以「常规价」这一栏严格来说无法核实——原表把 $25 当无条件常规价是不准确的", "5 年锁价只锁「当时的含税月费」，不含促销、附加包和 AutoPay 折扣本身", "多线阶梯反常：STARTER 2 线每线 $37.50 比单线 $35 还贵；MAX 5G BYO 从 3 线起每线价不再下降", "国际：官网 200+ 目的地清单为动态加载、未渲染，【中国是否在内无法确认】"]}, {"name": "Verizon", "short": "VZW", "net": "Verizon", "blurb": "直营后付费。当前主力只剩 Simplicity 一档无限套餐（$55 牌价 / $45 AutoPay / $30 转网），另有一条常被忽略的预付费产品线。税费一律另计。", "gotchas": ["Simplicity 的 $30 是【转网/携号专属】，需上传 45 天内的他家账单，不是长期常规价", "AutoPay 折扣要求符合条件的付款方式 + 无纸账单", "单线毫无价格优势（$45 AutoPay 换算到手约 $60），Verizon 的价值在 4–5 线", "预付费 15GB 档的忠诚度折扣官网两处口径打架：一处写「9 个月后 $30」，另一处写「续费 3 次 −$5、续费 9 次再 −$5」"]}, {"name": "Cricket", "short": "CKT", "net": "AT&T", "blurb": "AT&T 全资预付费品牌。Broadband Facts 逐套餐标注 Government Taxes Included，是本表里税费口径最干净的 AT&T 入口，且在哥伦布有实体店。", "gotchas": ["年付 12-Month Unlimited $300（$25/月）【完全禁止热点】，官方原文 tethering is prohibited，且不可加购", "低价无限档不含热点，要热点得上 $55 的 Supreme", "$5 AutoPay credit 从【第 2 个月】才生效，首月按牌价收", "促销位挂着「deal ends 8/4」但同段倒计时代码显示 355 天（2027-08-04），是官网自己的 bug，下单前建议截图"]}, {"name": "AT&T", "short": "ATT", "net": "AT&T", "blurb": "直营。后付费 Unlimited Your Way 2.0 四档 + 一条被严重低估的预付费线。在哥伦布 RootMetrics 1H2026 路测里 AT&T 综合并列第一、独得速度奖。", "gotchas": ["全线税费另计，且管理费 2026-08-05 刚从 $3.99 涨到 $4.99/线，是三大最高（八个月涨 43%）", "AutoPay 的 $10/线折扣必须绑【银行账户或 AT&T Points Plus 信用卡】；普通借记卡只有 $5，多数信用卡是 $0", "折扣「starts within 2 bills」——前两期账单先按原价收", "预付费 $25 与 $35 档的高速数据【本身就被硬封在 3 Mbps】，不是拥堵才慢，是永远 3 Mbps", "Build-A-Plan 是独立产品线，不在 att.com/plans/wireless/ 上；它 NO promotional offers / NO bill credits / 不能分期买机 / 不能以旧换新 / 每账户限 1 条线 / 仅线上办理"]}, {"name": "T-Mobile", "short": "TMO", "net": "T-Mobile", "blurb": "直营。哥伦布本地下载速度最快（RootMetrics 中位 480.9 Mbps）。最大的价值点是【学生价】：Essentials Saver 学生档 $30 AutoPay，比普通版便宜 $20/月。", "gotchas": ["2025-04 起 Experience 系列改为【税费另计】，历史上的「全包」卖点已终结", "每条语音线额外 $4.49/月 Regulatory & Telco Recovery Fee（第三方广传的 $3.99 是 2026-01-21 涨价前的旧数）", "AutoPay 折扣要求【银行账户或借记卡】，信用卡不算", "Essentials 系列在拥堵时【常态低于】Experience 用户，超 50GB 再降一档", "Essentials 全线热点是「无限但全程 3G」，Open Internet 政策给出的数字是最高 600 kbps", "学生价需 45 天内完成学籍验证并按要求复验，掉验证最多加价 $20/线/月"]}, {"name": "US Mobile", "short": "USM", "net": "三网可选", "blurb": "唯一能在三张全国网之间选择甚至切换的品牌（代号 Warp / Dark Star / Light Speed——官网从不点名对应哪家运营商，映射为第三方推断）。税费已含，且官方直言「我们没有多线折扣，因为单线价已经是别人多线折扣后的水平」。", "gotchas": ["【三网归属是第三方推断，不是官方表述】usmobile.com 的 /networks 与 /plans 页【从不出现 Verizon、AT&T、T-Mobile 任何一个名字】，只给代号与能力描述。Warp=Verizon / Dark Star=AT&T / Light Speed=T-Mobile 的映射来自 WhistleOut、BestMVNO 等第三方", "【优先级口径三网不同】官方只对 Warp 用了 Priority Data 一词；Dark Star 的优先级是【付费加购项】（Prioritized Data Add-on）；Light Speed 只写 High Speed Data——「高速」是流量口径，不是优先级口径", "【选哪张网直接决定套餐质量】：同样 $25，Dark Star 给不限速无限高速，Warp/Light Speed 只给 70GB 且热点砍半（10GB vs 20GB）；官方营销页统一写「20GB 热点」，是按最好情况写的", "【官网自己前后矛盾】：套餐卡下写 Taxes &amp; fees included，同页 FAQ 却写可能另收 $2 Service Fee 与 $1–$5/线 Recovery Fee。本页按「已含」计算，但下单前必须在结账页确认——若实际另收，它在 $25 档的优势会被吃掉", "$199 首年价【只限新线】，第二年自动跳 $270（官方原文 Renews at full price）", "该促销档期极短：官方 promo-archive 写明 2026-08-12 至 2026-08-18", "年付需一次性付清，且这是本品牌唯一的价格杠杆（没有 AutoPay 折扣）"]}, {"name": "Metro", "short": "MET", "net": "T-Mobile", "blurb": "T-Mobile 全资预付费品牌，是 Cricket 在 T-Mobile 侧的对位者。官网对 $30/$40/$50/$60 四档逐条写明 Taxes and fees included，并带 5 年价格保证——原表有 Cricket 却没有 Metro，是结构性缺口，本页补上。", "gotchas": ["【官网没有公开的多线阶梯表】查过 7 个官方页面（/phone-plans、/plan-benefits、/deals、/deals/40period、/deals/one-line-for-25-phone-plan、/deals/4-lines-for-100、/onlineplans）均未刊登 2/3/5 线每线价", "那个「4 线 $100」就是单线价 $25 原样复制四份，而且写明【只能到店办】——多线优惠在数字上并不比单线促销价更便宜", "5 年价格保证只锁 talk/text/5G 数据，有除外条款", "打中国大陆【无法确认】：国际加装包清单已抓到（$10/月 Global Voice 覆盖 210+ 国家与地区），但中国大陆是否在内、含多少分钟，页面用动态国家查询工具，抓不出结果；官网自己也提示要打电话确认"]}, {"name": "Mint Mobile", "short": "MNT", "net": "T-Mobile", "blurb": "T-Mobile 网络的预付费品牌，靠「一次性预付 3/6/12 个月」换低价。流量档在 2026 年做过升级：5GB→6GB、15GB→17GB、20GB→23GB。", "gotchas": ["【网络归属本次未取得官网原文】一个审计 agent 成功抓到 mintmobile.com/plans 并逐字引用了资费与促销条款，另一个 agent 对同域名的两次尝试（WebFetch 与带完整浏览器 UA 的 curl）均返回 HTTP 403。所以「跑 T-Mobile 网」这条本页标为未取得官方原文——历史上 Mint 的无限档阈值曾是 35GB/40GB，阈值口径变动频繁", "税费另计（Recovery Fee $1.88–$2.29/月 + FUSF + 州税），这点常被忽略", "$15 促销【只管第一个周期】，Unlimited 续费回到 $30/月", "预付周期越短单价越贵：3 个月档的常规价比 12 个月档贵 $10–$20/月", "官方 FAQ 白纸黑字承认【没有任何多线折扣】，所谓 Family Plan 只是账号管理界面", "Unlimited 超 50GB 后拥堵时降优先级"]}], "plans": [{"id": "vis-base", "brand": "Visible", "brand_short": "VIS", "net": "Verizon", "name": "Visible（月付基础档）", "adv": 25, "promo": null, "tax_inc": true, "fee": 0.0, "oneline": "Verizon 网络无限流量，税费全含，$25 就是账单数字", "data": "无限高速数据，无 GB 阈值。但【不含 5G Ultra Wideband】，只有 5G/4G LTE", "depri": "会被降优先级的那条队列。官网脚注原文：In times of traffic, your data may be temporarily slower than other traffic", "hotspot": "无限量，但全程锁速 5 Mbps，且限 1 台设备连接", "video": "最高 480p（基础档）", "intl": "含美国境内拨打/短信墨西哥、加拿大。Global Pass $10/天覆盖 140+ 国（清单里核对到中国大陆）。【不含打中国】", "prepay": "月付，无合约", "autopay": "无 AutoPay 差价", "cond": "需自带兼容解锁手机", "promo_terms": "", "notes": "Broadband Facts 里本档下行只有 5G 34–149 Mbps——这是「不含 UW」的直接体现。", "url": "https://www.visible.com/plans", "chips": [{"t": "无热点限制", "k": ""}, {"t": "降优先级", "k": "warn"}]}, {"id": "vis-base-yr", "brand": "Visible", "brand_short": "VIS", "net": "Verizon", "name": "Visible（年付 $275/年）", "adv": 22.92, "promo": null, "tax_inc": true, "fee": 0.0, "oneline": "年付摊到每月 $22.92，但第一年反而比月付+促销码贵", "data": "同月付基础档", "depri": "同月付基础档", "hotspot": "无限量锁速 5 Mbps", "video": "最高 480p", "intl": "同月付基础档", "prepay": "一次性年付 $275，激活后不退款", "autopay": "无", "cond": "需自带兼容解锁手机", "promo_terms": "", "notes": "年付在 Visible 体系里性价比最尴尬：第一年比「月付 + SAVE6」还贵，只有从第二年起才比裸价 $25 便宜。对刚落地、还不确定住哪/待多久的人风险偏高。SAVE6 与 SUMMER 促销码均明确写明不适用于年付。", "url": "https://www.visible.com/plans", "chips": [{"t": "年付锁定", "k": "warn"}]}, {"id": "vis-plus", "brand": "Visible", "brand_short": "VIS", "net": "Verizon", "name": "Visible+（月付）", "adv": 35, "promo": 29, "tax_inc": true, "fee": 0.0, "oneline": "有优先数据的那一档——这才是 Visible 值得推荐的版本", "data": "无限【高级优先】数据（premium/priority），含 5G Ultra Wideband", "depri": "【本次十家里官方措辞最硬的一条】脚注 5 逐字：Visible+ and Visible+ Pro give you unlimited premium data on Verizon's award-winning 5G &amp; 4G LTE networks when 5G Ultra Wideband is unavailable. Premium data means no data slowdowns due to prioritization. 且底层网络是官方点名 Verizon，不是第三方推断。", "hotspot": "无限量，锁速 10 Mbps（基础档的两倍）", "video": "1080p【只在 5G Ultra Wideband 覆盖下成立】；5G/LTE 下只有 720p", "intl": "含墨西哥/加拿大通话短信与数据漫游；每月含 1 天 Global Pass", "prepay": "月付", "autopay": "无 AutoPay 差价", "cond": "需自带兼容解锁手机", "promo_terms": "促销码 SAVE6：$6 off、前 12 个月，即 $29/月。官网首页与 /plans 页同时展示。不适用于年付档。", "notes": "基础版和 Visible+ 的真正差别不在流量数字，而在【优先级队列】和【UW 接入】。差 $10 买的是这两样。", "url": "https://www.visible.com/plans", "chips": [{"t": "优先数据", "k": "good"}, {"t": "含 5G UW", "k": "good"}]}, {"id": "vis-pro", "brand": "Visible", "brand_short": "VIS", "net": "Verizon", "name": "Visible+ Pro（月付）", "adv": 45, "promo": 35, "tax_inc": true, "fee": 0.0, "oneline": "顶配：优先数据 + 15 Mbps 热点 + 更强国际", "data": "无限高级优先数据，含 5G UW", "depri": "不受常规降优先级条款约束", "hotspot": "无限量，锁速 15 Mbps", "video": "最高 1080p HD", "intl": "85+ 国拨打 / 200+ 国短信；含 Global Pass 额度", "prepay": "月付", "autopay": "无", "cond": "需自带兼容解锁手机", "promo_terms": "两个码并存，本档 SUMMER 更便宜：SUMMER $10 off 前 12 个月 → $35/月；SAVE6 $6 off → $39/月。年付另有 SAVEHALF 五折（$225/年）。", "notes": "Pro 与 Visible+ 的差价买的是热点速度（15 vs 10 Mbps）和国际范围。单纯在美国用手机的人不需要。", "url": "https://www.visible.com/plans", "chips": [{"t": "优先数据", "k": "good"}]}, {"id": "tot-byo", "brand": "Total Wireless", "brand_short": "TOT", "net": "Verizon", "name": "Total MAX 5G BYO", "adv": 25, "promo": 20, "tax_inc": true, "fee": 0.0, "oneline": "全表最强的「Verizon 网络 + 含税 + 无降优先级」组合，前提是自带手机", "data": "无限 premium 5G 数据，含 5G Ultra Wideband。官网未设 GB 阈值", "depri": "【表述需限定】No network deprioritization or throttling 这句只出现在官方竞品对比营销页 /facts（该页自带免责：Data verified as of 5/13/2026），以及 Verizon 新闻稿的 won't slow you down。两个实际售卖页（/plans/ 与 /m/plans/smartphone）完全没有 deprioritization / premium data 字样。服务总条款则保留兜底权：跑进全网前 0.5% 重度用户会被压到 1.5 Mbps，且 certain Plans 内不同流量可被区别优先级。", "hotspot": "无限量，锁速 5 Mbps，限 1 台设备", "video": "官网未明确列出（未找到）", "intl": "140+ 国漫游（数据 10GB/月、通话 300 分钟/月、短信无限）。【中国是否在 140+ 名单内无法确认——官网清单为动态加载未渲染】", "prepay": "月付预付费", "autopay": "$25 即 AutoPay 价；官网不公布非 AutoPay 牌价（促销页写首月 $30）", "cond": "必须自带符合条件的解锁兼容设备，这是 BYO 专属档", "promo_terms": "官网当前横幅：首月 $30，之后 $20/月（36 个月约 $730）——比原表的 $25 每月还低 $5。新客另享 5 年锁价：只锁当时的含税月费，不含促销与附加包。", "notes": "原表把 $25 填在「常规价」列且促销价留空是不准确的——官网只印 AutoPay 价，非 AutoPay 牌价本次查不到。另外 AutoPay 的 $5 折扣是【每账户一个】(one per account)，不是每线一个——拼卡时不能按每人减 $5 算。", "url": "https://www.totalwireless.com/m/byop", "chips": [{"t": "官方称不降优先级", "k": "good"}, {"t": "5年锁价", "k": "good"}]}, {"id": "tot-starter", "brand": "Total Wireless", "brand_short": "TOT", "net": "Verizon", "name": "Total STARTER", "adv": 35, "promo": null, "tax_inc": true, "fee": 0.0, "oneline": "唯一会被常规降优先级的一档，单人不划算，拼卡才有意义", "data": "无限数据", "depri": "这一档【会】被降优先级（与 MAX 系列不同）", "hotspot": "含（额度见官网）", "video": "未找到", "intl": "未找到", "prepay": "月付预付费", "autopay": "$35 为 AutoPay 价", "cond": "可自带手机或买机", "promo_terms": "", "notes": "这档的价值在 4 线：$95 总价即每线 $23.75，是 Total 全线拼卡最优解——不是看着最便宜的 MAX 5G BYO。", "url": "https://www.totalwireless.com/m/plans/smartphone", "chips": [{"t": "会降优先级", "k": "warn"}]}, {"id": "tot-max", "brand": "Total Wireless", "brand_short": "TOT", "net": "Verizon", "name": "Total MAX 5G", "adv": 50, "promo": null, "tax_inc": true, "fee": 0.0, "oneline": "不自带手机时的 MAX 档，配置与 BYO 版几乎一样", "data": "无限 premium 5G 数据，含 5G UW", "depri": "官方：No network deprioritization or throttling", "hotspot": "无限量锁速 5 Mbps", "video": "未找到", "intl": "140+ 国漫游（10GB 数据 / 300 分钟 / 无限短信）", "prepay": "月付预付费", "autopay": "$50 为 AutoPay 价，牌价 $55", "cond": "无需自带手机", "promo_terms": "", "notes": "单人自带手机没有任何理由选这档——配置与 $25 的 BYO 版几乎完全一样（同为 premium data、同为无限 5 Mbps 热点、同为 140+ 漫游、同为 100GB 云盘），只差在是否必须自带手机。", "url": "https://www.totalwireless.com/m/plans/smartphone", "chips": [{"t": "官方称不降优先级", "k": "good"}]}, {"id": "tot-all", "brand": "Total Wireless", "brand_short": "TOT", "net": "Verizon", "name": "Total ALL ACCESS", "adv": 60, "promo": null, "tax_inc": true, "fee": 0.0, "oneline": "顶配：热点提速到 10 Mbps + 1TB 云盘 + Disney+", "data": "无限 premium 5G 数据，含 5G UW", "depri": "官方：No network deprioritization or throttling", "hotspot": "无限量，锁速 10 Mbps（MAX 的两倍）", "video": "未找到", "intl": "140+ 国漫游 + $10 国际长途 credit。【中国是否覆盖无法确认】", "prepay": "月付预付费", "autopay": "$60 为 AutoPay 价；非 AutoPay 牌价官网未印（推算 $65，按铁律不填）", "cond": "可自带手机", "promo_terms": "", "notes": "比 MAX 5G 贵 $10，换来热点 5→10 Mbps、云盘 100GB→1TB、Disney+ Premium。本来就付 Disney+ 的话这 $10 是赚的。", "url": "https://www.totalwireless.com/m/plans/smartphone", "chips": [{"t": "官方称不降优先级", "k": "good"}]}, {"id": "vzw-simp", "brand": "Verizon", "brand_short": "VZW", "net": "Verizon", "name": "Simplicity Plan", "adv": 45, "promo": 30, "tax_inc": false, "fee": 3.99, "oneline": "Verizon 直营当前唯一主力无限档，税费另计", "data": "手机本机无限数据；每账期超过 500GB 后降至 4 Mbps", "depri": "机制与 T-Mobile Essentials 完全不同：Simplicity 是【不做拥堵劣后、只在 500GB 后硬降速到 4 Mbps】——500GB 是速度天花板，不是优先级顺位。横向比较时不要把「500GB 后 4Mbps」和「50GB premium data」当同类项。", "hotspot": "10GB，之后本账期剩余时间降至 1 Mbps", "video": "5G/4G LTE 覆盖区内 720p", "intl": "美国境内无限拨打墨西哥和加拿大（受公平使用限制）", "prepay": "月付后付费，需查信用", "autopay": "$45 需 AutoPay + 无纸账单，付款方式需符合条件；不用 AutoPay 牌价 $55", "cond": "支持 BYOD，也支持新机分期", "promo_terms": "$30/月需 AutoPay + 转网/携号优惠（需上传 45 天内的他家账单）。这是【转网专属】，不是长期常规价。", "notes": "Simplicity 拿不到 Verizon 的大额手机抵扣——那些促销一律要求 Unlimited Plus 或 Ultimate。", "url": "https://www.verizon.com/support/verizon-simplicity-faqs/", "chips": [{"t": "后付费·查信用", "k": "warn"}]}, {"id": "vzw-pp15", "brand": "Verizon", "brand_short": "VZW", "net": "Verizon", "name": "Verizon Prepaid 15GB", "adv": 35, "promo": 30, "tax_inc": false, "fee": 0.0, "oneline": "Verizon 网络的小流量预付费档，不查信用", "data": "15GB 高速数据（5G/4G LTE），含无限通话短信", "depri": "超额规则见官网", "hotspot": "含（额度见官网）", "video": "未找到", "intl": "含发往 200+ 国的无限国际短信；国际通话需另购加装包", "prepay": "月付预付费，不查信用", "autopay": "$35 需 AutoPay（$10 折扣，首月不享）；牌价 $45", "cond": "需自带兼容手机或购机", "promo_terms": "忠诚度折扣后 $30/月。【官网两处口径不一致】：/plans/prepaid/ 表格写「9 个月后 $30」，而预付费 FAQ 写两级阶梯「续费 3 次 −$5、续费 9 次再 −$5」。下单前需确认。", "notes": "Verizon 目前【没有】像 AT&T/T-Mobile 那样的小流量后付费档，最小的可用流量档就是这个预付费 15GB。", "url": "https://www.verizon.com/plans/prepaid/", "chips": [{"t": "不查信用", "k": "good"}]}, {"id": "vzw-ppunl", "brand": "Verizon", "brand_short": "VZW", "net": "Verizon", "name": "Verizon Prepaid Unlimited", "adv": 50, "promo": null, "tax_inc": false, "fee": 0.0, "oneline": "Verizon 网络无限流量，不查信用不需 SSN", "data": "无限数据", "depri": "见官网", "hotspot": "含（额度见官网）", "video": "未找到", "intl": "含 200+ 国无限国际短信", "prepay": "月付预付费", "autopay": "$50 需 AutoPay（$10 折扣，首月不享）；牌价 $60", "cond": "需自带兼容手机或购机", "promo_terms": "", "notes": "与 Simplicity 的 $45 AutoPay 相比，换算到手价后其实相当接近，但这档不查信用、没有 $3.99 管理费。", "url": "https://www.verizon.com/plans/prepaid/", "chips": [{"t": "不查信用", "k": "good"}]}, {"id": "vzw-ppplus", "brand": "Verizon", "brand_short": "VZW", "net": "Verizon", "name": "Verizon Prepaid Unlimited Plus", "adv": 60, "promo": 50, "tax_inc": false, "fee": 0.0, "oneline": "预付费顶配，忠诚度折扣后 $50", "data": "无限数据", "depri": "见官网", "hotspot": "含", "video": "未找到", "intl": "含 200+ 国无限国际短信", "prepay": "月付预付费", "autopay": "$60 需 AutoPay；牌价 $70", "cond": "需自带兼容手机或购机", "promo_terms": "忠诚度折扣后 $50/月。", "notes": "", "url": "https://www.verizon.com/plans/prepaid/", "chips": [{"t": "不查信用", "k": "good"}]}, {"id": "ckt-12mo", "brand": "Cricket", "brand_short": "CKT", "net": "AT&T", "name": "12-Month Unlimited（年付 $300）", "adv": 25, "promo": null, "tax_inc": true, "fee": 0.0, "oneline": "$300 一次付清、含税、无限流量的 AT&T 网络——代价是完全禁止热点", "data": "无限数据。官方未公布高速阈值 GB 数", "depri": "Cricket【没有任何 premium data / priority data 概念】，官网通篇不出现该词。唯一表述是 Cricket may temporarily slow data speeds if the network is busy。无固定降速数值、无阈值。（注：Total Wireless 对比页把 Cricket 描述为 Always on the lowest priority 属竞品营销说法，Cricket 官方并未如此披露）", "hotspot": "【完全不含且不可加购】。官方原文：Tethering or use of device as a mobile hot spot is prohibited", "video": "Cricket 对【所有】套餐做视频降码率：we aim to render content identified as streaming video in standard-definition (max of 1.5 to 2 Mbps)", "intl": "见官网", "prepay": "一次性预付 $300 覆盖 12 个月，不退款", "autopay": "不适用——多月档不走 AutoPay 折扣机制", "cond": "需新开单线账户（不能并入现有账户）、必须自带手机、【仅限线上办理】", "promo_terms": "Broadband Facts 明确写 This Monthly Price is not an introductory rate——【这不是促销价，是常态定价】。官网未公布截止日期。", "notes": "对确定要在哥伦布待满一年、且不需要热点的人，这是全表性价比最高的档之一。代价是 $300 不退、禁热点、加不了任何功能，且转成月付后回不去。", "url": "https://www.cricketwireless.com/cell-phone-plans/multi-month-unlimited", "chips": [{"t": "非促销价", "k": "good"}, {"t": "禁止热点", "k": "bad"}, {"t": "仅线上", "k": "warn"}]}, {"id": "ckt-sens", "brand": "Cricket", "brand_short": "CKT", "net": "AT&T", "name": "Sensible 10GB", "adv": 30, "promo": null, "tax_inc": true, "fee": 0.0, "oneline": "AT&T 网络的小流量含税档", "data": "10GB 高速数据", "depri": "超额后见官网", "hotspot": "见官网", "video": "可能限制为 SD", "intl": "见官网", "prepay": "月付预付费", "autopay": "$30 需 AutoPay（$5 credit，自第 2 个月起生效）；牌价 $35", "cond": "需自带兼容手机", "promo_terms": "", "notes": "多线【零折扣】：$30×线数，别被套餐列表并排展示误导。超额后降至 128 Kbps。国际功能被阉割：这一档【连国际短信都不可用】，也没有墨西哥/加拿大通话。", "url": "https://www.cricketwireless.com/plans/phone", "chips": [{"t": "小流量", "k": ""}]}, {"id": "ckt-select", "brand": "Cricket", "brand_short": "CKT", "net": "AT&T", "name": "Select Unlimited", "adv": 35, "promo": null, "tax_inc": true, "fee": 0.0, "oneline": "AT&T 网络含税无限档，但不含热点", "data": "无限数据", "depri": "仅拥堵时可能临时降速；Select 未见高级优先级声明", "hotspot": "【不含】。要热点需上 $55 的 Supreme（含 50GB）；中间档 Smart Unlimited $45 含 15GB", "video": "限制为 SD（Cricket 全线降码率 max 1.5–2 Mbps）", "intl": "只有对墨西哥/加拿大的通话短信；官网同样标注【国际短信不可用】。所谓 200+ 国家是【可加购范围】，不是套餐自带也不是不限量——按国家单买加装包 $10/月起，且是 a set amount of calling minutes（有分钟上限）", "prepay": "月付预付费", "autopay": "$35 需 AutoPay（$5 credit，自第 2 个月起生效）；牌价 $40", "cond": "需自带兼容手机", "promo_terms": "", "notes": "原表把 $40 当「常规价」、$35 当「促销价」是反的——$35 才是长期常在价，$40 只存在第一个月。官网另标注 New lines only、账户内所有线必须同为 Select Unlimited。", "url": "https://www.cricketwireless.com/plans/phone", "chips": [{"t": "不含热点", "k": "bad"}]}, {"id": "ckt-smart", "brand": "Cricket", "brand_short": "CKT", "net": "AT&T", "name": "Smart Unlimited", "adv": 45, "promo": null, "tax_inc": true, "fee": 0.0, "oneline": "中档，含税，含 15GB 热点", "data": "无限数据", "depri": "仅拥堵时可能临时降速", "hotspot": "15GB（审计复核官网确认）", "video": "可能限制为 SD", "intl": "见官网", "prepay": "月付预付费", "autopay": "$45 需 AutoPay（自第 2 个月起）；牌价 $50", "cond": "需自带兼容手机", "promo_terms": "", "notes": "", "url": "https://www.cricketwireless.com/plans/phone", "chips": []}, {"id": "ckt-sup", "brand": "Cricket", "brand_short": "CKT", "net": "AT&T", "name": "Supreme Unlimited", "adv": 55, "promo": null, "tax_inc": true, "fee": 0.0, "oneline": "Cricket 唯一含大额热点的档（50GB）", "data": "无限数据", "depri": "仅拥堵时可能临时降速", "hotspot": "50GB", "video": "见官网", "intl": "比 Select 更强的国际功能", "prepay": "月付预付费", "autopay": "$55 需 AutoPay（官方原文 $55/month with Auto Pay after $5 credit in month 2）；牌价 $60", "cond": "需自带兼容手机", "promo_terms": "", "notes": "", "url": "https://www.cricketwireless.com/plans/phone", "chips": [{"t": "50GB 热点", "k": "good"}]}, {"id": "att-pp12", "brand": "AT&T", "brand_short": "ATT", "net": "AT&T", "name": "Prepaid 12-Month Unlimited（$240/年）", "adv": 20, "promo": null, "tax_inc": false, "fee": 2.63, "oneline": "全线最便宜的 AT&T 入口，$240 一次付清覆盖 360 天", "data": "每 30 天 16GB 高速额度，之后不断网但全面降速", "depri": "【硬降速】法律原文：If 16GB high-speed data allowance is used in a 30-day period, all data speeds including video are reduced to a max. of 1.5Mbps for the remainder of the 30 days", "hotspot": "10GB 高速，之后降至 128 Kbps（该速度下热点基本不可用）", "video": "超额后同样受 1.5 Mbps 限制", "intl": "美国境内使用；数据仅限美国", "prepay": "一次性预付 $240 覆盖 360 天，不退款", "autopay": "不适用——法律原文 Not eligible for AutoPay discount or multi-line accounts", "cond": "仅线上办理、仅单线", "promo_terms": "", "notes": "对确定待满一年的人性价比极高；对可能中途换号/回国的人风险大（不退款）。每次缴费另收 $2.63 管理费。", "url": "https://www.att.com/prepaid/plans/", "chips": [{"t": "16GB 后 1.5Mbps", "k": "warn"}, {"t": "仅线上单线", "k": "warn"}]}, {"id": "att-pp25", "brand": "AT&T", "brand_short": "ATT", "net": "AT&T", "name": "Prepaid $25 Unlimited（5 年锁价）", "adv": 25, "promo": null, "tax_inc": false, "fee": 2.63, "oneline": "月付里最便宜的 AT&T，但速度被硬封在 3 Mbps", "data": "每 30 天 30GB，且这 30GB 【本身就被封顶在 3 Mbps】", "depri": "【硬降速 + 高速档本身限速，双重限制】法律原文：Plan includes 30GB of data per 30-day period at a maximum speed of 3Mbps in the U.S. If 30GB is used, all data speeds are reduced to a max of 1.5Mbps", "hotspot": "【不含】。可另加 5GB 热点包 $10/月 + 税", "video": "受 3 Mbps 限制", "intl": "见官网", "prepay": "月付预付费", "autopay": "不适用——锁价条款排除 AutoPay 折扣", "cond": "仅线上、仅新单线客户", "promo_terms": "5 年锁价。但条款写明：If you cancel your service, change to an ineligible plan, or add a line to your account, your price lock will end——以后想加室友的线，锁价直接作废。", "notes": "3 Mbps 不是「网络忙才慢」，是永远 3 Mbps。刷 1080p 视频勉强，4K 不行，大文件下载会很难受。", "url": "https://www.att.com/prepaid/plans/", "chips": [{"t": "全程 3Mbps 封顶", "k": "bad"}, {"t": "5年锁价", "k": "good"}]}, {"id": "att-ppsaver", "brand": "AT&T", "brand_short": "ATT", "net": "AT&T", "name": "Prepaid Unlimited Saver", "adv": 35, "promo": null, "tax_inc": false, "fee": 2.63, "oneline": "配置与 $25 档一模一样，却贵 $10——基本没有存在价值", "data": "每 30 天 30GB，速度封顶 3 Mbps", "depri": "与 $25 档完全相同的硬降速条款", "hotspot": "不含，可加 5GB 包 $10/月", "video": "受 3 Mbps 限制", "intl": "见官网", "prepay": "月付预付费", "autopay": "不适用——法律原文 Not eligible for Auto Pay discount or Multi-Line account", "cond": "可店内/Walmart 办理", "promo_terms": "", "notes": "流量、速度、热点、国际功能与 $25 档完全一致，唯一差别是 $25 档限「仅线上 + 新单线客户」，本档没有这个限制。能线上办且是新客的话，直接选 $25 档。", "url": "https://www.att.com/prepaid/plans/", "chips": [{"t": "全程 3Mbps 封顶", "k": "bad"}, {"t": "不推荐", "k": "bad"}]}, {"id": "att-ppplus", "brand": "AT&T", "brand_short": "ATT", "net": "AT&T", "name": "Prepaid Unlimited Enhanced Plus", "adv": 45, "promo": null, "tax_inc": false, "fee": 2.63, "oneline": "预付费里第一个真「无限量」（无 GB 阈值）的档", "data": "美国和墨西哥境内无限量数据，无 GB 高速阈值；加拿大 25GB 后降至 512 Kbps", "depri": "仅拥堵时降优先级，但【无用量门槛保护】——任何时候基站忙都可能降速", "hotspot": "10GB 高速，之后 128 Kbps", "video": "见官网", "intl": "含墨西哥；加拿大 25GB 后降速", "prepay": "月付预付费", "autopay": "不适用——不可与 AutoPay 折扣合用", "cond": "这是预付费里第一个能拼室友卡的档（Multi-Line 门槛正是 $45）", "promo_terms": "", "notes": "同价位的后付费 Value 2.0 只要 $50（AutoPay）就有 5GB 优先保护 + 后付费信用建立，但要查信用。", "url": "https://www.att.com/prepaid/plans/", "chips": [{"t": "不查信用", "k": "good"}, {"t": "无优先保护", "k": "warn"}]}, {"id": "att-bap-sd", "brand": "AT&T", "brand_short": "ATT", "net": "AT&T", "name": "Build-A-Plan · Unlimited SD（无热点）", "adv": 35, "promo": null, "tax_inc": false, "fee": 4.99, "oneline": "官方自定义套餐：$15 基础 + $20 无限 SD 数据 = $35，仅线上、仅单线", "data": "无限量数据，但【视频硬限 SD】且速度标注 max 2 Mbps（5G）/ 1.5 Mbps（4G）", "depri": "AT&T 称网络繁忙时可能临时降速；本行未找到硬性高速阈值", "hotspot": "【默认不含】。可加购 5GB(+$5)=$40、25GB(+$15)=$50、50GB(+$20)=$55", "video": "硬限 SD", "intl": "Build-A-Plan 官方页未清楚列出包含的国际功能", "prepay": "月付，可按月调整配置", "autopay": "【要求 AutoPay，但没有 AutoPay 折扣】——官方原文 AutoPay is REQUIRED. There is NO AutoPay discount.", "cond": "仅线上办理；必须自带已付清、已解锁、支持 eSIM 的手机；【每账户限 1 条线】，室友拼卡完全用不了", "promo_terms": "", "notes": "审计确认：$35 就是 AT&T 官方价目矩阵里 Unlimited SD 的总价，不是拼算出来的。但这个产品线 NO promotional offers、NO switcher credits、NO bill credits，不能分期买机也不能以旧换新——想要补贴手机只能走传统 Unlimited 2.0。门店买不到。", "url": "https://www.att.com/plans/build-a-plan/", "chips": [{"t": "限 1 条线", "k": "bad"}, {"t": "视频硬限 SD", "k": "bad"}, {"t": "拿不到任何促销", "k": "warn"}]}, {"id": "att-bap-sd25", "brand": "AT&T", "brand_short": "ATT", "net": "AT&T", "name": "Build-A-Plan · Unlimited SD + 25GB 热点", "adv": 50, "promo": null, "tax_inc": false, "fee": 4.99, "oneline": "Build-A-Plan 加满热点后的价格，和后付费 Value 2.0 同价", "data": "无限量数据，视频硬限 SD，速度 max 2 Mbps（5G）", "depri": "繁忙时可能临时降速", "hotspot": "25GB（+$15 加购）", "video": "硬限 SD", "intl": "官方页未清楚列出", "prepay": "月付", "autopay": "要求 AutoPay 但无折扣", "cond": "仅线上、仅单线、必须 eSIM", "promo_terms": "", "notes": "到了这个价位就该重新算账：同为 $50 的后付费 Value 2.0 视频不限 SD、有 5GB 优先保护、能拼卡、能买机分期——Build-A-Plan 只在「$35 无热点」那一档有意义。", "url": "https://www.att.com/plans/build-a-plan/", "chips": [{"t": "限 1 条线", "k": "bad"}, {"t": "视频硬限 SD", "k": "bad"}]}, {"id": "att-value", "brand": "AT&T", "brand_short": "ATT", "net": "AT&T", "name": "Value 2.0（后付费）", "adv": 50, "promo": null, "tax_inc": false, "fee": 4.99, "oneline": "AT&T 后付费入门档，热点只有 3GB 是硬伤", "data": "无限量数据 + 5GB 高速优先额度（超 5GB 不断网、不硬降速，只是失去优先保护）", "depri": "仅拥堵时降优先级。官方支持页：Unlimited plus 5GB of high-speed data. After 5GB, AT&T may temporarily slow data speeds if the network is busy", "hotspot": "3GB，之后降至最高 128 Kbps", "video": "见官网", "intl": "见官网", "prepay": "月付后付费，需查信用", "autopay": "$50 需 AutoPay + 无纸账单（$10 折扣，绑银行账户或 AT&T Points Plus 卡才给足额）；牌价 $60", "cond": "支持 BYOD 与分期购机", "promo_terms": "", "notes": "对比 AT&T Prepaid $25 档：现金支出明显更高，但换来「仅拥堵降优先级」（无 3 Mbps 硬顶）和后付费信用记录。", "url": "https://www.att.com/plans/wireless/", "chips": [{"t": "后付费·查信用", "k": "warn"}, {"t": "热点仅 3GB", "k": "bad"}]}, {"id": "att-ppultra", "brand": "AT&T", "brand_short": "ATT", "net": "AT&T", "name": "Prepaid Unlimited Ultra", "adv": 60, "promo": null, "tax_inc": false, "fee": 2.63, "oneline": "预付费里唯一承诺「不因用量降速」的一档，30GB 热点", "data": "真·无限高速数据，无 GB 阈值、不因用量降速。卡片原文：Data that can't slow down based on how much you use", "depri": "【不因用量降速——预付费里唯一有此承诺的一档】。加拿大 25GB 后降至 512 Kbps", "hotspot": "30GB 高速，之后 128 Kbps", "video": "见官网", "intl": "含美国与墨西哥无限数据", "prepay": "月付预付费", "autopay": "该档条款未提及 AutoPay 折扣（与 $35/$45 档明确写「不可合用」不同）", "cond": "不查信用、不需 SSN", "promo_terms": "", "notes": "与后付费 Extra 2.0 的 AutoPay 价 $70 只差 $10，但 Extra 2.0 有 100GB 高速保护 + 50GB 热点。对不想查信用又要大流量+大热点的人，这是最合适的一档。", "url": "https://www.att.com/prepaid/plans/", "chips": [{"t": "不因用量降速", "k": "good"}, {"t": "不查信用", "k": "good"}]}, {"id": "att-extra", "brand": "AT&T", "brand_short": "ATT", "net": "AT&T", "name": "Unlimited Extra 2.0（后付费）", "adv": 70, "promo": null, "tax_inc": false, "fee": 4.99, "oneline": "AT&T 官方标注 Most popular——100GB 高速 + 50GB 热点，是全线性价比拐点", "data": "无限量数据 + 100GB 高速优先额度", "depri": "仅拥堵时降优先级：After 100GB, AT&T may temporarily slow data speeds if the network is busy", "hotspot": "50GB，之后 128 Kbps", "video": "见官网", "intl": "见官网", "prepay": "月付后付费，需查信用", "autopay": "$70 需 AutoPay + 无纸账单；牌价 $80", "cond": "支持 BYOD 与分期购机", "promo_terms": "", "notes": "相比 Value 2.0 多 $20/月，换来 95GB 高速保护和 47GB 热点。四人拼卡每人 $40（AutoPay）+ 税费。AT&T 的大额手机抵扣主要挂在这一档和 Premium。", "url": "https://www.att.com/plans/wireless/", "chips": [{"t": "100GB 优先", "k": "good"}, {"t": "50GB 热点", "k": "good"}]}, {"id": "att-prem", "brand": "AT&T", "brand_short": "ATT", "net": "AT&T", "name": "Unlimited Premium 2.0（后付费）", "adv": 90, "promo": null, "tax_inc": false, "fee": 4.99, "oneline": "彻底去掉 GB 阈值 + 100GB 热点", "data": "真·无限高速数据，无 GB 阈值", "depri": "【不因用量降速】——本档法律条款中不存在 Value/Extra 那种 After XGB 降速句", "hotspot": "100GB，之后 128 Kbps", "video": "见官网", "intl": "含拉美漫游", "prepay": "月付后付费，需查信用", "autopay": "$90 需 AutoPay + 无纸账单；牌价 $100", "cond": "支持 BYOD 与分期购机", "promo_terms": "", "notes": "从 Extra（$70）升到 Premium（$90）多花 $20 买两样：去掉 100GB 阈值、热点 50→100GB，外加拉美漫游和平板/手表 5 折。对普通用户通常不划算——100GB 高速已经够用。", "url": "https://www.att.com/plans/wireless/", "chips": [{"t": "不因用量降速", "k": "good"}]}, {"id": "tmo-stu-saver", "brand": "T-Mobile", "brand_short": "TMO", "net": "T-Mobile", "name": "Essentials Saver + 学生优惠 2.0", "adv": 30, "promo": null, "tax_inc": false, "fee": 4.49, "oneline": "T-Mobile 全线对学生最便宜的一档，比普通版便宜 $20/月", "data": "无限 5G/4G LTE，其中 50GB 为 premium 优先数据", "depri": "不是降到固定速度，是降优先级，且 Essentials 常态优先级就低。官网脚注：Essentials 2.0 customers may notice speeds lower than other customers and further reduction if using >50GB/month", "hotspot": "无限量但【全程 3G】，无高速额度。Open Internet 政策给出的数字是最高 600 kbps", "video": "SD", "intl": "基础国际功能", "prepay": "月付后付费，需查信用（Credit approval & deposit may be required）", "autopay": "$30 需 AutoPay（要求银行账户或借记卡，信用卡不算）；牌价 $35", "cond": "需在 45 天内完成学籍验证，并按要求复验", "promo_terms": "非限时促销，是学籍资格价。掉验证会被加价至多 $20/线/月。线上下单每次最多 2 台设备。", "notes": "OSU 在读就能用。换算到手价约 $42，仍是 T-Mobile 网络里最便宜的后付费入口。", "url": "https://www.t-mobile.com/cell-phone-plans/student-discounts", "chips": [{"t": "学生价", "k": "good"}, {"t": "热点仅 3G", "k": "bad"}, {"t": "拥堵常态劣后", "k": "warn"}]}, {"id": "tmo-pp-unl", "brand": "T-Mobile", "brand_short": "TMO", "net": "T-Mobile", "name": "Prepaid Unlimited Monthly", "adv": 45, "promo": null, "tax_inc": false, "fee": 0.0, "oneline": "不查信用、不需 SSN，且没有 $4.49 附加费——纯资费上比 Essentials Saver 更划算", "data": "无限数据", "depri": "见官网", "hotspot": "见官网", "video": "见官网", "intl": "见官网", "prepay": "月付预付费，不查信用", "autopay": "$45 需 AutoPay；牌价 $50（也是首月价）", "cond": "需自带兼容手机或购机", "promo_terms": "", "notes": "Broadband Facts 显示预付费 Provider Monthly Fees 已包含在月费内，只有政府税另计——所以它没有后付费那 $4.49 的 Regulatory & Telco Recovery Fee。", "url": "https://prepaid.t-mobile.com/prepaid-plans", "chips": [{"t": "不查信用", "k": "good"}, {"t": "无 $4.49 附加费", "k": "good"}]}, {"id": "tmo-saver", "brand": "T-Mobile", "brand_short": "TMO", "net": "T-Mobile", "name": "Essentials Saver 2.0", "adv": 50, "promo": null, "tax_inc": false, "fee": 4.49, "oneline": "普通人能拿到的最便宜 T-Mobile 后付费档", "data": "无限 5G/4G LTE，其中 50GB 为 premium 优先数据", "depri": "仅降优先级，且 Essentials 常态低于 Experience 用户；超 50GB 再降一档", "hotspot": "无限量但全程 3G（最高 600 kbps）", "video": "SD", "intl": "基础国际功能", "prepay": "月付后付费，需查信用", "autopay": "$50 需 AutoPay（银行账户或借记卡，信用卡不算）；牌价 $55", "cond": "支持 BYOD", "promo_terms": "", "notes": "原表用的 $55 是【未含 AutoPay】的 Broadband Facts 价，而同表 Verizon 用的是含 AutoPay 的 $45——口径不一致。", "url": "https://www.t-mobile.com/cell-phone-plans", "chips": [{"t": "热点仅 3G", "k": "bad"}, {"t": "拥堵常态劣后", "k": "warn"}]}, {"id": "tmo-stu-more", "brand": "T-Mobile", "brand_short": "TMO", "net": "T-Mobile", "name": "Experience More + 学生优惠 2.0", "adv": 65, "promo": null, "tax_inc": false, "fee": 4.49, "oneline": "学生价中档：无限优先数据 + 60GB 热点 + 中国漫游 5GB", "data": "无限 premium 优先数据（官网未给具体降级阈值）", "depri": "官网未给 Experience More 的具体阈值。Open Internet 通则把 Heavy Data User 定义为「一般 50GB 或 100GB」", "hotspot": "60GB 高速，之后最高 3G（600 kbps）", "video": "见官网", "intl": "中国漫游含 5GB 高速——对经常回国的人实用", "prepay": "月付后付费，需查信用", "autopay": "$65 需 AutoPay；牌价 $70", "cond": "需学籍验证", "promo_terms": "", "notes": "含 Netflix 带广告版 + Apple TV $3/月，折算下来能抵掉一部分与 Essentials Saver 学生价的差额。", "url": "https://www.t-mobile.com/cell-phone-plans/student-discounts", "chips": [{"t": "学生价", "k": "good"}, {"t": "60GB 热点", "k": "good"}]}, {"id": "tmo-stu-beyond", "brand": "T-Mobile", "brand_short": "TMO", "net": "T-Mobile", "name": "Experience Beyond + 学生优惠 2.0", "adv": 80, "promo": null, "tax_inc": false, "fee": 4.49, "oneline": "学生价顶配：250GB 热点 + 中国漫游 15GB + 卫星短信", "data": "无限 premium 优先数据", "depri": "官网未给具体阈值", "hotspot": "无限量，其中 250GB 为高速（注意：卡面脚注里的 250GB 指的是热点额度，不是数据阈值）", "video": "见官网", "intl": "中国漫游 15GB 高速；T-Satellite 可在无信号野外发短信", "prepay": "月付后付费，需查信用", "autopay": "$80 需 AutoPay；牌价 $85", "cond": "需学籍验证", "promo_terms": "", "notes": "比普通 Experience Beyond 便宜 $20/月。经常回国的话这档的国际额度是全表最强之一。", "url": "https://www.t-mobile.com/cell-phone-plans/student-discounts", "chips": [{"t": "学生价", "k": "good"}, {"t": "250GB 热点", "k": "good"}]}, {"id": "tmo-more", "brand": "T-Mobile", "brand_short": "TMO", "net": "T-Mobile", "name": "Experience More 2.0", "adv": 85, "promo": null, "tax_inc": false, "fee": 4.49, "oneline": "普通消费者主力中档", "data": "无限 premium 优先数据", "depri": "官网未给具体阈值", "hotspot": "60GB 高速，之后 3G", "video": "见官网", "intl": "中国漫游 5GB 高速", "prepay": "月付后付费，需查信用", "autopay": "$85 需 AutoPay；牌价 $90", "cond": "支持 BYOD", "promo_terms": "", "notes": "有学籍就别买这档——学生价同档只要 $65。", "url": "https://www.t-mobile.com/cell-phone-plans", "chips": [{"t": "60GB 热点", "k": "good"}]}, {"id": "tmo-beyond", "brand": "T-Mobile", "brand_short": "TMO", "net": "T-Mobile", "name": "Experience Beyond 2.0", "adv": 100, "promo": null, "tax_inc": false, "fee": 4.49, "oneline": "普通消费者顶配", "data": "无限 premium 优先数据", "depri": "官网未给具体阈值", "hotspot": "无限量，其中 250GB 高速", "video": "见官网", "intl": "中国漫游 15GB", "prepay": "月付后付费，需查信用", "autopay": "$100 需 AutoPay；牌价 $105", "cond": "支持 BYOD", "promo_terms": "", "notes": "有学籍就别买这档——学生价同档只要 $80。", "url": "https://www.t-mobile.com/cell-phone-plans", "chips": [{"t": "250GB 热点", "k": "good"}]}, {"id": "usm-flex", "brand": "US Mobile", "brand_short": "USM", "net": "三网可选", "name": "Unlimited Flex（仅年付 $210）", "adv": 17.5, "promo": null, "tax_inc": true, "fee": 0.0, "oneline": "仅提供年付，官方标注 ANNUAL PLAN ONLY", "data": "见官网各网络差异", "depri": "随所选网络变化", "hotspot": "见官网", "video": "随网络/套餐变化", "intl": "见官网", "prepay": "仅年付 $210 一次性付清", "autopay": "无 AutoPay 折扣", "cond": "需解锁兼容手机；可在三网间选择", "promo_terms": "", "notes": "Broadband Facts 标注 $17.50/mo、not introductory——这是常态价不是促销。", "url": "https://www.usmobile.com/plans", "chips": [{"t": "仅年付", "k": "warn"}]}, {"id": "usm-starter", "brand": "US Mobile", "brand_short": "USM", "net": "三网可选", "name": "Unlimited Starter", "adv": 25, "promo": 16.58, "tax_inc": true, "fee": 0.0, "oneline": "三网可选、税费全含的主力档；促销首年 $199 但档期只到 8/18", "data": "【按网络差异极大】Dark Star 上是真·不限速无限高速；Warp 与 Light Speed 上是 70GB 高速数据，之后降速", "depri": "是明确降速到阈值后，不是仅拥堵降优先级。官方 /plans 页：you may experience slower speeds after 70 GB（适用 Warp / Light Speed）。两点必须补：①「Dark Star 无限高速」是【流量不设阈值】，不等于不被拥堵劣后——官方对 Dark Star 只承诺 High Speed Data；②【降速后的具体速率官网完全没有公布】，任何写死的数字都是编造。", "hotspot": "按网络差异：Dark Star 20GB、Warp 与 Light Speed 10GB。官方两处自相矛盾——帮助页写 10GB，/plans 页写 20 GB hotspot on Dark Star。本页取 20GB 是【按 Dark Star 口径】。【超过热点额度后的速度：官网四处均未找到】", "video": "随所选网络/套餐变化，官网未给统一数值", "intl": "年付 Starter 含 1GB 国际漫游数据、200 分钟通话和 250 条短信", "prepay": "月付 $25，或年付 $270（$22.50/月）", "autopay": "无独立 AutoPay 折扣——年付预付是本品牌唯一的价格杠杆", "cond": "需解锁兼容手机", "promo_terms": "$199 首年 = $16.58/月。官方 promo-archive：档期 2026-08-12 至 2026-08-18。限制：必须一次性年付、【仅限新线】、Renews at full price（第二年跳 $270）。", "notes": "原表把 $16.58 填进「促销价」列与别家月付促销并列，是不可比的——那是年付摊算，且只管第一年。", "url": "https://www.usmobile.com/plans", "chips": [{"t": "三网可选", "k": "good"}, {"t": "促销 8/18 截止", "k": "warn"}]}, {"id": "usm-prem", "brand": "US Mobile", "brand_short": "USM", "net": "三网可选", "name": "Unlimited Premium", "adv": 32.5, "promo": 24.9, "tax_inc": true, "fee": 0.0, "oneline": "US Mobile 顶配，官方称无限优先数据", "data": "官方称无限优先数据", "depri": "Premium 官方称无限优先级数据", "hotspot": "见官网", "video": "随网络变化", "intl": "见官网", "prepay": "年付 $390（$32.50/月）；促销 $299 首年（$24.90/月）", "autopay": "无独立 AutoPay 折扣，但 AutoPay 是学生折扣与 Perk 返现的必要条件", "cond": "需解锁兼容手机", "promo_terms": "$299 首年 = $24.90/月，同为 2026-08-12 至 2026-08-18 档期，仅限新线，续年回全价。", "notes": "3 条以上 Premium 月付线可送 1 个 perk（最高价值 $15/月）——这是 US Mobile 唯一的多线好处。官方另有学生折扣页，需 AutoPay。", "url": "https://www.usmobile.com/plans", "chips": [{"t": "三网可选", "k": "good"}, {"t": "无限优先", "k": "good"}]}, {"id": "met-25", "brand": "Metro", "brand_short": "MET", "net": "T-Mobile", "name": "$25 BYOD 档", "adv": 25, "promo": null, "tax_inc": true, "fee": 0.0, "oneline": "T-Mobile 网络 + 税费全含 + 5 年锁价的最低入口，自带手机专属", "data": "无限流量", "depri": "见官网", "hotspot": "本档不含（$30 档起含 10GB）", "video": "见官网", "intl": "基础国际功能；加装包 $5/月 墨加、$10/月 Global Voice（210+ 国）", "prepay": "月付预付费，不查信用", "autopay": "$25 为 AutoPay 价，首月 $30", "cond": "需自带兼容解锁手机（BYOD 网络专属价）", "promo_terms": "", "notes": "这是 $25 这一档里唯一跑 T-Mobile 网、且税费全含的选项——正好补上 Cricket（AT&T）、Total/Visible（Verizon）之外的第三张网。另有 6 个月无限套餐 $120 一次付清（$20/月，新客 BYOD，含税）。", "url": "https://www.metrobyt-mobile.com/phone-plans", "chips": [{"t": "税费全含", "k": "good"}, {"t": "5年锁价", "k": "good"}, {"t": "不含热点", "k": "warn"}]}, {"id": "met-30", "brand": "Metro", "brand_short": "MET", "net": "T-Mobile", "name": "$30 档（含 10GB 热点）", "adv": 30, "promo": null, "tax_inc": true, "fee": 0.0, "oneline": "加 $5 换 10GB 热点", "data": "无限流量", "depri": "见官网", "hotspot": "10GB", "video": "见官网", "intl": "基础国际功能", "prepay": "月付预付费", "autopay": "$30 为 AutoPay 价，首月 $35", "cond": "需自带兼容解锁手机", "promo_terms": "", "notes": "", "url": "https://www.metrobyt-mobile.com/phone-plans", "chips": [{"t": "税费全含", "k": "good"}]}, {"id": "met-35", "brand": "Metro", "brand_short": "MET", "net": "T-Mobile", "name": "$35 档（含墨加 + 10GB 热点）", "adv": 35, "promo": null, "tax_inc": true, "fee": 0.0, "oneline": "含墨西哥/加拿大 + 10GB 热点", "data": "无限流量", "depri": "见官网", "hotspot": "10GB", "video": "见官网", "intl": "含墨西哥与加拿大", "prepay": "月付预付费", "autopay": "$35 为 AutoPay 价，首月 $40", "cond": "需自带兼容解锁手机", "promo_terms": "", "notes": "", "url": "https://www.metrobyt-mobile.com/phone-plans", "chips": [{"t": "税费全含", "k": "good"}]}, {"id": "met-40", "brand": "Metro", "brand_short": "MET", "net": "T-Mobile", "name": "$40 Period（不需 AutoPay）", "adv": 40, "promo": null, "tax_inc": true, "fee": 0.0, "oneline": "唯一不要求 AutoPay 的档，$40 就是 $40", "data": "无限流量", "depri": "见官网", "hotspot": "见官网", "video": "见官网", "intl": "基础国际功能", "prepay": "月付预付费", "autopay": "【不需要 AutoPay】——这是它的卖点", "cond": "需自带兼容解锁手机", "promo_terms": "", "notes": "四线 $100（每线 $25，含税）是这家宣传的合租方案，但【只能到店办】。", "url": "https://www.metrobyt-mobile.com/deals/40period", "chips": [{"t": "税费全含", "k": "good"}, {"t": "无需 AutoPay", "k": "good"}]}, {"id": "met-60", "brand": "Metro", "brand_short": "MET", "net": "T-Mobile", "name": "$60 Unlimited Premium", "adv": 60, "promo": null, "tax_inc": true, "fee": 0.0, "oneline": "顶配，含 Amazon Prime", "data": "无限流量", "depri": "见官网", "hotspot": "见官网", "video": "见官网", "intl": "基础国际功能", "prepay": "月付预付费", "autopay": "$60 为 AutoPay 价，首月 $65", "cond": "需自带兼容解锁手机", "promo_terms": "", "notes": "官网对本档写「4 线省 20%」，即约 $48/线。", "url": "https://www.metrobyt-mobile.com/phone-plans", "chips": [{"t": "税费全含", "k": "good"}, {"t": "含 Amazon Prime", "k": "good"}]}, {"id": "mint-6", "brand": "Mint Mobile", "brand_short": "MNT", "net": "T-Mobile", "name": "6GB/月（12 个月预付）", "adv": 15, "promo": null, "tax_inc": false, "fee": 2.09, "oneline": "T-Mobile 网络小流量档，12 个月预付才是这个价", "data": "6GB 高速（原 5GB 档已升级）", "depri": "超额后降速，见官网", "hotspot": "含", "video": "SD / 约 480p", "intl": "有国际通话/短信选项", "prepay": "12 个月 $180 一次付清；6 个月档 $20/月；3 个月档 $25/月", "autopay": "无 AutoPay 折扣，需预先付款", "cond": "需兼容且已解锁手机", "promo_terms": "", "notes": "预付周期越短单价越贵——3 个月档比 12 个月档贵 $10/月。", "url": "https://www.mintmobile.com/plans/", "chips": [{"t": "需 12 个月预付", "k": "warn"}]}, {"id": "mint-17", "brand": "Mint Mobile", "brand_short": "MNT", "net": "T-Mobile", "name": "17GB/月（12 个月预付）", "adv": 20, "promo": 15, "tax_inc": false, "fee": 2.09, "oneline": "原 15GB 档已升级为 17GB", "data": "17GB 高速", "depri": "超额后降速", "hotspot": "含", "video": "SD / 约 480p", "intl": "有国际通话/短信选项", "prepay": "12 个月 $240；6 个月 $25/月；3 个月 $35/月", "autopay": "无", "cond": "需兼容且已解锁手机", "promo_terms": "新客首期任意档 $15/月，需一次性预付 $45(3月)/$90(6月)/$180(12月)。仅限初始周期，之后回全价。", "notes": "", "url": "https://www.mintmobile.com/plans/", "chips": [{"t": "需 12 个月预付", "k": "warn"}]}, {"id": "mint-23", "brand": "Mint Mobile", "brand_short": "MNT", "net": "T-Mobile", "name": "23GB/月（12 个月预付）", "adv": 25, "promo": 15, "tax_inc": false, "fee": 2.09, "oneline": "原 20GB 档已升级为 23GB", "data": "23GB 高速", "depri": "超额后降速", "hotspot": "含", "video": "SD / 约 480p", "intl": "有国际通话/短信选项", "prepay": "12 个月 $300；6 个月 $35/月；3 个月 $45/月", "autopay": "无", "cond": "需兼容且已解锁手机", "promo_terms": "新客首期 $15/月，仅限初始周期。", "notes": "", "url": "https://www.mintmobile.com/plans/", "chips": [{"t": "需 12 个月预付", "k": "warn"}]}, {"id": "mint-unl", "brand": "Mint Mobile", "brand_short": "MNT", "net": "T-Mobile", "name": "Unlimited（12 个月预付）", "adv": 30, "promo": 15, "tax_inc": false, "fee": 2.09, "oneline": "Mint 的无限档，税费另计这点常被忽略", "data": "无限，50GB 阈值", "depri": "超过 50GB 后，在网络繁忙时优先级低于其他流量", "hotspot": "20GB", "video": "SD / 约 480p", "intl": "有国际通话/短信选项；国际漫游不是它的强项", "prepay": "12 个月 $360；6 个月 $35/月；3 个月 $40/月", "autopay": "无 AutoPay 折扣，需预先付款", "cond": "需兼容且已解锁手机", "promo_terms": "新客首期 $15/月（一次性预付 $45/$90/$180）。仅限初始周期，续费回 $30/月。", "notes": "换算到手价约 $39，已经不比 Visible+ 的 $35 含税便宜——Mint 的低价光环有相当一部分来自「税费另计」这个口径差。", "url": "https://www.mintmobile.com/plans/", "chips": [{"t": "需 12 个月预付", "k": "warn"}]}]};</script>
+<script>
+(function(){
+"use strict";
+var MODE="landed";           // landed | adv
+var PROMO=false;             // 是否用促销价
+var RANGE=6;                 // 同价位带宽 ±$
+var openBrand=null;
+
+function money(v){ return v==null?"—":("$"+(Math.round(v*100)/100).toFixed(2).replace(/\.00$/,"")); }
+function netClass(n){ return n==="Verizon"?"vz":(n==="AT&T"?"att":(n==="T-Mobile"?"tmo":"multi")); }
+
+// 取一个套餐在当前口径下的比较价
+function px(p){
+  var base = (PROMO && p.promo!=null) ? p.promo : p.adv;
+  if(base==null) return null;
+  if(MODE==="adv") return base;
+  if(p.tax_inc) return base;                       // 已含税：广告价即到手价
+  return base*(1+DATA.tax.combined/100) + (p.fee||0) + DATA.tax.ng911;
+}
+function priceNote(p){
+  if(MODE==="adv") return p.tax_inc?"广告价·已含税":"广告价·税费另计";
+  return p.tax_inc?"到手价 = 广告价（已含税费）":"到手价（含税+每线固定费）";
+}
+
+/* ─── 价格轴 ─── */
+var AX_MIN=0, AX_MAX=120;
+function buildAxis(){
+  var host=document.getElementById("axis"); if(!host) return;
+  var groups={};
+  DATA.plans.forEach(function(p){ var v=px(p); if(v==null) return;
+    (groups[p.net]=groups[p.net]||[]).push({p:p,v:v}); });
+  var order=["Verizon","AT&T","T-Mobile"];
+  Object.keys(groups).forEach(function(n){ if(order.indexOf(n)<0) order.push(n); });
+  order=order.filter(function(n){ return groups[n] && groups[n].length; });
+  var maxv=0; DATA.plans.forEach(function(p){var v=px(p); if(v!=null&&v>maxv)maxv=v;});
+  AX_MAX=Math.ceil((maxv+10)/10)*10;   // 右侧留白，避免末端标签被切
+  var h='<div class="axis-inner"><div id="band" class="band" style="display:none"></div>';
+  var TRACK_W=1000, LANE_H=26;   // 与 CSS min-width 对应
+  order.forEach(function(net){
+    var arr=(groups[net]||[]).sort(function(a,b){return a.v-b.v;});
+    // 泳道排布：每个点估算像素宽度，放进第一条不碰撞的泳道
+    var lanes=[];
+    arr.forEach(function(o){
+      var label=o.p.brand_short+' '+money(o.v);
+      var wpx=label.length*6.6+18;                       // 估算标签像素宽
+      var xpx=(o.v-AX_MIN)/(AX_MAX-AX_MIN)*TRACK_W;
+      var L=xpx-wpx/2, R=xpx+wpx/2;
+      var li=0;
+      while(lanes[li] && lanes[li].some(function(u){return !(R<u.L-4 || L>u.R+4);})) li++;
+      if(!lanes[li]) lanes[li]=[];
+      lanes[li].push({L:L,R:R,o:o,x:xpx,label:label});
+    });
+    var nl=Math.max(1,lanes.length);
+    h+='<div class="axis-row" style="grid-template-rows:auto"><div class="axis-lab">'+net
+      +'<br><span style="color:var(--ink3);font-weight:400">'+arr.length+' 档</span></div>'
+      +'<div class="axis-track" style="height:'+(nl*LANE_H+8)+'px">';
+    lanes.forEach(function(lane,li){
+      lane.forEach(function(u){
+        h+='<button class="dot '+netClass(net)+'" data-id="'+u.o.p.id+'" '
+          +'style="left:'+(u.x/TRACK_W*100).toFixed(3)+'%;top:'+(li*LANE_H+LANE_H/2+4)+'px" '
+          +'title="'+u.o.p.brand+' '+u.o.p.name+' — '+money(u.o.v)+'">'+u.label+'</button>';
+      });
+    });
+    h+='</div></div>';
+  });
+  h+='<div class="axis-scale"><div></div><div class="axis-ticks">';
+  for(var t=0;t<=AX_MAX;t+=10){ h+='<span class="tick" style="left:'+((t-AX_MIN)/(AX_MAX-AX_MIN)*100).toFixed(2)+'%">$'+t+'</span>'; }
+  h+='</div></div></div>';
+  host.innerHTML=h;
+  host.querySelectorAll(".dot").forEach(function(d){
+    d.addEventListener("click",function(){ jumpTo(d.dataset.id); });
+  });
+}
+function highlightBand(v){
+  var b=document.getElementById("band"); if(!b) return;
+  var lo=(v-RANGE-AX_MIN)/(AX_MAX-AX_MIN)*100, hi=(v+RANGE-AX_MIN)/(AX_MAX-AX_MIN)*100;
+  b.style.display="block"; b.style.left=Math.max(0,lo)+"%"; b.style.width=Math.max(0,Math.min(100,hi)-Math.max(0,lo))+"%";
+}
+
+/* ─── 同价位对手 ─── */
+function rivalsHTML(p){
+  var v=px(p); if(v==null) return '<div class="empty">该套餐无可比价格。</div>';
+  var list=DATA.plans.filter(function(q){ var w=px(q); return w!=null && Math.abs(w-v)<=RANGE; })
+    .map(function(q){ return {q:q,w:px(q)}; })
+    .sort(function(a,b){ return a.w-b.w; });
+  if(list.length<=1) return '<div class="empty">在 ±'+money(RANGE)+' 区间内，没有其他品牌的套餐——这个价位它独一档。</div>';
+  var h="";
+  list.forEach(function(o){
+    var self=o.q.id===p.id, d=o.w-v;
+    var dc = Math.abs(d)<0.5?"d-eq":(d>0?"d-up":"d-dn");
+    var ds = Math.abs(d)<0.5?"同价":(d>0?"+"+money(d):"−"+money(-d));
+    h+='<div class="rival'+(self?" self":"")+'">'
+      +'<span class="tag '+netClass(o.q.net)+'">'+o.q.net+'</span>'
+      +'<span style="min-width:0"><span class="rb">'+o.q.brand+'</span> · '+o.q.name
+      +(self?' <span class="tag" style="border-color:var(--accent);color:var(--accent)">当前</span>':'')
+      +'<span class="rd">'+o.q.oneline+'</span></span>'
+      +'<span class="rp">'+money(o.w)+'<span class="delta '+dc+'">'+ds+'</span></span></div>';
+  });
+  return h;
+}
+
+/* ─── 渲染 ─── */
+function planHTML(p){
+  var v=px(p), showPromo = PROMO && p.promo!=null;
+  return '<article class="plan" id="plan-'+p.id+'" data-id="'+p.id+'">'
+   +'<div class="plan-main">'
+     +'<div><div class="plan-name">'+p.name+'</div>'
+       +'<div class="muted">'+p.oneline+'</div>'
+       +'<div class="plan-chips">'
+         +'<span class="tag '+netClass(p.net)+'">'+p.net+'</span>'
+         +'<span class="tag '+(p.tax_inc?"good":"warn")+'">'+(p.tax_inc?"税费已含":"税费另计")+'</span>'
+         +(p.chips||[]).map(function(c){return '<span class="tag'+(c.k?" "+c.k:"")+'">'+c.t+'</span>';}).join("")
+       +'</div></div>'
+     +'<div class="price-box"><div class="price'+(showPromo?" promo":"")+'"><span class="cur">$</span>'
+        +(v==null?"—":(Math.round(v*100)/100).toFixed(2).replace(/\.00$/,"").replace(/^\$/,""))+'</div>'
+        +(showPromo?'<div class="price-was">常规 '+money(MODE==="adv"?p.adv:(p.tax_inc?p.adv:p.adv*(1+DATA.tax.combined/100)+(p.fee||0)+DATA.tax.ng911))+'</div>':'')
+        +'<div class="price-sub">'+priceNote(p)+'</div></div>'
+   +'</div>'
+   +'<div class="plan-body">'+specHTML(p)
+     +'<div class="rivals"><div class="rivals-h">同价位横向对比 <span class="rn">口径：'+(MODE==="landed"?"到手价":"广告价")+'，区间 ±'+money(RANGE)+'</span></div>'
+     +rivalsHTML(p)+'</div></div></article>';
+}
+function specHTML(p){
+  var rows=[["高速数据",p.data],["超额后",p.depri],["热点",p.hotspot],["视频",p.video],
+            ["国际",p.intl],["付款",p.prepay],["AutoPay",p.autopay],["条件",p.cond],
+            ["促销",p.promo_terms],["备注",p.notes]];
+  var h='<dl class="spec">';
+  rows.forEach(function(r){ if(r[1]) h+='<dt>'+r[0]+'</dt><dd>'+r[1]+'</dd>'; });
+  h+='</dl>';
+  if(p.url) h+='<div class="muted" style="margin-top:9px">出处：<a href="'+p.url+'" target="_blank" rel="noopener">'+p.url+'</a></div>';
+  return h;
+}
+function renderBrands(){
+  var g=document.getElementById("brandgrid"), h="";
+  DATA.brands.forEach(function(b){
+    var ps=DATA.plans.filter(function(p){return p.brand===b.name;});
+    var vals=ps.map(px).filter(function(x){return x!=null;});
+    var lo=vals.length?Math.min.apply(null,vals):null, hi=vals.length?Math.max.apply(null,vals):null;
+    h+='<button class="brandbtn" data-brand="'+b.name+'" aria-expanded="false">'
+      +'<span class="bn">'+b.name+'</span>'
+      +'<span class="bm">'+b.net+' · '+ps.length+' 档<br>'+(lo!=null?money(lo)+" – "+money(hi):"—")+'</span></button>';
+  });
+  g.innerHTML=h;
+  g.querySelectorAll(".brandbtn").forEach(function(btn){
+    btn.addEventListener("click",function(){ toggleBrand(btn.dataset.brand); });
+  });
+}
+function toggleBrand(name){
+  var p=document.getElementById("panel");
+  if(openBrand===name){ openBrand=null; p.className="panel"; p.innerHTML=""; syncBrandBtns(); return; }
+  openBrand=name; syncBrandBtns();
+  var b=DATA.brands.filter(function(x){return x.name===name;})[0];
+  var ps=DATA.plans.filter(function(x){return x.brand===name;})
+    .sort(function(a,c){ var x=px(a),y=px(c); return (x==null?1e9:x)-(y==null?1e9:y); });
+  p.className="panel open";
+  p.innerHTML='<div class="panel-head"><h3>'+b.name+'</h3><div class="pm">'+b.blurb+'</div></div>'
+    +(b.gotchas&&b.gotchas.length?'<div class="warnbox"><b>这家的坑：</b> '+b.gotchas.join(' <b>·</b> ')+'</div>':'')
+    +ps.map(planHTML).join("");
+  bindPlans(p);
+  p.scrollIntoView({behavior:"smooth",block:"nearest"});
+}
+function syncBrandBtns(){
+  document.querySelectorAll(".brandbtn").forEach(function(b){
+    b.setAttribute("aria-expanded", b.dataset.brand===openBrand ? "true":"false"); });
+}
+function bindPlans(root){
+  root.querySelectorAll(".plan-main").forEach(function(m){
+    m.addEventListener("click",function(){
+      var a=m.closest(".plan"), was=a.classList.contains("open");
+      root.querySelectorAll(".plan.open").forEach(function(o){o.classList.remove("open");});
+      if(!was){ a.classList.add("open");
+        var p=DATA.plans.filter(function(x){return x.id===a.dataset.id;})[0];
+        var v=px(p); if(v!=null) highlightBand(v);
+        document.querySelectorAll(".dot").forEach(function(d){ d.classList.toggle("on", d.dataset.id===a.dataset.id); });
+      } else { var b=document.getElementById("band"); if(b)b.style.display="none";
+        document.querySelectorAll(".dot.on").forEach(function(d){d.classList.remove("on");}); }
+    });
+  });
+}
+function jumpTo(id){
+  var p=DATA.plans.filter(function(x){return x.id===id;})[0]; if(!p) return;
+  if(openBrand!==p.brand) toggleBrand(p.brand);
+  setTimeout(function(){
+    var el=document.getElementById("plan-"+id); if(!el) return;
+    document.querySelectorAll(".plan.open").forEach(function(o){o.classList.remove("open");});
+    el.classList.add("open");
+    var v=px(p); if(v!=null) highlightBand(v);
+    document.querySelectorAll(".dot").forEach(function(d){ d.classList.toggle("on", d.dataset.id===id); });
+    el.scrollIntoView({behavior:"smooth",block:"center"});
+  },60);
+}
+function rerender(){
+  buildAxis(); renderBrands();
+  var keep=openBrand; openBrand=null; if(keep) toggleBrand(keep);
+  document.querySelectorAll("[data-lp]").forEach(function(el){
+    var p=DATA.plans.filter(function(x){return x.id===el.dataset.lp;})[0];
+    if(p){ var v=px(p); el.textContent = v==null?"—":money(v); }
+  });
+}
+
+/* ─── 开关绑定 ─── */
+function initControls(){
+  document.querySelectorAll("[data-mode]").forEach(function(b){
+    b.addEventListener("click",function(){
+      MODE=b.dataset.mode;
+      document.querySelectorAll("[data-mode]").forEach(function(x){x.setAttribute("aria-pressed", x===b?"true":"false");});
+      rerender();
+    });
+  });
+  document.querySelectorAll("[data-promo]").forEach(function(b){
+    b.addEventListener("click",function(){
+      PROMO = b.dataset.promo==="1";
+      document.querySelectorAll("[data-promo]").forEach(function(x){x.setAttribute("aria-pressed", x===b?"true":"false");});
+      rerender();
+    });
+  });
+  document.querySelectorAll("[data-range]").forEach(function(b){
+    b.addEventListener("click",function(){
+      RANGE=+b.dataset.range;
+      document.querySelectorAll("[data-range]").forEach(function(x){x.setAttribute("aria-pressed", x===b?"true":"false");});
+      rerender();
+    });
+  });
+}
+/* ─── TOC ─── */
+function initTOC(){
+  var secs=[].slice.call(document.querySelectorAll("section[id]"));
+  var links=[].slice.call(document.querySelectorAll("nav.toc a"));
+  if(!("IntersectionObserver" in window)) return;
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){
+      links.forEach(function(l){ l.classList.toggle("active", l.getAttribute("href")==="#"+e.target.id); }); } });
+  },{rootMargin:"-15% 0px -75% 0px"});
+  secs.forEach(function(s){io.observe(s);});
+}
+document.addEventListener("DOMContentLoaded",function(){
+  initControls(); rerender(); initTOC();
+});
+})();
+</script>
+</body></html>
