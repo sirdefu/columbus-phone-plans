@@ -1,7 +1,7 @@
 {
  "att": {
   "brand": "AT&T",
-  "checked": "2026-08-15 03:24 UTC",
+  "checked": "2026-08-17 13:41 UTC",
   "count": 5,
   "note": "后付费头图价（分档价是客户端渲染的，抓不到，靠下面那条补）",
   "snippets": [
@@ -15,7 +15,7 @@
  },
  "att_bap": {
   "brand": "AT&T",
-  "checked": "2026-08-15 03:24 UTC",
+  "checked": "2026-08-17 13:41 UTC",
   "count": 2,
   "note": "Build-A-Plan 头图价",
   "snippets": [
@@ -26,7 +26,7 @@
  },
  "att_bap_spec": {
   "brand": "AT&T",
-  "checked": "2026-08-15 03:24 UTC",
+  "checked": "2026-08-17 13:41 UTC",
   "count": 89,
   "note": "Build-A-Plan 完整价目矩阵（$15 基础 + 各数据/热点档）",
   "snippets": [
@@ -124,7 +124,7 @@
  },
  "att_prepaid": {
   "brand": "AT&T",
-  "checked": "2026-08-15 03:24 UTC",
+  "checked": "2026-08-17 13:41 UTC",
   "count": 4,
   "note": "预付费 $240 年付 / $20 月等效 / Level Up",
   "snippets": [
@@ -137,7 +137,7 @@
  },
  "cricket": {
   "brand": "Cricket",
-  "checked": "2026-08-15 03:24 UTC",
+  "checked": "2026-08-17 13:41 UTC",
   "count": 16,
   "note": "四档无限 + Sensible、AutoPay 价",
   "snippets": [
@@ -162,7 +162,7 @@
  },
  "cricket_multi": {
   "brand": "Cricket",
-  "checked": "2026-08-15 03:24 UTC",
+  "checked": "2026-08-17 13:41 UTC",
   "count": 61,
   "note": "12 个月 $300 年付档是否还在",
   "snippets": [
@@ -232,7 +232,7 @@
  },
  "googlefi": {
   "brand": "Google Fi",
-  "checked": "2026-08-15 03:24 UTC",
+  "checked": "2026-08-17 13:41 UTC",
   "count": 53,
   "note": "三档无限 + 自带 Pixel 五折促销截止日",
   "snippets": [
@@ -294,7 +294,7 @@
  },
  "metro": {
   "brand": "Metro",
-  "checked": "2026-08-15 03:24 UTC",
+  "checked": "2026-08-17 13:41 UTC",
   "count": 102,
   "note": "$25/$30/$35/$40/$60 档、税费全含声明",
   "snippets": [
@@ -408,7 +408,7 @@
   "checked": "2026-08-15 03:24 UTC",
   "count": 50,
   "last_error": "HTTP 403",
-  "last_error_at": "2026-08-15 03:24 UTC",
+  "last_error_at": "2026-08-17 13:41 UTC",
   "note": "四档 3/6/12 个月价、$15 促销（预期 403）",
   "snippets": [
    "$ 15 /mo",
@@ -466,7 +466,7 @@
  },
  "tmobile": {
   "brand": "T-Mobile",
-  "checked": "2026-08-15 03:24 UTC",
+  "checked": "2026-08-17 13:41 UTC",
   "count": 107,
   "note": "Essentials/Experience 各档、$4.49 恢复费",
   "snippets": [
@@ -582,7 +582,7 @@
  },
  "tmobile_stu": {
   "brand": "T-Mobile",
-  "checked": "2026-08-15 03:24 UTC",
+  "checked": "2026-08-17 13:41 UTC",
   "count": 80,
   "note": "学生档 $35/$30 是否仍在",
   "snippets": [
@@ -671,7 +671,7 @@
  },
  "tmobile_switch": {
   "brand": "T-Mobile",
-  "checked": "2026-08-15 03:24 UTC",
+  "checked": "2026-08-17 13:41 UTC",
   "count": 39,
   "note": "Essentials Saver $50 AutoPay 价、$35 设备接入费",
   "snippets": [
@@ -719,7 +719,7 @@
  },
  "total": {
   "brand": "Total Wireless",
-  "checked": "2026-08-15 03:24 UTC",
+  "checked": "2026-08-17 13:41 UTC",
   "count": 25,
   "note": "MAX 5G BYO $25/$20、四档价、5 年锁价",
   "snippets": [
@@ -753,7 +753,7 @@
  },
  "total_byop": {
   "brand": "Total Wireless",
-  "checked": "2026-08-15 03:24 UTC",
+  "checked": "2026-08-17 13:41 UTC",
   "count": 5,
   "note": "BYO 专属价与条件",
   "snippets": [
@@ -767,7 +767,7 @@
  },
  "usmobile": {
   "brand": "US Mobile",
-  "checked": "2026-08-15 03:24 UTC",
+  "checked": "2026-08-17 13:41 UTC",
   "count": 19,
   "note": "Starter/Flex/Premium 年付价、促销档期（预期 403）",
   "snippets": [
@@ -795,7 +795,7 @@
  },
  "verizon": {
   "brand": "Verizon",
-  "checked": "2026-08-15 03:24 UTC",
+  "checked": "2026-08-17 13:41 UTC",
   "count": 23,
   "note": "Simplicity $55/$45/$30",
   "snippets": [
@@ -827,7 +827,7 @@
  },
  "verizon_pre": {
   "brand": "Verizon",
-  "checked": "2026-08-15 03:24 UTC",
+  "checked": "2026-08-17 13:41 UTC",
   "count": 70,
   "note": "预付费各档与忠诚度折扣",
   "snippets": [
@@ -906,7 +906,7 @@
  },
  "visible": {
   "brand": "Visible",
-  "checked": "2026-08-15 03:24 UTC",
+  "checked": "2026-08-17 13:41 UTC",
   "count": 112,
   "note": "三档月费/年费、促销码、税费口径",
   "snippets": [
