@@ -1,7 +1,7 @@
 {
  "att": {
   "brand": "AT&T",
-  "checked": "2026-08-24 13:53 UTC",
+  "checked": "2026-08-31 19:25 UTC",
   "count": 5,
   "note": "后付费头图价（分档价是客户端渲染的，抓不到，靠下面那条补）",
   "snippets": [
@@ -15,7 +15,7 @@
  },
  "att_bap": {
   "brand": "AT&T",
-  "checked": "2026-08-24 13:53 UTC",
+  "checked": "2026-08-31 19:25 UTC",
   "count": 2,
   "note": "Build-A-Plan 头图价",
   "snippets": [
@@ -26,7 +26,7 @@
  },
  "att_bap_spec": {
   "brand": "AT&T",
-  "checked": "2026-08-24 13:53 UTC",
+  "checked": "2026-08-31 19:25 UTC",
   "count": 89,
   "note": "Build-A-Plan 完整价目矩阵（$15 基础 + 各数据/热点档）",
   "snippets": [
@@ -124,20 +124,23 @@
  },
  "att_prepaid": {
   "brand": "AT&T",
-  "checked": "2026-08-24 13:53 UTC",
-  "count": 4,
+  "checked": "2026-08-31 19:25 UTC",
+  "count": 7,
   "note": "预付费 $240 年付 / $20 月等效 / Level Up",
   "snippets": [
    "AT&T Level Up is a feature that lets you use your payment history to \"level up\" to a new phone on postpaid wireless with $0 down, regardless of your credit score.",
-   "Pay $240 today, get a year of unlimited talk, text, and data.",
+   "After 6 months, plan is $60/mo.",
+   "Get 12 months of unlimited for $20/mo.",
+   "Pay $240 today for a year of unlimited talk, text, and data.",
    "SIM or phone purchase, activation on new single line, and $240 prepayment.",
-   "Save all year Get 12 months of unlimited for $20/mo."
+   "Save $15/mo.",
+   "for 6 months Our best plan for $45/mo."
   ],
   "url": "https://www.att.com/prepaid/"
  },
  "cricket": {
   "brand": "Cricket",
-  "checked": "2026-08-24 13:53 UTC",
+  "checked": "2026-08-31 19:25 UTC",
   "count": 16,
   "note": "四档无限 + Sensible、AutoPay 价",
   "snippets": [
@@ -162,7 +165,7 @@
  },
  "cricket_multi": {
   "brand": "Cricket",
-  "checked": "2026-08-24 13:53 UTC",
+  "checked": "2026-08-31 19:25 UTC",
   "count": 61,
   "note": "12 个月 $300 年付档是否还在",
   "snippets": [
@@ -232,7 +235,7 @@
  },
  "googlefi": {
   "brand": "Google Fi",
-  "checked": "2026-08-24 13:53 UTC",
+  "checked": "2026-08-31 19:25 UTC",
   "count": 53,
   "note": "三档无限 + 自带 Pixel 五折促销截止日",
   "snippets": [
@@ -294,8 +297,8 @@
  },
  "metro": {
   "brand": "Metro",
-  "checked": "2026-08-24 13:53 UTC",
-  "count": 102,
+  "checked": "2026-08-31 19:25 UTC",
+  "count": 104,
   "note": "$25/$30/$35/$40/$60 档、税费全含声明",
   "snippets": [
    "$0",
@@ -376,7 +379,9 @@
    "Includes up to 8GB hotspot ($50/mo.",
    "Just switch to the $50/mo.",
    "Just switch to the $60/mo.",
+   "Metro by T-Mobile 's most affordable phone plan starts at $25/month with",
    "Metro by T-Mobile BYOD $25 UNL",
+   "Metro offers plans starting at $25/month with AutoPay , with taxes and fees included when you…",
    "Only available when you sign up for the $60/mo.",
    "Pay $120 today for six months of service (equivalent to $20/month ).",
    "Pay $50 for your first month of service.",
@@ -388,7 +393,7 @@
    "Watch & tablet lines for only $5/month when you bring a device",
    "With AutoPay and a Metro voice line (the first month is $50).",
    "Yes, some Metro prepaid plans include hotspot data, like 8GB on the $50/mo.",
-   "You will need to purchase a gateway device for $49.99.",
+   "You will need to purchase a gateway device for $9.99.",
    "and $60/mo.",
    "plan, 10GB on the $30/mo.",
    "plan, and 25GB on the $60/mo.",
@@ -408,7 +413,7 @@
   "checked": "2026-08-15 03:24 UTC",
   "count": 50,
   "last_error": "HTTP 403",
-  "last_error_at": "2026-08-24 13:53 UTC",
+  "last_error_at": "2026-08-31 19:25 UTC",
   "note": "四档 3/6/12 个月价、$15 促销（预期 403）",
   "snippets": [
    "$ 15 /mo",
@@ -466,7 +471,7 @@
  },
  "tmobile": {
   "brand": "T-Mobile",
-  "checked": "2026-08-24 13:53 UTC",
+  "checked": "2026-08-31 19:25 UTC",
   "count": 107,
   "note": "Essentials/Experience 各档、$4.49 恢复费",
   "snippets": [
@@ -582,8 +587,8 @@
  },
  "tmobile_stu": {
   "brand": "T-Mobile",
-  "checked": "2026-08-24 13:53 UTC",
-  "count": 78,
+  "checked": "2026-08-31 19:25 UTC",
+  "count": 80,
   "note": "学生档 $35/$30 是否仍在",
   "snippets": [
    "$0",
@@ -653,23 +658,25 @@
    "Switch to T-Mobile today and get 1 line on Essentials Saver with Student Savings 2.0 for $30/month, plus taxes and fees.",
    "Switch to T-Mobile today and get a plan with Student Perks starting at just $30/mo*.",
    "Up to $1,100 via bill credits, depending on finance agreement term; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.",
+   "Verify student enrollment status for account holder within 45 days, maintain student line, & re-verify annually; otherwise additional cost up to $20/line per month.",
    "Verify student enrollment status for account holder within 45 days, maintain student line, & re-verify when requested; otherwise additional cost up to $20/line per month.",
    "Watch & tablet lines just $5/month",
    "When you enroll in AutoPay using your debit card or bank account, you qualify for a $5 per line monthly discount up to $40, which begins in the next bill cycle after enrollment.",
    "With $20 in monthly bill credits.",
-   "Yes, you can save $20/month on 5G Home Internet",
+   "Yes, you can save $20/month on 5G Home Internet when bundling with a Student Per…",
    "lease purchase option) up to $800 paid by virtual prepaid MasterCard ( no cash access & exp…",
-   "when bundling with a Student Perks Savings voice plan — that’s $5/month more than T-Mobile ’s standard bundle discount — with the monthly price for internet locked for five years.",
    "…('TRF') (not a government required tax or charge) totaling $4.49 for Voice Lines and $2.10 for Mobile Internet lines ('MI…",
+   "…et when bundling with a Student Perks Savings plan — that’s $5/month more than T-Mobile ’s standard bundle discount — with…",
    "…ise plan becomes Experience More with additional cost up to $20/line per month.",
    "…required tax or charge) totaling $4.49 for Voice Lines and $2.10 for Mobile Internet lines ('MI') (subject to change with…",
-   "…se plan becomes Essentials Saver with additional cost up to $20/line per month."
+   "…se plan becomes Essentials Saver with additional cost up to $20/line per month.",
+   "…without the Student Savings discount costing an additional $20/month/line."
   ],
   "url": "https://www.t-mobile.com/cell-phone-plans/student-discounts"
  },
  "tmobile_switch": {
   "brand": "T-Mobile",
-  "checked": "2026-08-24 13:53 UTC",
+  "checked": "2026-08-31 19:25 UTC",
   "count": 39,
   "note": "Essentials Saver $50 AutoPay 价、$35 设备接入费",
   "snippets": [
@@ -717,8 +724,8 @@
  },
  "total": {
   "brand": "Total Wireless",
-  "checked": "2026-08-24 13:53 UTC",
-  "count": 25,
+  "checked": "2026-08-31 19:25 UTC",
+  "count": 24,
   "note": "MAX 5G BYO $25/$20、四档价、5 年锁价",
   "snippets": [
    "$10 international calling credit 3",
@@ -738,7 +745,6 @@
    "$85 /mo",
    "$90 /mo",
    "$95 /mo",
-   "Bring your phone for $20/mo",
    "Bundle to save $40/mo",
    "First month $30, then $20/mo after.",
    "If you have a phone plan, add a tablet plan from $10/mo",
@@ -751,7 +757,7 @@
  },
  "total_byop": {
   "brand": "Total Wireless",
-  "checked": "2026-08-24 13:53 UTC",
+  "checked": "2026-08-31 19:25 UTC",
   "count": 6,
   "note": "BYO 专属价与条件",
   "snippets": [
@@ -766,7 +772,7 @@
  },
  "usmobile": {
   "brand": "US Mobile",
-  "checked": "2026-08-24 13:53 UTC",
+  "checked": "2026-08-31 19:25 UTC",
   "count": 19,
   "note": "Starter/Flex/Premium 年付价、促销档期（预期 403）",
   "snippets": [
@@ -794,11 +800,10 @@
  },
  "verizon": {
   "brand": "Verizon",
-  "checked": "2026-08-24 13:53 UTC",
-  "count": 23,
+  "checked": "2026-08-31 19:25 UTC",
+  "count": 32,
   "note": "Simplicity $55/$45/$30",
   "snippets": [
-   "$16.97/mo",
    "$20/mo",
    "$23/mo",
    "$25/mo",
@@ -809,24 +814,34 @@
    "$35.95/mo",
    "$39.97/mo",
    "$45.98/mo",
+   "$6.98/mo perk savings based on the current $8.99/mo for",
    "$64.99/mo",
    "$73.99/mo",
    "$74.99/mo",
+   "$9.99/mo perk savings based on the",
+   "$9.99/mo perk savings based on the current $19.99/mo that Disney+, Hulu, ESPN+ (With Ads) Subscribers pay for the bundle less the cost of the Disney perk added to Simplicity Plan.",
    "After AutoPay and $15/mo switch discount.",
+   "Discounted calls to an additional 160+ countries from $0.05/min.",
+   "Netflix Standard with ads and $10.99/mo for HBO Max Basic with Ads plan less $13/mo perk added to",
+   "Premium Video Streaming available for $10/mo+ taxes per capable device enrolled.",
+   "Premium Video Streaming available for $10/mo+taxes & fees (where applicable) per capable device enrolled.",
    "Save $10.95/mo",
    "Save $10.98/mo",
    "Save $11.98/mo",
+   "Save $16.97/mo",
    "Save $20.98/mo",
    "Save $34.99/mo",
    "Save $44.99/mo",
    "Save $53.99/mo",
-   "With single line for $ 30 /mo, you have"
+   "Unlimited Hotspot available for $15/mo per line + taxes & fees (where applicable) per device enrolled.",
+   "With single line for $ 30 /mo, you have",
+   "current $19.99/mo that Disney+, Hulu, ESPN+ (With Ads) Subscribers pay for the bundle less the $10/mo"
   ],
   "url": "https://www.verizon.com/plans/unlimited/"
  },
  "verizon_pre": {
   "brand": "Verizon",
-  "checked": "2026-08-24 13:53 UTC",
+  "checked": "2026-08-31 19:25 UTC",
   "count": 70,
   "note": "预付费各档与忠诚度折扣",
   "snippets": [
@@ -905,7 +920,7 @@
  },
  "visible": {
   "brand": "Visible",
-  "checked": "2026-08-24 13:53 UTC",
+  "checked": "2026-08-31 19:25 UTC",
   "count": 112,
   "note": "三档月费/年费、促销码、税费口径",
   "snippets": [

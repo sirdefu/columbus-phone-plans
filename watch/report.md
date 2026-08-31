@@ -1,14 +1,14 @@
-# 资费变更检测 · 2026-08-24 13:53 UTC
+# 资费变更检测 · 2026-08-31 19:25 UTC
 
-**2 个页面的价格文本发生变化。** 下面是逐条 diff——先自己扫一眼判断是不是实质变动（很多是营销文案微调），确认重要再让 Claude 重跑完整分析并更新页面。
+**5 个页面的价格文本发生变化。** 下面是逐条 diff——先自己扫一眼判断是不是实质变动（很多是营销文案微调），确认重要再让 Claude 重跑完整分析并更新页面。
 
 
 ## 发生变化
 
-### Total Wireless — `total_byop`
+### Total Wireless — `total`
 
-盯的是：BYO 专属价与条件  
-<https://www.totalwireless.com/m/byop>
+盯的是：MAX 5G BYO $25/$20、四档价、5 年锁价  
+<https://www.totalwireless.com/m/plans/smartphone>
 
 
 **消失了 1 条：**
@@ -16,10 +16,22 @@
 - Bring your phone for $20/mo
 ```
 
-**新出现 2 条：**
+### Metro — `metro`
+
+盯的是：$25/$30/$35/$40/$60 档、税费全含声明  
+<https://www.metrobyt-mobile.com/phone-plans>
+
+
+**消失了 1 条：**
 ```diff
-+ $20 /mo
-+ First month $30.
+- You will need to purchase a gateway device for $49.99.
+```
+
+**新出现 3 条：**
+```diff
++ Metro by T-Mobile 's most affordable phone plan starts at $25/month with
++ Metro offers plans starting at $25/month with AutoPay , with taxes and fees included when you…
++ You will need to purchase a gateway device for $9.99.
 ```
 
 ### T-Mobile — `tmobile_stu`
@@ -28,24 +40,64 @@
 <https://www.t-mobile.com/cell-phone-plans/student-discounts>
 
 
-**消失了 7 条：**
+**消失了 2 条：**
 ```diff
-- Contact us before cancelling entire account to continue remaining bill credits, or credits stop & balance on required finance agreement is due (e.g., $599.99 – iPhone 17e 256GB).
-- Get Apple TV for just $3/mo.
-- Must have GOTO USB-C Wired Earbuds BLK, PG Liquid Glass w/ $300 warranty, and Nimble Champ 10K battery in cart to receive discount.
-- Plus tax & $35 device connection charge.
-- Qualifying credit and service ($60+/mo.
-- Save $70 on the college bundle.
-- Up to $630 via 24 or 36 monthly bill credits, depending on finance agreement term; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.
+- Yes, you can save $20/month on 5G Home Internet
+- when bundling with a Student Perks Savings voice plan — that’s $5/month more than T-Mobile ’s standard bundle discount — with the monthly price for internet locked for five years.
+```
+
+**新出现 4 条：**
+```diff
++ Verify student enrollment status for account holder within 45 days, maintain student line, & re-verify annually; otherwise additional cost up to $20/line per month.
++ Yes, you can save $20/month on 5G Home Internet when bundling with a Student Per…
++ …et when bundling with a Student Perks Savings plan — that’s $5/month more than T-Mobile ’s standard bundle discount — with…
++ …without the Student Savings discount costing an additional $20/month/line.
+```
+
+### AT&T — `att_prepaid`
+
+盯的是：预付费 $240 年付 / $20 月等效 / Level Up  
+<https://www.att.com/prepaid/>
+
+
+**消失了 2 条：**
+```diff
+- Pay $240 today, get a year of unlimited talk, text, and data.
+- Save all year Get 12 months of unlimited for $20/mo.
 ```
 
 **新出现 5 条：**
 ```diff
-+ $143/yr value
-+ Contact us before cancelling entire account to continue remaining bill credits, or credits stop & balance on required finance agreement is due (e.g., $1,099.99– Galaxy S26+ 256GB).
-+ For well-qualified customers; plus tax & $35 device connection charge.
-+ Qualifying credit and service ($85+/mo.
-+ Up to $1,100 via bill credits, depending on finance agreement term; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.
++ After 6 months, plan is $60/mo.
++ Get 12 months of unlimited for $20/mo.
++ Pay $240 today for a year of unlimited talk, text, and data.
++ Save $15/mo.
++ for 6 months Our best plan for $45/mo.
+```
+
+### Verizon — `verizon`
+
+盯的是：Simplicity $55/$45/$30  
+<https://www.verizon.com/plans/unlimited/>
+
+
+**消失了 1 条：**
+```diff
+- $16.97/mo
+```
+
+**新出现 10 条：**
+```diff
++ $6.98/mo perk savings based on the current $8.99/mo for
++ $9.99/mo perk savings based on the
++ $9.99/mo perk savings based on the current $19.99/mo that Disney+, Hulu, ESPN+ (With Ads) Subscribers pay for the bundle less the cost of the Disney perk added to Simplicity Plan.
++ Discounted calls to an additional 160+ countries from $0.05/min.
++ Netflix Standard with ads and $10.99/mo for HBO Max Basic with Ads plan less $13/mo perk added to
++ Premium Video Streaming available for $10/mo+ taxes per capable device enrolled.
++ Premium Video Streaming available for $10/mo+taxes & fees (where applicable) per capable device enrolled.
++ Save $16.97/mo
++ Unlimited Hotspot available for $15/mo per line + taxes & fees (where applicable) per device enrolled.
++ current $19.99/mo that Disney+, Hulu, ESPN+ (With Ads) Subscribers pay for the bundle less the $10/mo
 ```
 
 
@@ -60,9 +112,9 @@
 > 其余站点若连续多周无法核实，说明监控失效了，需要人工看一眼。
 
 
-## 无变化（15 个）
+## 无变化（12 个）
 
-Visible、Cricket、Cricket、Total Wireless、Metro、T-Mobile、T-Mobile、AT&T、AT&T、AT&T、AT&T、Verizon、Verizon、Google Fi、US Mobile
+Visible、Cricket、Cricket、Total Wireless、T-Mobile、T-Mobile、AT&T、AT&T、AT&T、Verizon、Google Fi、US Mobile
 
 
 ---
