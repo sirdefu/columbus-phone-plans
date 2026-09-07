@@ -1,20 +1,9 @@
-# 资费变更检测 · 2026-08-31 19:25 UTC
+# 资费变更检测 · 2026-09-07 18:09 UTC
 
 **5 个页面的价格文本发生变化。** 下面是逐条 diff——先自己扫一眼判断是不是实质变动（很多是营销文案微调），确认重要再让 Claude 重跑完整分析并更新页面。
 
 
 ## 发生变化
-
-### Total Wireless — `total`
-
-盯的是：MAX 5G BYO $25/$20、四档价、5 年锁价  
-<https://www.totalwireless.com/m/plans/smartphone>
-
-
-**消失了 1 条：**
-```diff
-- Bring your phone for $20/mo
-```
 
 ### Metro — `metro`
 
@@ -22,16 +11,40 @@
 <https://www.metrobyt-mobile.com/phone-plans>
 
 
-**消失了 1 条：**
+**消失了 2 条：**
 ```diff
-- You will need to purchase a gateway device for $49.99.
+- With AutoPay and a Metro voice line (the first month is $50).
+- You will need to purchase a gateway device for $9.99.
 ```
 
-**新出现 3 条：**
+**新出现 2 条：**
 ```diff
-+ Metro by T-Mobile 's most affordable phone plan starts at $25/month with
-+ Metro offers plans starting at $25/month with AutoPay , with taxes and fees included when you…
-+ You will need to purchase a gateway device for $9.99.
++ Metro customers adding 5G Home Internet to a new voice account can pay $50 the first month, then $45/mo.
++ You will need to purchase a gateway device for $4.99.
+```
+
+### T-Mobile — `tmobile`
+
+盯的是：Essentials/Experience 各档、$4.49 恢复费  
+<https://www.t-mobile.com/cell-phone-plans>
+
+
+**消失了 5 条：**
+```diff
+- Contact us before cancelling entire account to continue remaining bill credits, or credits stop & balance on required finance agreement is due (e.g., $309.99–moto g stylus 2026).
+- Grab the new moto g stylus for under $10.
+- Plus tax & $35 device connection charge.
+- Save $300 when you activate a new line on most plans.
+- Up to $300.99 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.
+```
+
+**新出现 5 条：**
+```diff
++ Qualifying credit, service ($85+/mo.
++ Save up to $800 when you trade-in an eligible device on an Experience More or Experience Beyond plan.
++ Up to $800 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.
++ plan w/AutoPay; plus taxes/fees) and trade-in (e.g., Save: $800: Samsung Galaxy S24; Save $550: Samsung Galaxy A54) required.
++ …stop & balance on required finance agreement is due (e.g., $799.99–Samsung Galaxy S26 FE 256GB).
 ```
 
 ### T-Mobile — `tmobile_stu`
@@ -40,39 +53,11 @@
 <https://www.t-mobile.com/cell-phone-plans/student-discounts>
 
 
-**消失了 2 条：**
+**新出现 3 条：**
 ```diff
-- Yes, you can save $20/month on 5G Home Internet
-- when bundling with a Student Perks Savings voice plan — that’s $5/month more than T-Mobile ’s standard bundle discount — with the monthly price for internet locked for five years.
-```
-
-**新出现 4 条：**
-```diff
-+ Verify student enrollment status for account holder within 45 days, maintain student line, & re-verify annually; otherwise additional cost up to $20/line per month.
-+ Yes, you can save $20/month on 5G Home Internet when bundling with a Student Per…
-+ …et when bundling with a Student Perks Savings plan — that’s $5/month more than T-Mobile ’s standard bundle discount — with…
-+ …without the Student Savings discount costing an additional $20/month/line.
-```
-
-### AT&T — `att_prepaid`
-
-盯的是：预付费 $240 年付 / $20 月等效 / Level Up  
-<https://www.att.com/prepaid/>
-
-
-**消失了 2 条：**
-```diff
-- Pay $240 today, get a year of unlimited talk, text, and data.
-- Save all year Get 12 months of unlimited for $20/mo.
-```
-
-**新出现 5 条：**
-```diff
-+ After 6 months, plan is $60/mo.
-+ Get 12 months of unlimited for $20/mo.
-+ Pay $240 today for a year of unlimited talk, text, and data.
-+ Save $15/mo.
-+ for 6 months Our best plan for $45/mo.
++ Get a $5 movie ticket every month–so you can catch the latest release without stretching your student budget.
++ Last year, T-Mobile offered over $900 in Tuesday savings with free stuff, weekly perks, and deals from brands students actually use, all in the T-Life app.
++ Take movie night off campus for only $5.
 ```
 
 ### Verizon — `verizon`
@@ -81,23 +66,30 @@
 <https://www.verizon.com/plans/unlimited/>
 
 
-**消失了 1 条：**
+**消失了 3 条：**
 ```diff
-- $16.97/mo
+- $31.98/mo
+- $35.95/mo
+- Save $10.95/mo
 ```
 
-**新出现 10 条：**
+**新出现 3 条：**
 ```diff
-+ $6.98/mo perk savings based on the current $8.99/mo for
-+ $9.99/mo perk savings based on the
-+ $9.99/mo perk savings based on the current $19.99/mo that Disney+, Hulu, ESPN+ (With Ads) Subscribers pay for the bundle less the cost of the Disney perk added to Simplicity Plan.
-+ Discounted calls to an additional 160+ countries from $0.05/min.
-+ Netflix Standard with ads and $10.99/mo for HBO Max Basic with Ads plan less $13/mo perk added to
-+ Premium Video Streaming available for $10/mo+ taxes per capable device enrolled.
-+ Premium Video Streaming available for $10/mo+taxes & fees (where applicable) per capable device enrolled.
-+ Save $16.97/mo
-+ Unlimited Hotspot available for $15/mo per line + taxes & fees (where applicable) per device enrolled.
-+ current $19.99/mo that Disney+, Hulu, ESPN+ (With Ads) Subscribers pay for the bundle less the $10/mo
++ $34.98/mo
++ $37.95/mo
++ Save $12.95/mo
+```
+
+### Verizon — `verizon_pre`
+
+盯的是：预付费各档与忠诚度折扣  
+<https://www.verizon.com/plans/prepaid/>
+
+
+**消失了 2 条：**
+```diff
+- Verizon Prepaid + Home discount $15/mo savings on Verizon Fios Home Internet plan or Frontier Fiber Internet services when combined with any eligible Verizon Prepaid phone plan.
+- save $15/mo on
 ```
 
 
@@ -114,7 +106,7 @@
 
 ## 无变化（12 个）
 
-Visible、Cricket、Cricket、Total Wireless、T-Mobile、T-Mobile、AT&T、AT&T、AT&T、Verizon、Google Fi、US Mobile
+Visible、Cricket、Cricket、Total Wireless、Total Wireless、T-Mobile、AT&T、AT&T、AT&T、AT&T、Google Fi、US Mobile
 
 
 ---

@@ -1,7 +1,7 @@
 {
  "att": {
   "brand": "AT&T",
-  "checked": "2026-08-31 19:25 UTC",
+  "checked": "2026-09-07 18:09 UTC",
   "count": 5,
   "note": "后付费头图价（分档价是客户端渲染的，抓不到，靠下面那条补）",
   "snippets": [
@@ -15,7 +15,7 @@
  },
  "att_bap": {
   "brand": "AT&T",
-  "checked": "2026-08-31 19:25 UTC",
+  "checked": "2026-09-07 18:09 UTC",
   "count": 2,
   "note": "Build-A-Plan 头图价",
   "snippets": [
@@ -26,7 +26,7 @@
  },
  "att_bap_spec": {
   "brand": "AT&T",
-  "checked": "2026-08-31 19:25 UTC",
+  "checked": "2026-09-07 18:09 UTC",
   "count": 89,
   "note": "Build-A-Plan 完整价目矩阵（$15 基础 + 各数据/热点档）",
   "snippets": [
@@ -124,7 +124,7 @@
  },
  "att_prepaid": {
   "brand": "AT&T",
-  "checked": "2026-08-31 19:25 UTC",
+  "checked": "2026-09-07 18:09 UTC",
   "count": 7,
   "note": "预付费 $240 年付 / $20 月等效 / Level Up",
   "snippets": [
@@ -140,7 +140,7 @@
  },
  "cricket": {
   "brand": "Cricket",
-  "checked": "2026-08-31 19:25 UTC",
+  "checked": "2026-09-07 18:09 UTC",
   "count": 16,
   "note": "四档无限 + Sensible、AutoPay 价",
   "snippets": [
@@ -165,7 +165,7 @@
  },
  "cricket_multi": {
   "brand": "Cricket",
-  "checked": "2026-08-31 19:25 UTC",
+  "checked": "2026-09-07 18:09 UTC",
   "count": 61,
   "note": "12 个月 $300 年付档是否还在",
   "snippets": [
@@ -235,7 +235,7 @@
  },
  "googlefi": {
   "brand": "Google Fi",
-  "checked": "2026-08-31 19:25 UTC",
+  "checked": "2026-09-07 18:09 UTC",
   "count": 53,
   "note": "三档无限 + 自带 Pixel 五折促销截止日",
   "snippets": [
@@ -297,7 +297,7 @@
  },
  "metro": {
   "brand": "Metro",
-  "checked": "2026-08-31 19:25 UTC",
+  "checked": "2026-09-07 18:09 UTC",
   "count": 104,
   "note": "$25/$30/$35/$40/$60 档、税费全含声明",
   "snippets": [
@@ -381,6 +381,7 @@
    "Just switch to the $60/mo.",
    "Metro by T-Mobile 's most affordable phone plan starts at $25/month with",
    "Metro by T-Mobile BYOD $25 UNL",
+   "Metro customers adding 5G Home Internet to a new voice account can pay $50 the first month, then $45/mo.",
    "Metro offers plans starting at $25/month with AutoPay , with taxes and fees included when you…",
    "Only available when you sign up for the $60/mo.",
    "Pay $120 today for six months of service (equivalent to $20/month ).",
@@ -391,9 +392,8 @@
    "The $50/mo.",
    "The $60/mo.",
    "Watch & tablet lines for only $5/month when you bring a device",
-   "With AutoPay and a Metro voice line (the first month is $50).",
    "Yes, some Metro prepaid plans include hotspot data, like 8GB on the $50/mo.",
-   "You will need to purchase a gateway device for $9.99.",
+   "You will need to purchase a gateway device for $4.99.",
    "and $60/mo.",
    "plan, 10GB on the $30/mo.",
    "plan, and 25GB on the $60/mo.",
@@ -413,7 +413,7 @@
   "checked": "2026-08-15 03:24 UTC",
   "count": 50,
   "last_error": "HTTP 403",
-  "last_error_at": "2026-08-31 19:25 UTC",
+  "last_error_at": "2026-09-07 18:09 UTC",
   "note": "四档 3/6/12 个月价、$15 促销（预期 403）",
   "snippets": [
    "$ 15 /mo",
@@ -471,7 +471,7 @@
  },
  "tmobile": {
   "brand": "T-Mobile",
-  "checked": "2026-08-31 19:25 UTC",
+  "checked": "2026-09-07 18:09 UTC",
   "count": 107,
   "note": "Essentials/Experience 各档、$4.49 恢复费",
   "snippets": [
@@ -523,7 +523,6 @@
    "3 $5/month.",
    "Apple TV just $3/month",
    "Apple TV just $3/month Experience Beyond, Experience More™, including Experi…",
-   "Contact us before cancelling entire account to continue remaining bill credits, or credits stop & balance on required finance agreement is due (e.g., $309.99–moto g stylus 2026).",
    "Contact us before cancelling entire account to continue remaining bill credits, or credits stop & balance on required finance agreement is due (e.g., $629.99 – iPhone 15 128GB).",
    "Contact us before cancelling entire account to continue remaining bill credits, or credits stop & balance on required finance agreement is due (e.g., $899.99 – Galaxy S26 256GB).",
    "Customers on other plans can add the service for a limited time at $10/month (a savings of $5/mo.), per line.",
@@ -535,24 +534,23 @@
    "For well-qualified customers; plus taxes & $35 device connection charge.",
    "Get $100 rebate via virtual prepaid Mastercard® (no cash access & expires in 6 months); which you can use online, or in-store via accepted mobile payment apps.",
    "Get $100 via virtual prepaid Mastercard with eligible port-in;",
-   "Grab the new moto g stylus for under $10.",
    "How to get the $100 prepaid card:",
    "If you cancel entire account before receiving all bill credits, credits stop and balance on required finance agreement is due (e.g., $829.99 – iPhone 17 256GB).",
    "In the first year on our Experience Beyond plan thanks to $100 back and built-in benefits worth $650.",
    "Included with Experience Beyond 2.0 plans or $10/mo.; auto renews monthly.",
    "New accounts with qualifying credit, new voice line ($100+/mo.",
    "Of the $4.49 total charge for voice lines, $0.50 is applied to the RPF and $3.99 is applied to the TRF.",
-   "Plus tax & $35 device connection charge.",
    "Qualifying credit & service ($85+/mo.",
    "Qualifying credit and service ($100+/mo.",
    "Qualifying credit and service ($60+/mo.",
    "Qualifying credit and service ($85+/mo.",
    "Qualifying credit, port-in (AT&T, Verizon, or another eligible carrier, see complete list at T-Mobile .com/port), and new voice line ($85+/mo.",
    "Qualifying credit, service ($100+/mo.",
+   "Qualifying credit, service ($85+/mo.",
    "Receive $100 via Virtual Prepaid Mastercard® after verification.",
    "Save $1900 when you trade in an eligible device on an Experience Beyond plan.",
-   "Save $300 when you activate a new line on most plans.",
    "Save up to $1000 when you activate a new line on an Experience Beyond plan.",
+   "Save up to $800 when you trade-in an eligible device on an Experience More or Experience Beyond plan.",
    "Shop online now and get up to $315 off with up to 36 monthly bill credits when you add a line on a qualifying plan.",
    "Switch and get up to $800/line to pay off your old phones.",
    "Switch and save $750.",
@@ -563,8 +561,8 @@
    "Up to $1,900 via 24 or 36 monthly bill credits, depending on finance agreement term; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.",
    "Up to $1100 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.",
    "Up to $300.99 via 24 or 36 monthly bill credits, depending on finance agreement term; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.",
-   "Up to $300.99 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.",
    "Up to $315 via 24 or 36 monthly bill credits, depending on finance agreement term; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.",
+   "Up to $800 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.",
    "Up to $830 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.",
    "Up to $900 via 24 or 36 monthly bill credits, depending on finance agreement term; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.",
    "Watch & tablet lines just $5/month",
@@ -573,6 +571,7 @@
    "plan w/AutoPay, plus taxes & fees), and $35 device connection charge due at sale.",
    "plan w/AutoPay; plus taxes/fees) & trade-in (e.g., Save $1,300: Pixel 10/ Save $650: Pixel 5) required.",
    "plan w/AutoPay; plus taxes/fees) & trade-in (e.g., Save $1,900: Samsung Galaxy S26 / Save $1,100: Samsung S22 / Save $550: Samsung Galaxy A71) required.",
+   "plan w/AutoPay; plus taxes/fees) and trade-in (e.g., Save: $800: Samsung Galaxy S24; Save $550: Samsung Galaxy A54) required.",
    "…('TRF') (not a government required tax or charge) totaling $4.49 for Voice Lines and $2.10 for Mobile Internet lines ('MI…",
    "…TV included at no additional cost as a plan benefit (up to $9.99 per month value).",
    "…ning device balance, including lease purchase option, up to $800, paid via virtual prepaid Mastercard® ( no cash access &…",
@@ -580,6 +579,7 @@
    "…stop & balance on required finance agreement is due (e.g., $1,299.99 – Google Pixel 11 Pro XL 256 GB).",
    "…stop & balance on required finance agreement is due (e.g., $1,899.99 – Samsung Galaxy Z Fold8 256GB).",
    "…stop & balance on required finance agreement is due (e.g., $299.99 – moto edge 2025 256GB).",
+   "…stop & balance on required finance agreement is due (e.g., $799.99–Samsung Galaxy S26 FE 256GB).",
    "…stop & balance on required finance agreement is due (e.g., $999.99 – motorola razr+ 2026).",
    "…top and balance on required finance agreement is due (e.g., $1,099.99 – Apple iPhone 17 Pro 256 GB)."
   ],
@@ -587,8 +587,8 @@
  },
  "tmobile_stu": {
   "brand": "T-Mobile",
-  "checked": "2026-08-31 19:25 UTC",
-  "count": 80,
+  "checked": "2026-09-07 18:09 UTC",
+  "count": 83,
   "note": "学生档 $35/$30 是否仍在",
   "snippets": [
    "$0",
@@ -641,10 +641,12 @@
    "Contact us before cancelling entire account to continue remaining bill credits, or credits stop & balance on required finance agreement is due (e.g., $1,099.99– Galaxy S26+ 256GB).",
    "For MI lines $0.12 is applied to the RPF and $1.98 is applied to the TRF.",
    "For well-qualified customers; plus tax & $35 device connection charge.",
+   "Get a $5 movie ticket every month–so you can catch the latest release without stretching your student budget.",
    "Get a Student Perks phone plan and America’s fastest 5G home internet for just $30/mo.",
    "Get one phone line and 5G home internet for just $60/mo.",
    "Included with Experience Beyond or $10/mo.; auto renews monthly.",
    "Included with Experience Beyond plans or $10/mo.; auto renews monthly.",
+   "Last year, T-Mobile offered over $900 in Tuesday savings with free stuff, weekly perks, and deals from brands students actually use, all in the T-Life app.",
    "Max referral of $500/year per account.",
    "Memberships automatically renew at up to $ 96/year after 1 year On Us unless cancelled.",
    "Monthly Regulatory Programs & Telco Recovery Fees totaling up to $2.10 per line, and federal and local surcharges apply.",
@@ -657,6 +659,7 @@
    "Return each device undamaged or pay up to $370.",
    "Switch to T-Mobile today and get 1 line on Essentials Saver with Student Savings 2.0 for $30/month, plus taxes and fees.",
    "Switch to T-Mobile today and get a plan with Student Perks starting at just $30/mo*.",
+   "Take movie night off campus for only $5.",
    "Up to $1,100 via bill credits, depending on finance agreement term; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.",
    "Verify student enrollment status for account holder within 45 days, maintain student line, & re-verify annually; otherwise additional cost up to $20/line per month.",
    "Verify student enrollment status for account holder within 45 days, maintain student line, & re-verify when requested; otherwise additional cost up to $20/line per month.",
@@ -676,7 +679,7 @@
  },
  "tmobile_switch": {
   "brand": "T-Mobile",
-  "checked": "2026-08-31 19:25 UTC",
+  "checked": "2026-09-07 18:09 UTC",
   "count": 39,
   "note": "Essentials Saver $50 AutoPay 价、$35 设备接入费",
   "snippets": [
@@ -724,7 +727,7 @@
  },
  "total": {
   "brand": "Total Wireless",
-  "checked": "2026-08-31 19:25 UTC",
+  "checked": "2026-09-07 18:09 UTC",
   "count": 24,
   "note": "MAX 5G BYO $25/$20、四档价、5 年锁价",
   "snippets": [
@@ -757,7 +760,7 @@
  },
  "total_byop": {
   "brand": "Total Wireless",
-  "checked": "2026-08-31 19:25 UTC",
+  "checked": "2026-09-07 18:09 UTC",
   "count": 6,
   "note": "BYO 专属价与条件",
   "snippets": [
@@ -772,7 +775,7 @@
  },
  "usmobile": {
   "brand": "US Mobile",
-  "checked": "2026-08-31 19:25 UTC",
+  "checked": "2026-09-07 18:09 UTC",
   "count": 19,
   "note": "Starter/Flex/Premium 年付价、促销档期（预期 403）",
   "snippets": [
@@ -800,7 +803,7 @@
  },
  "verizon": {
   "brand": "Verizon",
-  "checked": "2026-08-31 19:25 UTC",
+  "checked": "2026-09-07 18:09 UTC",
   "count": 32,
   "note": "Simplicity $55/$45/$30",
   "snippets": [
@@ -810,8 +813,8 @@
    "$30",
    "$30.98/mo",
    "$30/mo",
-   "$31.98/mo",
-   "$35.95/mo",
+   "$34.98/mo",
+   "$37.95/mo",
    "$39.97/mo",
    "$45.98/mo",
    "$6.98/mo perk savings based on the current $8.99/mo for",
@@ -825,9 +828,9 @@
    "Netflix Standard with ads and $10.99/mo for HBO Max Basic with Ads plan less $13/mo perk added to",
    "Premium Video Streaming available for $10/mo+ taxes per capable device enrolled.",
    "Premium Video Streaming available for $10/mo+taxes & fees (where applicable) per capable device enrolled.",
-   "Save $10.95/mo",
    "Save $10.98/mo",
    "Save $11.98/mo",
+   "Save $12.95/mo",
    "Save $16.97/mo",
    "Save $20.98/mo",
    "Save $34.99/mo",
@@ -841,8 +844,8 @@
  },
  "verizon_pre": {
   "brand": "Verizon",
-  "checked": "2026-08-31 19:25 UTC",
-  "count": 70,
+  "checked": "2026-09-07 18:09 UTC",
+  "count": 68,
   "note": "预付费各档与忠诚度折扣",
   "snippets": [
    "$10 value).",
@@ -900,7 +903,6 @@
    "Save an extra $20/mo with Auto Pay after the first month.",
    "Save up to $40/mo",
    "Save up to $40/mo per",
-   "Verizon Prepaid + Home discount $15/mo savings on Verizon Fios Home Internet plan or Frontier Fiber Internet services when combined with any eligible Verizon Prepaid phone plan.",
    "With Multiline discount, you save $20/mo when you add an additional Verizon Prepaid Unlimited plan to your account.",
    "Without Auto Pay, 4 lines with Multiline discount comes to a total of $180/mo.",
    "available, our $35 plan with Talk & Text.",
@@ -911,7 +913,6 @@
    "iPhone 16e (128GB) originally for $599.99, instant discount of $250 at checkout.\" data-tooltip-type=\"icon\" data-aria-label=\"Get iPhone 16e for $349.99\">",
    "lines for just $80/mo",
    "months of service, for a total of $10/mo on plans $45 or higher.",
-   "save $15/mo on",
    "…nal $5/mo applies after 9 months of service, for a total of $10/mo on phone plans $45 or higher.",
    "…plies after 3 months of service on a phone plan; additional $5/mo applies after 9 months of service, for a total of $10/mo…",
    "…r 9 months of service, for a total of $10/mo on phone plans $45 or higher."
@@ -920,7 +921,7 @@
  },
  "visible": {
   "brand": "Visible",
-  "checked": "2026-08-31 19:25 UTC",
+  "checked": "2026-09-07 18:09 UTC",
   "count": 112,
   "note": "三档月费/年费、促销码、税费口径",
   "snippets": [
