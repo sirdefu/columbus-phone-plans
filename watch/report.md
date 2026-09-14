@@ -1,26 +1,35 @@
-# 资费变更检测 · 2026-09-07 18:09 UTC
+# 资费变更检测 · 2026-09-14 18:25 UTC
 
 **5 个页面的价格文本发生变化。** 下面是逐条 diff——先自己扫一眼判断是不是实质变动（很多是营销文案微调），确认重要再让 Claude 重跑完整分析并更新页面。
 
 
 ## 发生变化
 
-### Metro — `metro`
+### Visible — `visible`
 
-盯的是：$25/$30/$35/$40/$60 档、税费全含声明  
-<https://www.metrobyt-mobile.com/phone-plans>
+盯的是：三档月费/年费、促销码、税费口径  
+<https://www.visible.com/plans>
 
 
-**消失了 2 条：**
+**消失了 1 条：**
 ```diff
-- With AutoPay and a Metro voice line (the first month is $50).
-- You will need to purchase a gateway device for $9.99.
+- Save $15 a month on Verizon Home Internet, when you bundle it with any Visible phone plan ( offer details ).
 ```
 
-**新出现 2 条：**
+### Cricket — `cricket_multi`
+
+盯的是：12 个月 $300 年付档是否还在  
+<https://www.cricketwireless.com/cell-phone-plans/multi-month-unlimited>
+
+
+**消失了 1 条：**
 ```diff
-+ Metro customers adding 5G Home Internet to a new voice account can pay $50 the first month, then $45/mo.
-+ You will need to purchase a gateway device for $4.99.
+- Pay in advance and save $300
+```
+
+**新出现 1 条：**
+```diff
++ Pay in advance and save $300 with a 12 month Multi-Month Unlimited Plan from Cricket Wireless
 ```
 
 ### T-Mobile — `tmobile`
@@ -29,67 +38,77 @@
 <https://www.t-mobile.com/cell-phone-plans>
 
 
-**消失了 5 条：**
+**消失了 9 条：**
 ```diff
-- Contact us before cancelling entire account to continue remaining bill credits, or credits stop & balance on required finance agreement is due (e.g., $309.99–moto g stylus 2026).
-- Grab the new moto g stylus for under $10.
-- Plus tax & $35 device connection charge.
-- Save $300 when you activate a new line on most plans.
-- Up to $300.99 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.
+- If you cancel entire account before receiving all bill credits, credits stop and balance on required finance agreement is due (e.g., $829.99 – iPhone 17 256GB).
+- Qualifying credit, port-in (AT&T, Verizon, or another eligible carrier, see complete list at T-Mobile .com/port), and new voice line ($85+/mo.
+- Up to $1,100 via 24 or 36 monthly bill credits, depending on finance…
+- Up to $1,300 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.
+- Up to $315 via 24 or 36 monthly bill credits, depending on finance agreement term; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.
+- Up to $830 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.
+- plan w/AutoPay; plus taxes/fees) & trade-in (e.g., Save $1,300: Pixel 10/ Save $650: Pixel 5) required.
+- …stop & balance on required finance agreement is due (e.g., $1,299.99 – Google Pixel 11 Pro XL 256 GB).
+- …top and balance on required finance agreement is due (e.g., $1,099.99 – Apple iPhone 17 Pro 256 GB).
+```
+
+**新出现 15 条：**
+```diff
++ $1,099.99 – Pixel 11 Pro 256 GB).
++ If you cancel entire account before receiving all bill credits, credits stop and balance on required finance agreement is due (e.g., $1,199.99 – Apple iPhone 18 Pro 256GB).
++ Qualifying credit & service ($60+/mo.
++ Qualifying credit, add a new line, and service ($60+/mo.
++ Qualifying credit, add a new line, port-in (AT&T, Verizon, or another eligible carrier, see complete list at T-Mobile .com/port), & service ($85+/mo.
++ Qualifying credit, add a new line, service ($100+/mo.
++ Up to $1,200 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.
++ Up to $900 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.
++ Up to $930 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.
++ Up to 50% or up to $315 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.
++ plan w/AutoPay, plus taxes & fees), & eligible trade-in (e.g., Save $1,200: iPhone 16; Save $930: iPhone 14; Save $500: iPhone 6) required.
++ plan w/AutoPay; plus taxes/fees) & trade-in (e.g., Save $1,100: Pixel 10/ Save $550: Pixel 5) required.
++ plan w/AutoPay; plus taxes/fees) & trade-in (e.g., Save $900: Pixel 7; $450: Pixel 4) required.
++ …stop & balance on required finance agreement is due (e.g., $1,099.99 – Google Pixel 11 Pro 256 GB).
++ …stop & balance on required finance agreement is due (e.g., $899.99 – Google Pixel 11 256GB).
+```
+
+### T-Mobile — `tmobile_switch`
+
+盯的是：Essentials Saver $50 AutoPay 价、$35 设备接入费  
+<https://www.t-mobile.com/switch/savings>
+
+
+**消失了 4 条：**
+```diff
+- Contact us before cancelling entire account to continue remaining bill credits, or credits stop & balance on required finance agreement is due (e.g., $599.99 – iPhone 17e 256GB).
+- Get 2 lines for $90/mo.
+- Qualifying credit and service ($45+/mo.
+- Up to $630 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.
 ```
 
 **新出现 5 条：**
 ```diff
-+ Qualifying credit, service ($85+/mo.
-+ Save up to $800 when you trade-in an eligible device on an Experience More or Experience Beyond plan.
-+ Up to $800 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.
-+ plan w/AutoPay; plus taxes/fees) and trade-in (e.g., Save: $800: Samsung Galaxy S24; Save $550: Samsung Galaxy A54) required.
-+ …stop & balance on required finance agreement is due (e.g., $799.99–Samsung Galaxy S26 FE 256GB).
++ Contact us before cancelling entire account to continue remaining bill credits, or credits stop & balance on required finance agreement is due (e.g., $699.99 – iPhone 17e 256GB).
++ For well-qualified customers; plus tax & $35 device connection charge.
++ Get 2 lines for $80/mo.
++ Qualifying credit, add a new line, service ($60+/mo.
++ Up to $700 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.
 ```
 
-### T-Mobile — `tmobile_stu`
+### Google Fi — `googlefi`
 
-盯的是：学生档 $35/$30 是否仍在  
-<https://www.t-mobile.com/cell-phone-plans/student-discounts>
+盯的是：三档无限 + 自带 Pixel 五折促销截止日  
+<https://fi.google.com/about/plans>
 
 
-**新出现 3 条：**
+**新出现 8 条：**
 ```diff
-+ Get a $5 movie ticket every month–so you can catch the latest release without stretching your student budget.
-+ Last year, T-Mobile offered over $900 in Tuesday savings with free stuff, weekly perks, and deals from brands students actually use, all in the T-Life app.
-+ Take movie night off campus for only $5.
-```
-
-### Verizon — `verizon`
-
-盯的是：Simplicity $55/$45/$30  
-<https://www.verizon.com/plans/unlimited/>
-
-
-**消失了 3 条：**
-```diff
-- $31.98/mo
-- $35.95/mo
-- Save $10.95/mo
-```
-
-**新出现 3 条：**
-```diff
-+ $34.98/mo
-+ $37.95/mo
-+ Save $12.95/mo
-```
-
-### Verizon — `verizon_pre`
-
-盯的是：预付费各档与忠诚度折扣  
-<https://www.verizon.com/plans/prepaid/>
-
-
-**消失了 2 条：**
-```diff
-- Verizon Prepaid + Home discount $15/mo savings on Verizon Fios Home Internet plan or Frontier Fiber Internet services when combined with any eligible Verizon Prepaid phone plan.
-- save $15/mo on
++ $12
++ $13
++ $14
++ $15
++ $57
++ $63
++ $68
++ $75
 ```
 
 
@@ -106,7 +125,7 @@
 
 ## 无变化（12 个）
 
-Visible、Cricket、Cricket、Total Wireless、Total Wireless、T-Mobile、AT&T、AT&T、AT&T、AT&T、Google Fi、US Mobile
+Cricket、Total Wireless、Total Wireless、Metro、T-Mobile、AT&T、AT&T、AT&T、AT&T、Verizon、Verizon、US Mobile
 
 
 ---
