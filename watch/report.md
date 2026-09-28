@@ -1,66 +1,26 @@
-# 资费变更检测 · 2026-09-21 18:32 UTC
+# 资费变更检测 · 2026-09-28 20:02 UTC
 
-**6 个页面的价格文本发生变化。** 下面是逐条 diff——先自己扫一眼判断是不是实质变动（很多是营销文案微调），确认重要再让 Claude 重跑完整分析并更新页面。
+**5 个页面的价格文本发生变化。** 下面是逐条 diff——先自己扫一眼判断是不是实质变动（很多是营销文案微调），确认重要再让 Claude 重跑完整分析并更新页面。
 
 
 ## 发生变化
 
-### Visible — `visible`
+### Total Wireless — `total`
 
-盯的是：三档月费/年费、促销码、税费口径  
-<https://www.visible.com/plans>
-
-
-**消失了 4 条：**
-```diff
-- $15/mo off Home Internet
-- \r\n<li>Global Pass starting at $5/day</li>\r\n<li>$15/mo off&nbsp;<a style=\"text-decoration: underline;\" href=…
-- \r\n<li>Global Pass starting at $5/day</li>\r\n<li>$15/mo off&nbsp;<a style=\"text-decoration:…
-- …class=\"hidden-content\">super script 10</span></li>\r\n<li>$15/mo off&nbsp;<a style=\"text-decoration: underline;\" href=…
-```
-
-**新出现 2 条：**
-```diff
-+ \r\n<li>Global Pass starting at $5/day</li>\r\n<li>Free 2-day device shipping</li>\r\n</ul>\r\n"}}" id="text-386aee00f5" class="cmp-text" style="padding-top:;
-+ \r\n<li>Global Pass starting at $5/day</li>\r\n<li>Free 2-day device shipping</li>\r\n</ul>\r\n"}}" id="text-cf6a10e8ef" class="cmp-text" style="padding-top:;
-```
-
-### Cricket — `cricket_multi`
-
-盯的是：12 个月 $300 年付档是否还在  
-<https://www.cricketwireless.com/cell-phone-plans/multi-month-unlimited>
-
-
-**新出现 6 条：**
-```diff
-+ $45/mo.
-+ $75 price includes Cricket Home Internet ($45/mo.
-+ Auto Pay Credit: $5/mo credit requires enrollment in Auto Pay and will apply starting on second service charge.
-+ Fees: $5 Customer Assistance Fee applies to rep-assisted and automated phone system payments.
-+ Internet Gateway: Activation and use of Cricket Home Internet requires purchase of Cricket Internet Gateway for $49.99 + applicable sales tax.
-+ after discounts), Cricket Sensible 10GB phone plan ($35/mo.), and $5 Auto Pay Credit.
-```
-
-### Metro — `metro`
-
-盯的是：$25/$30/$35/$40/$60 档、税费全含声明  
-<https://www.metrobyt-mobile.com/phone-plans>
+盯的是：MAX 5G BYO $25/$20、四档价、5 年锁价  
+<https://www.totalwireless.com/m/plans/smartphone>
 
 
 **消失了 2 条：**
 ```diff
-- Endless entertainment and fast, free shipping on over 100 million items with Prime, on our $60/mo.
-- with AutoPay plan.​ That’s a $14.99/mo.
+- $10 international calling credit 3
+- …ions2 Roaming in 140+ countries, including Canada & Mexico1 $10 international calling credit3 included with ALL ACCESS
 ```
 
-**新出现 6 条：**
+**新出现 2 条：**
 ```diff
-+ $130
-+ $55 UNL w/AutoPay-$60 Month
-+ $55/mo.
-+ $95
-+ Unlimited $55/mo.
-+ with AutoPay $60 for the first month.
++ $10 international calling credit 6
++ …ions3 Roaming in 140+ countries, including Canada & Mexico4 $10 international calling credit6 included with ALL ACCESS
 ```
 
 ### T-Mobile — `tmobile`
@@ -69,13 +29,10 @@
 <https://www.t-mobile.com/cell-phone-plans>
 
 
-**新出现 5 条：**
+**消失了 2 条：**
 ```diff
-+ Get iPhone 18 Pro Max for under $100
-+ If you cancel entire account before receiving all bill credits, credits stop and balance on required finance agreement is due (e.g., $1,299.99 – iPhone 18 Pro Max 256GB).
-+ Qualifying credit, add a new line, port-in (AT&T, Verizon, or another eligible carrier, see complete list at T-Mobile .com/port), & service ($100+/mo.
-+ Up to $1200 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.
-+ plan w/AutoPay, plus taxes and fees) & trade-in (e.g., Save $1,200: iPhone 16; Save $930: iPhone 14; Save $500: iPhone 6) required.
+- plan w/AutoPay; plus taxes/fees) & trade-in (e.g., Save $900: Pixel 7; $450: Pixel 4) required.
+- …stop & balance on required finance agreement is due (e.g., $899.99 – Google Pixel 11 256GB).
 ```
 
 ### T-Mobile — `tmobile_stu`
@@ -84,34 +41,51 @@
 <https://www.t-mobile.com/cell-phone-plans/student-discounts>
 
 
+**消失了 3 条：**
+```diff
+- $143/yr value
+- Monthly Regulatory Programs & Telco Recovery Fees totaling up to $2.10 per line, and federal and local surcharges apply.
+- Regulatory Programs & Telco Recovery Fees totaling up to $4.49 per line, and federal and local surcharges apply.
+```
+
+**新出现 3 条：**
+```diff
++ $12.49/mo.
++ Monthly Regulatory Programs & Telco Recovery Fees totaling up to $2.10 ($2.60 eff.
++ Regulatory Programs & Telco Recovery Fees totaling up to $4.49 ($5.49 eff.
+```
+
+### T-Mobile — `tmobile_switch`
+
+盯的是：Essentials Saver $50 AutoPay 价、$35 设备接入费  
+<https://www.t-mobile.com/switch/savings>
+
+
 **消失了 1 条：**
 ```diff
-- Verify student enrollment status for account holder within 45 days, maintain student line, & re-verify when requested; otherwise additional cost up to $20/line per month.
+- Monthly Regulatory Programs & Telco Recovery Fees totaling up to $3.99 per line, and federal and local surcharges apply.
 ```
 
-### Verizon — `verizon`
-
-盯的是：Simplicity $55/$45/$30  
-<https://www.verizon.com/plans/unlimited/>
-
-
-**消失了 5 条：**
+**新出现 1 条：**
 ```diff
-- $23/mo
-- $34.98/mo
-- $37.95/mo
-- $39.97/mo
-- Save $12.95/mo
++ Monthly Regulatory Programs & Telco Recovery Fees totaling up to $4.49 ($5.49 eff.
 ```
 
-**新出现 6 条：**
+### US Mobile — `usmobile`
+
+盯的是：Starter/Flex/Premium 年付价、促销档期（预期 403）  
+<https://www.usmobile.com/plans>
+
+
+**消失了 1 条：**
 ```diff
-+ $31.98/mo
-+ $35.95/mo
-+ $41.97/mo
-+ $47.98/mo
-+ Save $10.95/mo
-+ Save $22.98/mo
+- Unlimited from $17/mo when paid annually
+```
+
+**新出现 2 条：**
+```diff
++ Plus, get a $10 prepaid Mastercard®!
++ Unlimited for less than $17/mo.
 ```
 
 
@@ -126,9 +100,9 @@
 > 其余站点若连续多周无法核实，说明监控失效了，需要人工看一眼。
 
 
-## 无变化（11 个）
+## 无变化（12 个）
 
-Cricket、Total Wireless、Total Wireless、T-Mobile、AT&T、AT&T、AT&T、AT&T、Verizon、Google Fi、US Mobile
+Visible、Cricket、Cricket、Total Wireless、Metro、AT&T、AT&T、AT&T、AT&T、Verizon、Verizon、Google Fi
 
 
 ---
