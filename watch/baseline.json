@@ -1,7 +1,7 @@
 {
  "att": {
   "brand": "AT&T",
-  "checked": "2026-10-19 19:07 UTC",
+  "checked": "2026-10-26 19:04 UTC",
   "count": 5,
   "note": "后付费头图价（分档价是客户端渲染的，抓不到，靠下面那条补）",
   "snippets": [
@@ -15,7 +15,7 @@
  },
  "att_bap": {
   "brand": "AT&T",
-  "checked": "2026-10-19 19:07 UTC",
+  "checked": "2026-10-26 19:04 UTC",
   "count": 2,
   "note": "Build-A-Plan 头图价",
   "snippets": [
@@ -26,7 +26,7 @@
  },
  "att_bap_spec": {
   "brand": "AT&T",
-  "checked": "2026-10-19 19:07 UTC",
+  "checked": "2026-10-26 19:04 UTC",
   "count": 89,
   "note": "Build-A-Plan 完整价目矩阵（$15 基础 + 各数据/热点档）",
   "snippets": [
@@ -124,7 +124,7 @@
  },
  "att_prepaid": {
   "brand": "AT&T",
-  "checked": "2026-10-19 19:07 UTC",
+  "checked": "2026-10-26 19:04 UTC",
   "count": 7,
   "note": "预付费 $240 年付 / $20 月等效 / Level Up",
   "snippets": [
@@ -140,7 +140,7 @@
  },
  "cricket": {
   "brand": "Cricket",
-  "checked": "2026-10-19 19:07 UTC",
+  "checked": "2026-10-26 19:04 UTC",
   "count": 16,
   "note": "四档无限 + Sensible、AutoPay 价",
   "snippets": [
@@ -165,7 +165,7 @@
  },
  "cricket_multi": {
   "brand": "Cricket",
-  "checked": "2026-10-19 19:07 UTC",
+  "checked": "2026-10-26 19:04 UTC",
   "count": 67,
   "note": "12 个月 $300 年付档是否还在",
   "snippets": [
@@ -241,7 +241,7 @@
  },
  "googlefi": {
   "brand": "Google Fi",
-  "checked": "2026-10-19 19:07 UTC",
+  "checked": "2026-10-26 19:04 UTC",
   "count": 53,
   "note": "三档无限 + 自带 Pixel 五折促销截止日",
   "snippets": [
@@ -303,7 +303,7 @@
  },
  "metro": {
   "brand": "Metro",
-  "checked": "2026-10-19 19:07 UTC",
+  "checked": "2026-10-26 19:04 UTC",
   "count": 101,
   "note": "$25/$30/$35/$40/$60 档、税费全含声明",
   "snippets": [
@@ -416,7 +416,7 @@
   "checked": "2026-08-15 03:24 UTC",
   "count": 50,
   "last_error": "HTTP 403",
-  "last_error_at": "2026-10-19 19:07 UTC",
+  "last_error_at": "2026-10-26 19:04 UTC",
   "note": "四档 3/6/12 个月价、$15 促销（预期 403）",
   "snippets": [
    "$ 15 /mo",
@@ -474,7 +474,7 @@
  },
  "tmobile": {
   "brand": "T-Mobile",
-  "checked": "2026-10-19 19:07 UTC",
+  "checked": "2026-10-26 19:04 UTC",
   "count": 119,
   "note": "Essentials/Experience 各档、$4.49 恢复费",
   "snippets": [
@@ -602,7 +602,7 @@
  },
  "tmobile_stu": {
   "brand": "T-Mobile",
-  "checked": "2026-10-19 19:07 UTC",
+  "checked": "2026-10-26 19:04 UTC",
   "count": 96,
   "note": "学生档 $35/$30 是否仍在",
   "snippets": [
@@ -664,7 +664,7 @@
    "Get a Student Perks phone plan and America’s fastest 5G home internet for just $30/mo.",
    "Get iPad (A16) for only $199.",
    "Get one phone line and 5G home internet for just $60/mo.",
-   "Get up to $1000 off an iPhone 18 Pro Max when you add a new line and bring your number on an Experience Beyond plan with Student Savings 2.0.",
+   "Get up to $800 off an iPhone 18 Pro Max when you add a new line and bring your number on an Experience Beyond plan with Student Savings 2.0.",
    "If you cancel entire account before receiving all bill credits, credits stop and balance on required finance agreement is due (e.g., $599.99 - iPad A16 128GB).",
    "If you cancel entire account before receiving all bill credits, credits stop and remaining balance on all devices at full price becomes due (e.g., $299.99–Apple Watch SE 3 40mm).",
    "Included with Experience Beyond or $10/mo.; auto renews monthly.",
@@ -707,7 +707,7 @@
  },
  "tmobile_switch": {
   "brand": "T-Mobile",
-  "checked": "2026-10-19 19:07 UTC",
+  "checked": "2026-10-26 19:04 UTC",
   "count": 46,
   "note": "Essentials Saver $50 AutoPay 价、$35 设备接入费",
   "snippets": [
@@ -762,8 +762,8 @@
  },
  "total": {
   "brand": "Total Wireless",
-  "checked": "2026-10-19 19:07 UTC",
-  "count": 24,
+  "checked": "2026-10-26 19:04 UTC",
+  "count": 25,
   "note": "MAX 5G BYO $25/$20、四档价、5 年锁价",
   "snippets": [
    "$10 international calling credit 6",
@@ -784,6 +784,7 @@
    "$90 /mo",
    "$95 /mo",
    "Bundle to save $40/mo",
+   "Disney+ Basic (With Ads) is currently $12.49/month tax and Disney Premium (No Ads) is currently $21.49/month tax.",
    "First month $30, then $20/mo after.",
    "If you have a phone plan, add a tablet plan from $10/mo",
    "Save $15/mo with Fios or Frontier",
@@ -795,7 +796,7 @@
  },
  "total_byop": {
   "brand": "Total Wireless",
-  "checked": "2026-10-19 19:07 UTC",
+  "checked": "2026-10-26 19:04 UTC",
   "count": 7,
   "note": "BYO 专属价与条件",
   "snippets": [
@@ -811,15 +812,15 @@
  },
  "usmobile": {
   "brand": "US Mobile",
-  "checked": "2026-10-19 19:07 UTC",
+  "checked": "2026-10-26 19:04 UTC",
   "count": 18,
   "note": "Starter/Flex/Premium 年付价、促销档期（预期 403）",
   "snippets": [
-   "$10 /mo",
-   "$10 monthly Starter w/ code",
    "$10/mo per line",
-   "$20 /mo",
-   "$20 monthly Premium w/ code",
+   "$15 /mo",
+   "$15 monthly Starter w/ code",
+   "$25 /mo",
+   "$25 monthly Premium w/ code",
    "$90/yr on annual plan.",
    "First 2 free, then $2/transfer.",
    "From only $5/mo.",
@@ -838,17 +839,18 @@
  },
  "verizon": {
   "brand": "Verizon",
-  "checked": "2026-10-19 19:07 UTC",
-  "count": 33,
+  "checked": "2026-10-26 19:04 UTC",
+  "count": 34,
   "note": "Simplicity $55/$45/$30",
   "snippets": [
    "$20/mo",
+   "$23/mo",
    "$25/mo",
    "$30",
    "$30.98/mo",
    "$30/mo",
-   "$31.98/mo",
-   "$35.95/mo",
+   "$34.98/mo",
+   "$37.95/mo",
    "$41.97/mo",
    "$45.98/mo",
    "$47.98/mo",
@@ -864,9 +866,9 @@
    "Netflix Standard with ads and $10.99/mo for HBO Max Basic with Ads plan less $13/mo perk added to",
    "Premium Video Streaming available for $10/mo+ taxes per capable device enrolled.",
    "Premium Video Streaming available for $10/mo+taxes & fees (where applicable) per capable device enrolled.",
-   "Save $10.95/mo",
    "Save $10.98/mo",
    "Save $11.98/mo",
+   "Save $12.95/mo",
    "Save $16.97/mo",
    "Save $22.98/mo",
    "Save $34.99/mo",
@@ -880,8 +882,8 @@
  },
  "verizon_pre": {
   "brand": "Verizon",
-  "checked": "2026-10-19 19:07 UTC",
-  "count": 64,
+  "checked": "2026-10-26 19:04 UTC",
+  "count": 77,
   "note": "预付费各档与忠诚度折扣",
   "snippets": [
    "$10 value).",
@@ -904,12 +906,16 @@
    "$60",
    "$70",
    "$70 Prepaid Unlimited Plus smartphone plan",
+   "15 GB plan : The 15 GB plan costs $45/month, or $35/month with Auto Pay after the first month.",
    "4 lines with Multiline and Auto Pay discount comes to a total of $140/mo.",
    "<strong>Get iPhone 16e for $349.99</strong></strong> <br>Offer ends 1/31/27 or while supplies last.",
+   "Add an additional Unlimited Plus phone line for $40/month with the multiline discount.",
+   "Add an additional Unlimited phone line for $30/month with the multiline discount.",
    "As low as $ 35 /mo with loyalty discounts.",
    "As low as $ 50 /mo with loyalty discounts.",
    "As low as $ 60 /mo with loyalty discounts.",
    "Auto Pay discount $10/mo Auto Pay discount available on phone plans $45 & higher after 1st month.",
+   "Auto Pay discount : Enroll in Auto Pay with a credit or debit card to save $10/month on eligible prepaid phone plans priced at $45 or more.",
    "Auto Pay discount of $5/mo available after 1st month for all plans.",
    "Bring your own phone and get 1 line starting at $35/mo $35/mo on the 15 GB Verizon Prepaid phone plan with Auto Pay.",
    "Each additional Unlimited phone line receives a $20/mo discount.",
@@ -925,7 +931,10 @@
    "Get iPhone 16e for $349.99",
    "Global Choice for our $70 Unlimited Plus Prepaid Plan.",
    "Hotspot & router plans Save $30/mo on each additional Verizon",
+   "If you don't use a lot of data, the Verizon Prepaid 15 GB plan at $35 per month with Auto Pay would be a good choice.",
    "Loyalty discount $5/mo loyalty discount applies after 3 months of service on a…",
+   "Loyalty discount : Eligible prepaid phone plans priced at $45 or more can receive a $5/month loyalty discount after thre…",
+   "Multiline discount : Add additional Verizon Prepaid Unlimited phone lines to your account and save $20/month per line.",
    "Multiline discount of $ 20 /mo included.",
    "Phone plans Save $20/mo on each additional Verizon Prepaid Unlimited phone line you",
    "Plus an additional $100 in $10/mo service credits over 10 months on any Verizon Prepaid Unlimited plan.",
@@ -935,9 +944,12 @@
    "Save an extra $20/mo with Auto Pay after the first month.",
    "Save up to $40/mo",
    "Save up to $40/mo per",
+   "So you could get two additional Unlimited phone lines for $40/month each before the Auto Pay discount.",
+   "The Talk & Text plan is eligible for a $5/month Auto Pay discount.",
+   "Unlimited Plus plan : The Unlimited Plus plan costs $70 for the first month and $60/month with Auto Pay.",
+   "Unlimited plan : The Unlimited plan costs $60 for the first month and $50/month with Auto Pay.",
    "With Multiline discount, you save $20/mo when you add an additional Verizon Prepaid Unlimited plan to your account.",
    "Without Auto Pay, 4 lines with Multiline discount comes to a total of $180/mo.",
-   "You can choose prepaid plans starting at $35/mo with Auto Pay, and you'll get a 3-year price guarantee for your base monthly rate on every Verizon Prepaid phone plan.",
    "available, our $35 plan with Talk & Text.",
    "data-aria-label=\"Save $15/mo on Verizon Fios Home Internet plans\">",
    "data-aria-label=\"Save $150 on a Samsung Galaxy A15 5G\">",
@@ -945,15 +957,18 @@
    "iPhone 16e (128GB) originally for $599.99, instant discount of $250 at checkout.\" data-tooltip-type=\"icon\" data-aria-label=\"Get iPhone 16e for $349.99\">",
    "lines for just $80/mo",
    "months of service, for a total of $10/mo on plans $45 or higher.",
+   "…ble prepaid phone plans priced at $45 or more can receive a $5/month loyalty discount after three months of service and an…",
+   "…ditional $5/month after nine months, for a total savings of $10/month.",
    "…nal $5/mo applies after 9 months of service, for a total of $10/mo on phone plans $45 or higher.",
    "…plies after 3 months of service on a phone plan; additional $5/mo applies after 9 months of service, for a total of $10/mo…",
-   "…r 9 months of service, for a total of $10/mo on phone plans $45 or higher."
+   "…r 9 months of service, for a total of $10/mo on phone plans $45 or higher.",
+   "…ty discount after three months of service and an additional $5/month after nine months, for a total savings of $10/month."
   ],
   "url": "https://www.verizon.com/plans/prepaid/"
  },
  "visible": {
   "brand": "Visible",
-  "checked": "2026-10-19 19:07 UTC",
+  "checked": "2026-10-26 19:04 UTC",
   "count": 128,
   "note": "三档月费/年费、促销码、税费口径",
   "snippets": [

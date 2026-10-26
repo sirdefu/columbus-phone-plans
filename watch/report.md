@@ -1,79 +1,35 @@
-# 资费变更检测 · 2026-10-19 19:07 UTC
+# 资费变更检测 · 2026-10-26 19:04 UTC
 
-**7 个页面的价格文本发生变化。** 下面是逐条 diff——先自己扫一眼判断是不是实质变动（很多是营销文案微调），确认重要再让 Claude 重跑完整分析并更新页面。
+**5 个页面的价格文本发生变化。** 下面是逐条 diff——先自己扫一眼判断是不是实质变动（很多是营销文案微调），确认重要再让 Claude 重跑完整分析并更新页面。
 
 
 ## 发生变化
 
-### Visible — `visible`
+### Total Wireless — `total`
 
-盯的是：三档月费/年费、促销码、税费口径  
-<https://www.visible.com/plans>
+盯的是：MAX 5G BYO $25/$20、四档价、5 年锁价  
+<https://www.totalwireless.com/m/plans/smartphone>
 
 
-**新出现 9 条：**
+**新出现 1 条：**
 ```diff
-+ Bring your phone and pay $75 upfront for your first 6 months of the Visible plan.
-+ New members who bring their own device get the Visible plan for just $75 upfront for the first 6 months of service.
-+ New members who bring their own device get the Visible plan for just $75 upfront for the first 6 months.
-+ Standard rate ($25/mo for the Visible plan) applies starting month 7, with service renewing monthly.
-+ Standard rate ($25/mo for the Visible plan) applies starting month 7, with se…
-+ Standard service rates ($25/mo) apply starting month 7, with service renewing monthly.
-+ …he first 6 months of service.&nbsp; Standard service rates ($25/mo) apply starting month 7, with service renewing monthly.…
-+ …rs who bring their own device get the Visible plan for just $75 upfront for the first 6 months of service.&nbsp; Standard…
-+ …rs who bring their own device get the Visible plan for just $75 upfront for the first 6 months.
++ Disney+ Basic (With Ads) is currently $12.49/month tax and Disney Premium (No Ads) is currently $21.49/month tax.
 ```
 
-### Metro — `metro`
+### T-Mobile — `tmobile_stu`
 
-盯的是：$25/$30/$35/$40/$60 档、税费全含声明  
-<https://www.metrobyt-mobile.com/phone-plans>
-
-
-**消失了 7 条：**
-```diff
-- 5G Home Internet for $45/mo.
-- After your first month, pay $45/month when you sign up for AutoPay to receive a $5 monthly discount (or pay $50/month without AutoPay).
-- Get 5G Home Internet for $45/month with AutoPay ($50 for your first month or without AutoPay).
-- Get fast, reliable 5G Home Internet for just $45/mo.
-- Metro customers adding 5G Home Internet to a new voice account can pay $50 the first month, then $45/mo.
-- Pay $50 for your first month of service.
-- You will need to purchase a gateway device for $4.99.
-```
-
-### T-Mobile — `tmobile`
-
-盯的是：Essentials/Experience 各档、$4.49 恢复费  
-<https://www.t-mobile.com/cell-phone-plans>
-
-
-**新出现 3 条：**
-```diff
-+ Get yours and save $1000 when you switch to T-Mobile and bring your number, or trade in an eligible device in any condition , on an Experience Beyond plan.
-+ If you cancel entire account before receiving all bill credits, credits stop and balance on required finance agreement is due (e.g., $1,999.99 – Apple iPhone Duo 256GB).
-+ Yours for $1000 off.​ No trade-in needed.
-```
-
-### T-Mobile — `tmobile_switch`
-
-盯的是：Essentials Saver $50 AutoPay 价、$35 设备接入费  
-<https://www.t-mobile.com/switch/savings>
+盯的是：学生档 $35/$30 是否仍在  
+<https://www.t-mobile.com/cell-phone-plans/student-discounts>
 
 
 **消失了 1 条：**
 ```diff
-- Included with Experience Beyond plans or $10/mo.; auto renews monthly.
+- Get up to $1000 off an iPhone 18 Pro Max when you add a new line and bring your number on an Experience Beyond plan with Student Savings 2.0.
 ```
 
-**新出现 7 条：**
+**新出现 1 条：**
 ```diff
-+ $11.99/mo value
-+ $12.49/mo.
-+ - an annual savings of $143.
-+ Apple TV for just $3/mo.
-+ Get Apple TV for just $3/mo.
-+ Included with Experience Beyond or $10/mo.; auto renews monthly.
-+ Receive Apple TV discount (up to $11.99/mo.
++ Get up to $800 off an iPhone 18 Pro Max when you add a new line and bring your number on an Experience Beyond plan with Student Savings 2.0.
 ```
 
 ### Verizon — `verizon`
@@ -82,16 +38,19 @@
 <https://www.verizon.com/plans/unlimited/>
 
 
-**消失了 2 条：**
+**消失了 3 条：**
 ```diff
-- Save $20.98/mo
-- Save $44.99/mo
+- $31.98/mo
+- $35.95/mo
+- Save $10.95/mo
 ```
 
-**新出现 2 条：**
+**新出现 4 条：**
 ```diff
-+ Get $10/mo off for 6 mos.
-+ bills at $10/mo unless perk is canceled or unregistered.
++ $23/mo
++ $34.98/mo
++ $37.95/mo
++ Save $12.95/mo
 ```
 
 ### Verizon — `verizon_pre`
@@ -100,9 +59,27 @@
 <https://www.verizon.com/plans/prepaid/>
 
 
-**新出现 1 条：**
+**消失了 1 条：**
 ```diff
-+ You can choose prepaid plans starting at $35/mo with Auto Pay, and you'll get a 3-year price guarantee for your base monthly rate on every Verizon Prepaid phone plan.
+- You can choose prepaid plans starting at $35/mo with Auto Pay, and you'll get a 3-year price guarantee for your base monthly rate on every Verizon Prepaid phone plan.
+```
+
+**新出现 14 条：**
+```diff
++ 15 GB plan : The 15 GB plan costs $45/month, or $35/month with Auto Pay after the first month.
++ Add an additional Unlimited Plus phone line for $40/month with the multiline discount.
++ Add an additional Unlimited phone line for $30/month with the multiline discount.
++ Auto Pay discount : Enroll in Auto Pay with a credit or debit card to save $10/month on eligible prepaid phone plans priced at $45 or more.
++ If you don't use a lot of data, the Verizon Prepaid 15 GB plan at $35 per month with Auto Pay would be a good choice.
++ Loyalty discount : Eligible prepaid phone plans priced at $45 or more can receive a $5/month loyalty discount after thre…
++ Multiline discount : Add additional Verizon Prepaid Unlimited phone lines to your account and save $20/month per line.
++ So you could get two additional Unlimited phone lines for $40/month each before the Auto Pay discount.
++ The Talk & Text plan is eligible for a $5/month Auto Pay discount.
++ Unlimited Plus plan : The Unlimited Plus plan costs $70 for the first month and $60/month with Auto Pay.
++ Unlimited plan : The Unlimited plan costs $60 for the first month and $50/month with Auto Pay.
++ …ble prepaid phone plans priced at $45 or more can receive a $5/month loyalty discount after three months of service and an…
++ …ditional $5/month after nine months, for a total savings of $10/month.
++ …ty discount after three months of service and an additional $5/month after nine months, for a total savings of $10/month.
 ```
 
 ### US Mobile — `usmobile`
@@ -111,25 +88,20 @@
 <https://www.usmobile.com/plans>
 
 
-**消失了 7 条：**
+**消失了 4 条：**
 ```diff
-- $16.58 /mo
-- $17.50 /mo
-- $210 per year
-- $24.92 /mo
-- First year $199, renews at $270
-- First year $299, renews at $390
-- Unlimited for less than $17/mo.
+- $10 /mo
+- $10 monthly Starter w/ code
+- $20 /mo
+- $20 monthly Premium w/ code
 ```
 
-**新出现 6 条：**
+**新出现 4 条：**
 ```diff
-+ $10 /mo
-+ $10 monthly Starter w/ code
-+ $20 /mo
-+ $20 monthly Premium w/ code
-+ Renews at $25/mo.
-+ Renews at $44/mo.
++ $15 /mo
++ $15 monthly Starter w/ code
++ $25 /mo
++ $25 monthly Premium w/ code
 ```
 
 
@@ -144,9 +116,9 @@
 > 其余站点若连续多周无法核实，说明监控失效了，需要人工看一眼。
 
 
-## 无变化（10 个）
+## 无变化（12 个）
 
-Cricket、Cricket、Total Wireless、Total Wireless、T-Mobile、AT&T、AT&T、AT&T、AT&T、Google Fi
+Visible、Cricket、Cricket、Total Wireless、Metro、T-Mobile、T-Mobile、AT&T、AT&T、AT&T、AT&T、Google Fi
 
 
 ---
