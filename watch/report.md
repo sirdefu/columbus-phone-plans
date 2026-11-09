@@ -1,6 +1,6 @@
-# 资费变更检测 · 2026-11-02 22:12 UTC
+# 资费变更检测 · 2026-11-09 22:54 UTC
 
-**4 个页面的价格文本发生变化。** 下面是逐条 diff——先自己扫一眼判断是不是实质变动（很多是营销文案微调），确认重要再让 Claude 重跑完整分析并更新页面。
+**9 个页面的价格文本发生变化。** 下面是逐条 diff——先自己扫一眼判断是不是实质变动（很多是营销文案微调），确认重要再让 Claude 重跑完整分析并更新页面。
 
 
 ## 发生变化
@@ -11,52 +11,36 @@
 <https://www.visible.com/plans>
 
 
-**消失了 24 条：**
+**消失了 1 条：**
 ```diff
-- $ 25
-- $ 30
-- $ 40
-- $35/mo Save $5/mo guaranteed for 5 years w/code 5OFF5
-- $45/mo Save $5/mo guaranteed for 5 years w/code 5OFF5
-- <span style=\"color: rgb(255,255,255); display: block;\">Get Visible+ for as low as $30/mo </span></h1>\r\n"}}" id="text-ee0e60a099" class="cmp-text" style="padding-top:;
-- All accounts remain subject to a $5 minimum monthly service charge.</p>\r\n<p>Void where prohibited, taxed, or otherwise restricted.
-- Bring your phone and pay $75 upfront for your first 6 months of the Visible plan.
-- Get $5/mo off Visible+ or Visible+ Pro for 60 months when you port in an eligible number and use promo code 5OFF5 at checkout.
-- Get Visible+ for as low as $30/mo
-- If a member switches to a non-eligible plan (such as the $25/mo Visible plan) or terminates service, the remaining promotional benefit is forfeited.
-- New members get $5/mo off the $35/mo Visible+ plan or the $45/mo Visible+ Pro plan for the first 60 months when they follow the steps above.
-- One Global Pass day per month included ($10 savings)¹⁰ super script 10
-- Switch to the Visible+ or Visible+ Pro monthly plan and save $5/mo for 5 years.
-- Two Global Pass days per month included ($20 savings)¹⁰ super script 10
-- Unlimited 5G plans starting at $25/mo
-- \r\n<li>Global Pass starting at $5/day</li>\r\n<li>Free 2-day device shipping</li>\r\n</ul>\r\n"}}" id="text-c73fc06832" class="cmp-text" style="padding-top:;
-- …/globalpass\">Global Pass</a>&nbsp;days per month included ($20 savings)¹⁰<span class=\"hidden-content\">super script 10</…
-- …026 at 11:59pm EST.</p>\r\n<p>New members get $5/mo off the $35/mo Visible+ plan or the $45/mo Visible+ Pro plan for the f…
-- …Visible+ Pro plan), the discount continues at the original $5/mo amount for the remainder of the original 60‑month period…
-- …m/globalpass\">Global Pass</a>&nbsp;day per month included ($10 savings)¹⁰<span class=\"hidden-content\">super script 10</…
-- …ocalls blocked</li>\r\n<li>Smartwatch service available for $10/mo<span aria-hidden=\"true\">⁷</span><span class=\"hidden-…
-- …p>New members get $5/mo off the $35/mo Visible+ plan or the $45/mo Visible+ Pro plan for the first 60 months when they fol…
-- …r Ends 10.29.2026 at 11:59pm EST.</p>\r\n<p>New members get $5/mo off the $35/mo Visible+ plan or the $45/mo Visible+ Pro…
+- $ 450
 ```
 
-**新出现 16 条：**
+**新出现 6 条：**
 ```diff
-+ $ 19
-+ $ 29
-+ $ 39
-+ Get an unlimited 5G monthly plan starting as low as $19/mo with code <b>HOLIDAYHACK</b>.
-+ Get an unlimited 5G monthly plan starting as low as $19/mo with code HOLIDAYHACK .
-+ New members get $6/mo off either (1) the $25/mo Visible plan for up to 12 months, (2) the $35/mo Visibl…
-+ New members get $6/mo off either (1) the $25/mo Visible plan for up to 12 mont…
-+ One Global Pass day per month included ($10 savings) 10 super script 10, see footnotes
-+ Smartwatch service available for $10/mo 7 super script 7, see footnotes
-+ Two Global Pass days per month included ($20 savings) 10 super script 10, see footnotes
-+ \r\n<li>Global Pass starting at $5/day</li>\r\n<li>Free 2-day device shipping</li>\r\n</ul>\r\n"}}" id="text-6d70a627b6" class="cmp-text" style="padding-top:;
-+ …2) the $35/mo Visible+ plan for up to 36 months, or (3) the $45/mo Visible+ Pro plan for up to 60 months.
-+ …=\"vds-body-large\">Global Pass</a> day per month included ($10 savings)<sup>10</sup><span class=\"hidden-content\">super…
-+ …\"vds-body-large\">Global Pass</a> days per month included ($20 savings)<sup>10</sup><span class=\"hidden-content\">super…
-+ …er (1) the $25/mo Visible plan for up to 12 months, (2) the $35/mo Visible+ plan for up to 36 months, or (3) the $45/mo Vi…
-+ …ocalls blocked</li>\r\n<li>Smartwatch service available for $10/mo<sup>7</sup><span class=\"hidden-content\">super script…
++ $450 /yr $ 225
++ Get 50% off Visible+ Pro annual plan (that’s like paying $18.75/mo) with code BLACKFRIDAY
++ New members get $225 off the Visible+ Pro annual plan (reg.
++ Promo code <b>BLACKFRIDAY</b> and payment of $225 required at checkout.</p>\r\n<p>&nbsp;</p>\r\n<p>1.
++ Promo code <b>BLACKFRIDAY</b> and payment of $225 required at checkout.</p>\r\n<p>&nbsp;</p>\r\n<p>Promo is not transferable, not redeemable for cash and has no cash value.
++ Promo code BLACKFRIDAY and payment of $225 required at checkout.
+```
+
+### Total Wireless — `total_byop`
+
+盯的是：BYO 专属价与条件  
+<https://www.totalwireless.com/m/byop>
+
+
+**消失了 2 条：**
+```diff
+- First month $30, then $20/mo after on a Total MAX 5G BYO plan.
+- Switch to Total Wireless for $20/mo
+```
+
+**新出现 1 条：**
+```diff
++ First month $30, then $20/mo after.
 ```
 
 ### T-Mobile — `tmobile`
@@ -65,47 +49,223 @@
 <https://www.t-mobile.com/cell-phone-plans>
 
 
-**消失了 12 条：**
+**消失了 82 条：**
 ```diff
-- Get up to $1,000 off iPhone 18 Pro Max when you switch and bring your number, or trade in your eligible phone in any condition on an Experience Beyond plan.
-- Get up to $1,000 off iPhone 18 Pro.
-- Get up to $1,000 off when you switch and bring your number, or trade in an eligible phone in any condition on an Experience Beyond plan.
-- Get yours and save $1000 when you switch to T-Mobile and bring your number, or trade in an eligible device in any condition , on an Experience Beyond plan.
-- If you cancel entire account before receiving all bill credits, credits stop and balance on required finance agreement is due (e.g., $929.99 – iPhone 17 256GB).
-- Qualifying credit, add a new line, port-in (AT&T, Verizon, or another eligible carrier, see complete list at T-Mobile .com/port), & service ($85+/mo.
-- Save $830 when you switch to T-Mobile and bring your number on an Experience More or Experience Beyond plan.
-- Under $100.
-- Up to $1,000 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.
-- Up to $830 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.
-- Yours for $1000 off.​ No trade-in needed.
-- plan w/AutoPay, plus taxes & fees), & eligible trade-in (e.g., Save $1,000: iPhone 16; Save $730: iPhone 14; Save $500: iPhone 1) required.
+- $0 due at sale; device cost, taxes, and fees financed over the term of financing agreement.
+- $1,099.99 – Pixel 11 Pro 256 GB).
+- $100 Rebate:
+- $100 Virtual Prepaid Mastercard, Limit of 4/Account / New Accounts only — Switch (ID260686)
+- $110
+- $120
+- $135
+- $145
+- $15
+- $20
+- $25 per line
+- $260
+- $30
+- $35 device connection charge due at sale.
+- $35 per line
+- $40 per line
+- $50 per line
+- $55 per line
+- $899.99 – Pixel 11 256 GB).
+- 1 Optional Hulu/Disney+/ESPN+ (w/ Ads) Verizon bundle for $12/mo.
+- 3 $5/month.
+- Apple TV just $3/month
+- Apple TV just $3/month Experience Beyond, Experience More™, including Experi…
+- Contact us before cancelling entire account to continue remaining bill credits, or credits stop & balance on required finance agreement is due (e.g., $629.99 – iPhone 15 128GB).
+- Contact us before cancelling entire account to continue remaining bill credits, or credits stop & balance on required finance agreement is due (e.g., $999.99 – Galaxy S26 256GB).
+… 另有 57 条
 ```
 
-**新出现 7 条：**
+**新出现 34 条：**
 ```diff
-+ For well-qualified customers; plus tax & $35 device connection charge.
-+ Get $1200 off the all‑new iPhone Duo.
-+ Get up to $1,200 off iPhone 18 Pro Max when you switch and bring your number, or trade in your eligible phone in any condition on an Experience Beyond plan.
-+ Qualifying credit, add a new line, service ($100+/mo.
-+ T-Mobile .com/port ), & service ($85+/mo.
-+ Up to $930 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.
-+ plan w/AutoPay, plus taxes & fees), & eligible trade-in (e.g., Save $1,200: iPhone 16; Save $930: iPhone 14; Save $500: iPhone 1) required.
++ $0/mo est.
++ $10/mo per phone line or home internet line
++ $10/mo.
++ $115
++ $125
++ $155
++ $165
++ $170
++ $195
++ $20-This is a 2 line Max plan
++ $240
++ $25 for the 6th line
++ $285
++ $30 - This is a 2 line Max plan
++ $35 for 7to 12 lines
++ $35 for the 6th line
++ $40
++ $45 for the 6th line
++ $45/line for 7to 12 lines
++ $5/mo per watch, tablet, or other line
++ $5/mo.
++ $50 for 7 to 12 lines
++ $60
++ $65 -This is a 2 line Max plan
++ $70 -This is a 2 line Max plan
+… 另有 9 条
 ```
 
-### AT&T — `att_prepaid`
+### T-Mobile — `tmobile_stu`
 
-盯的是：预付费 $240 年付 / $20 月等效 / Level Up  
-<https://www.att.com/prepaid/>
+盯的是：学生档 $35/$30 是否仍在  
+<https://www.t-mobile.com/cell-phone-plans/student-discounts>
+
+
+**消失了 36 条：**
+```diff
+- $11.99/mo value
+- $110
+- $12.49/mo.
+- $120
+- $135
+- $145
+- $15
+- $20
+- $25 per line
+- $260
+- $30
+- $35 per line
+- $40 per line
+- $50 per line
+- $55 per line
+- - an annual savings of $143.
+- 3 $5/month.
+- After 12 months or upon ineligibility, DashPass auto-renews at the then-current DashPass monthly plan membership fee (currently $9.99/month + tax) until canceled.
+- After free period or upon ineligibility, subscription auto-renews (currently $9.99/mo.
+- After you sign up for a T-Mobile plan with Student Perks, share a referral link and earn $100 virtual prepaid Mastercard® (up to $500 a year) when your friends join!
+- Apple TV for just $3/mo.
+- Apple TV just $3/month
+- Get Apple TV for just $3/mo.
+- Get a Student Perks phone plan and America’s fastest 5G home internet for just $30/mo.
+- Get up to $800 off an iPhone 18 Pro Max when you add a new line and bring your number on an Experience Beyond plan with Student Savings 2.0.
+… 另有 11 条
+```
+
+**新出现 39 条：**
+```diff
++ $1,200 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.
++ $10/mo per phone line or home internet line
++ $10/mo.
++ $115
++ $125
++ $155
++ $165
++ $170
++ $195
++ $20-This is a 2 line Max plan
++ $240
++ $25 for the 6th line
++ $285
++ $30 - This is a 2 line Max plan
++ $35 for 7to 12 lines
++ $35 for the 6th line
++ $40
++ $45 for the 6th line
++ $45/line for 7to 12 lines
++ $5/mo per watch, tablet, or other line
++ $5/mo.
++ $50 for 7 to 12 lines
++ $60
++ $65 -This is a 2 line Max plan
++ $70 -This is a 2 line Max plan
+… 另有 14 条
+```
+
+### T-Mobile — `tmobile_switch`
+
+盯的是：Essentials Saver $50 AutoPay 价、$35 设备接入费  
+<https://www.t-mobile.com/switch/savings>
 
 
 **消失了 1 条：**
 ```diff
-- for 6 months Our best plan for $45/mo.
+- Included with Experience Beyond or $10/mo.; auto renews monthly.
 ```
 
 **新出现 1 条：**
 ```diff
-+ for six months Our best plan for $45/mo.
++ Available on qualifying T-Mix plans or $10/mo.; auto renews monthly.
+```
+
+### AT&T — `att`
+
+盯的是：后付费头图价（分档价是客户端渲染的，抓不到，靠下面那条补）  
+<https://www.att.com/plans/wireless/>
+
+
+**新出现 18 条：**
+```diff
++ $ 25.00 /mo.
++ $ 35.00 /mo.
++ $ 40.00 /mo.
++ $ 45.00 /mo.
++ $ 50.00 /mo.
++ $ 60.00 /mo.
++ $ 65.00 /mo.
++ $ 80.00 /mo.
++ Get more with Unlimited Your Way Plus, get an extra $5/mo.
++ Now $25.00.
++ Now $35.00.
++ Now $45.00.
++ Now $65.00.
++ Plan price after $10/mo.
++ Was $40.00 per month..
++ Was $50.00 per month..
++ Was $60.00 per month..
++ Was $80.00 per month..
+```
+
+### Verizon — `verizon`
+
+盯的是：Simplicity $55/$45/$30  
+<https://www.verizon.com/plans/unlimited/>
+
+
+**消失了 1 条：**
+```diff
+- $37.95/mo
+```
+
+**新出现 1 条：**
+```diff
++ $15/mo
+```
+
+### Verizon — `verizon_pre`
+
+盯的是：预付费各档与忠诚度折扣  
+<https://www.verizon.com/plans/prepaid/>
+
+
+**消失了 3 条：**
+```diff
+- Get iPhone 16e for $349.99
+- data-aria-label="Save $150 on a Samsung Galaxy A15 5G">
+- iPhone 16e (128GB) originally for $599.99, instant discount of $250 at checkout." data-tooltip-type="icon" data-aria-label="Get iPhone 16e for $349.99">
+```
+
+**新出现 16 条：**
+```diff
++ $200 discount applied at checkout."
++ Get a Samsung Galaxy A37 5G for $339.99
++ Get a Samsung Galaxy S26 FE for $499.99 when you
++ Requires activation of a new line on any Verizon Prepaid Unlimited phone plan ($150 discount applied at checkout)."
++ Samsung Galaxy A37 5G (128 GB) originally $489.99.
++ Samsung Galaxy S26 FE (128 GB) originally $699.99.
++ Save $150
++ Save $150 on a Samsung Galaxy A37 5G Offer ends 1/31/27 or while supplies last.
++ Save $150 when you activate on any new
++ Save $200 on Galaxy S26 FE
++ Save $200 on a Samsung Galaxy S26 FE Offer ends 1/31/27 or while supplies last.
++ data-tooltip-type="icon" data-aria-label="Get 2 Unlimited lines for just$80/mo.">
++ data-tooltip-type="icon" data-aria-label="Save $150 on Samsung Galaxy A37 5G">
++ data-tooltip-type="icon" data-aria-label="Save $200 on Galaxy S26 FE">
++ for $349.99
++ iPhone 16e (128GB) originally for $599.99, instant discount of $250 at checkout." data-tooltip-type="icon" data-aria-label="Free Samsung Galaxy A17 5G">
 ```
 
 ### US Mobile — `usmobile`
@@ -116,18 +276,18 @@
 
 **消失了 4 条：**
 ```diff
-- $15 /mo
-- $15 monthly Starter w/ code
-- $25 /mo
-- $25 monthly Premium w/ code
+- $15 Unlimited
+- $25
+- Renews at $25/mo.
+- Renews at $44/mo.
 ```
 
 **新出现 4 条：**
 ```diff
-+ $15 Unlimited
-+ $25
-+ $25 $15 /mo
-+ $44 $25 /mo
++ $15 monthly Starter
++ $25 monthly Premium
++ Renews at $25/mo after 6 mos.
++ Renews at $44/mo after 6 mos.
 ```
 
 
@@ -142,9 +302,9 @@
 > 其余站点若连续多周无法核实，说明监控失效了，需要人工看一眼。
 
 
-## 无变化（13 个）
+## 无变化（8 个）
 
-Cricket、Cricket、Total Wireless、Total Wireless、Metro、T-Mobile、T-Mobile、AT&T、AT&T、AT&T、Verizon、Verizon、Google Fi
+Cricket、Cricket、Total Wireless、Metro、AT&T、AT&T、AT&T、Google Fi
 
 
 ---
