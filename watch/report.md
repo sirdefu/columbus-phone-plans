@@ -1,6 +1,6 @@
-# 资费变更检测 · 2026-11-09 22:54 UTC
+# 资费变更检测 · 2026-11-16 22:46 UTC
 
-**9 个页面的价格文本发生变化。** 下面是逐条 diff——先自己扫一眼判断是不是实质变动（很多是营销文案微调），确认重要再让 Claude 重跑完整分析并更新页面。
+**8 个页面的价格文本发生变化。** 下面是逐条 diff——先自己扫一眼判断是不是实质变动（很多是营销文案微调），确认重要再让 Claude 重跑完整分析并更新页面。
 
 
 ## 发生变化
@@ -13,34 +13,12 @@
 
 **消失了 1 条：**
 ```diff
-- $ 450
-```
-
-**新出现 6 条：**
-```diff
-+ $450 /yr $ 225
-+ Get 50% off Visible+ Pro annual plan (that’s like paying $18.75/mo) with code BLACKFRIDAY
-+ New members get $225 off the Visible+ Pro annual plan (reg.
-+ Promo code <b>BLACKFRIDAY</b> and payment of $225 required at checkout.</p>\r\n<p>&nbsp;</p>\r\n<p>1.
-+ Promo code <b>BLACKFRIDAY</b> and payment of $225 required at checkout.</p>\r\n<p>&nbsp;</p>\r\n<p>Promo is not transferable, not redeemable for cash and has no cash value.
-+ Promo code BLACKFRIDAY and payment of $225 required at checkout.
-```
-
-### Total Wireless — `total_byop`
-
-盯的是：BYO 专属价与条件  
-<https://www.totalwireless.com/m/byop>
-
-
-**消失了 2 条：**
-```diff
-- First month $30, then $20/mo after on a Total MAX 5G BYO plan.
-- Switch to Total Wireless for $20/mo
+- It’s like paying $38/mo.
 ```
 
 **新出现 1 条：**
 ```diff
-+ First month $30, then $20/mo after.
++ its like paying $18.75/mo.
 ```
 
 ### T-Mobile — `tmobile`
@@ -49,64 +27,12 @@
 <https://www.t-mobile.com/cell-phone-plans>
 
 
-**消失了 82 条：**
+**消失了 4 条：**
 ```diff
-- $0 due at sale; device cost, taxes, and fees financed over the term of financing agreement.
-- $1,099.99 – Pixel 11 Pro 256 GB).
-- $100 Rebate:
-- $100 Virtual Prepaid Mastercard, Limit of 4/Account / New Accounts only — Switch (ID260686)
-- $110
-- $120
-- $135
-- $145
-- $15
-- $20
-- $25 per line
-- $260
-- $30
-- $35 device connection charge due at sale.
-- $35 per line
-- $40 per line
-- $50 per line
-- $55 per line
-- $899.99 – Pixel 11 256 GB).
-- 1 Optional Hulu/Disney+/ESPN+ (w/ Ads) Verizon bundle for $12/mo.
-- 3 $5/month.
-- Apple TV just $3/month
-- Apple TV just $3/month Experience Beyond, Experience More™, including Experi…
-- Contact us before cancelling entire account to continue remaining bill credits, or credits stop & balance on required finance agreement is due (e.g., $629.99 – iPhone 15 128GB).
-- Contact us before cancelling entire account to continue remaining bill credits, or credits stop & balance on required finance agreement is due (e.g., $999.99 – Galaxy S26 256GB).
-… 另有 57 条
-```
-
-**新出现 34 条：**
-```diff
-+ $0/mo est.
-+ $10/mo per phone line or home internet line
-+ $10/mo.
-+ $115
-+ $125
-+ $155
-+ $165
-+ $170
-+ $195
-+ $20-This is a 2 line Max plan
-+ $240
-+ $25 for the 6th line
-+ $285
-+ $30 - This is a 2 line Max plan
-+ $35 for 7to 12 lines
-+ $35 for the 6th line
-+ $40
-+ $45 for the 6th line
-+ $45/line for 7to 12 lines
-+ $5/mo per watch, tablet, or other line
-+ $5/mo.
-+ $50 for 7 to 12 lines
-+ $60
-+ $65 -This is a 2 line Max plan
-+ $70 -This is a 2 line Max plan
-… 另有 9 条
+- For MI lines $0.12 is applied to the RPF and $1.98 is applied to the TRF.
+- Of the $4.49 total charge for voice lines, $0.50 is applied to the RPF and $3.99 is applied to the TRF.
+- …('TRF') (not a government required tax or charge) totaling $4.49 for Voice Lines and $2.10 for Mobile Internet lines ('MI…
+- …required tax or charge) totaling $4.49 for Voice Lines and $2.10 for Mobile Internet lines ('MI') (subject to change with…
 ```
 
 ### T-Mobile — `tmobile_stu`
@@ -115,108 +41,35 @@
 <https://www.t-mobile.com/cell-phone-plans/student-discounts>
 
 
-**消失了 36 条：**
-```diff
-- $11.99/mo value
-- $110
-- $12.49/mo.
-- $120
-- $135
-- $145
-- $15
-- $20
-- $25 per line
-- $260
-- $30
-- $35 per line
-- $40 per line
-- $50 per line
-- $55 per line
-- - an annual savings of $143.
-- 3 $5/month.
-- After 12 months or upon ineligibility, DashPass auto-renews at the then-current DashPass monthly plan membership fee (currently $9.99/month + tax) until canceled.
-- After free period or upon ineligibility, subscription auto-renews (currently $9.99/mo.
-- After you sign up for a T-Mobile plan with Student Perks, share a referral link and earn $100 virtual prepaid Mastercard® (up to $500 a year) when your friends join!
-- Apple TV for just $3/mo.
-- Apple TV just $3/month
-- Get Apple TV for just $3/mo.
-- Get a Student Perks phone plan and America’s fastest 5G home internet for just $30/mo.
-- Get up to $800 off an iPhone 18 Pro Max when you add a new line and bring your number on an Experience Beyond plan with Student Savings 2.0.
-… 另有 11 条
-```
-
-**新出现 39 条：**
-```diff
-+ $1,200 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.
-+ $10/mo per phone line or home internet line
-+ $10/mo.
-+ $115
-+ $125
-+ $155
-+ $165
-+ $170
-+ $195
-+ $20-This is a 2 line Max plan
-+ $240
-+ $25 for the 6th line
-+ $285
-+ $30 - This is a 2 line Max plan
-+ $35 for 7to 12 lines
-+ $35 for the 6th line
-+ $40
-+ $45 for the 6th line
-+ $45/line for 7to 12 lines
-+ $5/mo per watch, tablet, or other line
-+ $5/mo.
-+ $50 for 7 to 12 lines
-+ $60
-+ $65 -This is a 2 line Max plan
-+ $70 -This is a 2 line Max plan
-… 另有 14 条
-```
-
-### T-Mobile — `tmobile_switch`
-
-盯的是：Essentials Saver $50 AutoPay 价、$35 设备接入费  
-<https://www.t-mobile.com/switch/savings>
-
-
 **消失了 1 条：**
 ```diff
-- Included with Experience Beyond or $10/mo.; auto renews monthly.
+- Verify student enrollment status for account holder within 45 days, maintain student line, & re-verify annually; otherwise additional cost up to $20/line per month.
 ```
 
-**新出现 1 条：**
+**新出现 2 条：**
 ```diff
-+ Available on qualifying T-Mix plans or $10/mo.; auto renews monthly.
++ Verify student enrollment status for account holder within 45 days, maintain student line, & re-verify annually; otherwise additional cost up to $15/line per month.
++ …an will lose Student Savings at an additional cost of up to $15/line per month.
 ```
 
-### AT&T — `att`
+### AT&T — `att_prepaid`
 
-盯的是：后付费头图价（分档价是客户端渲染的，抓不到，靠下面那条补）  
-<https://www.att.com/plans/wireless/>
+盯的是：预付费 $240 年付 / $20 月等效 / Level Up  
+<https://www.att.com/prepaid/>
 
 
-**新出现 18 条：**
+**消失了 2 条：**
 ```diff
-+ $ 25.00 /mo.
-+ $ 35.00 /mo.
-+ $ 40.00 /mo.
+- Save $15/mo.
+- for six months Our best plan for $45/mo.
+```
+
+**新出现 4 条：**
+```diff
 + $ 45.00 /mo.
-+ $ 50.00 /mo.
-+ $ 60.00 /mo.
-+ $ 65.00 /mo.
-+ $ 80.00 /mo.
-+ Get more with Unlimited Your Way Plus, get an extra $5/mo.
-+ Now $25.00.
-+ Now $35.00.
++ $ 60.00
 + Now $45.00.
-+ Now $65.00.
-+ Plan price after $10/mo.
-+ Was $40.00 per month..
-+ Was $50.00 per month..
-+ Was $60.00 per month..
-+ Was $80.00 per month..
++ Was $60.00.
 ```
 
 ### Verizon — `verizon`
@@ -225,14 +78,17 @@
 <https://www.verizon.com/plans/unlimited/>
 
 
-**消失了 1 条：**
+**消失了 2 条：**
 ```diff
-- $37.95/mo
+- $30/mo
+- Save $34.99/mo
 ```
 
-**新出现 1 条：**
+**新出现 3 条：**
 ```diff
-+ $15/mo
++ $35/mo
++ $37.95/mo
++ Save $29.99/mo
 ```
 
 ### Verizon — `verizon_pre`
@@ -241,31 +97,47 @@
 <https://www.verizon.com/plans/prepaid/>
 
 
-**消失了 3 条：**
+**消失了 16 条：**
 ```diff
-- Get iPhone 16e for $349.99
-- data-aria-label="Save $150 on a Samsung Galaxy A15 5G">
-- iPhone 16e (128GB) originally for $599.99, instant discount of $250 at checkout." data-tooltip-type="icon" data-aria-label="Get iPhone 16e for $349.99">
+- $70 Prepaid Unlimited Plus smartphone plan
+- 15 GB plan : The 15 GB plan costs $45/month, or $35/month with Auto Pay after the first month.
+- Add an additional Unlimited Plus phone line for $40/month with the multiline discount.
+- Add an additional Unlimited phone line for $30/month with the multiline discount.
+- Auto Pay discount : Enroll in Auto Pay with a credit or debit card to save $10/month on eligible prepaid phone plans priced at $45 or more.
+- Global Choice for our $70 Unlimited Plus Prepaid Plan.
+- If you don't use a lot of data, the Verizon Prepaid 15 GB plan at $35 per month with Auto Pay would be a good choice.
+- Loyalty discount : Eligible prepaid phone plans priced at $45 or more can receive a $5/month loyalty discount after thre…
+- Multiline discount : Add additional Verizon Prepaid Unlimited phone lines to your account and save $20/month per line.
+- So you could get two additional Unlimited phone lines for $40/month each before the Auto Pay discount.
+- The Talk & Text plan is eligible for a $5/month Auto Pay discount.
+- Unlimited Plus plan : The Unlimited Plus plan costs $70 for the first month and $60/month with Auto Pay.
+- Unlimited plan : The Unlimited plan costs $60 for the first month and $50/month with Auto Pay.
+- …ble prepaid phone plans priced at $45 or more can receive a $5/month loyalty discount after three months of service and an…
+- …ditional $5/month after nine months, for a total savings of $10/month.
+- …ty discount after three months of service and an additional $5/month after nine months, for a total savings of $10/month.
 ```
 
-**新出现 16 条：**
+**新出现 1 条：**
 ```diff
-+ $200 discount applied at checkout."
-+ Get a Samsung Galaxy A37 5G for $339.99
-+ Get a Samsung Galaxy S26 FE for $499.99 when you
-+ Requires activation of a new line on any Verizon Prepaid Unlimited phone plan ($150 discount applied at checkout)."
-+ Samsung Galaxy A37 5G (128 GB) originally $489.99.
-+ Samsung Galaxy S26 FE (128 GB) originally $699.99.
-+ Save $150
-+ Save $150 on a Samsung Galaxy A37 5G Offer ends 1/31/27 or while supplies last.
-+ Save $150 when you activate on any new
-+ Save $200 on Galaxy S26 FE
-+ Save $200 on a Samsung Galaxy S26 FE Offer ends 1/31/27 or while supplies last.
-+ data-tooltip-type="icon" data-aria-label="Get 2 Unlimited lines for just$80/mo.">
-+ data-tooltip-type="icon" data-aria-label="Save $150 on Samsung Galaxy A37 5G">
-+ data-tooltip-type="icon" data-aria-label="Save $200 on Galaxy S26 FE">
-+ for $349.99
-+ iPhone 16e (128GB) originally for $599.99, instant discount of $250 at checkout." data-tooltip-type="icon" data-aria-label="Free Samsung Galaxy A17 5G">
++ Global Choice to get unlimited calls to one country/month and discounted rates to 220+ countries (included in our $65 Unlimited Plus smartphone plan)
+```
+
+### Google Fi — `googlefi`
+
+盯的是：三档无限 + 自带 Pixel 五折促销截止日  
+<https://fi.google.com/about/plans>
+
+
+**新出现 8 条：**
+```diff
++ $12
++ $13
++ $14
++ $15
++ $57
++ $63
++ $68
++ $75
 ```
 
 ### US Mobile — `usmobile`
@@ -274,20 +146,25 @@
 <https://www.usmobile.com/plans>
 
 
-**消失了 4 条：**
+**消失了 6 条：**
 ```diff
-- $15 Unlimited
-- $25
-- Renews at $25/mo.
-- Renews at $44/mo.
+- $15 monthly Starter
+- $25 $15 /mo
+- $25 monthly Premium
+- $44 $25 /mo
+- Renews at $25/mo after 6 mos.
+- Renews at $44/mo after 6 mos.
 ```
 
-**新出现 4 条：**
+**新出现 7 条：**
 ```diff
-+ $15 monthly Starter
-+ $25 monthly Premium
-+ Renews at $25/mo after 6 mos.
-+ Renews at $44/mo after 6 mos.
++ $17.50 /mo
++ $210 per year
++ $22.50 $16.58 /mo
++ $32.50 $24.92 /mo
++ First year $199, renews at $270
++ First year $299, renews at $390
++ Unlimited less than $17/mo.
 ```
 
 
@@ -302,9 +179,9 @@
 > 其余站点若连续多周无法核实，说明监控失效了，需要人工看一眼。
 
 
-## 无变化（8 个）
+## 无变化（9 个）
 
-Cricket、Cricket、Total Wireless、Metro、AT&T、AT&T、AT&T、Google Fi
+Cricket、Cricket、Total Wireless、Total Wireless、Metro、T-Mobile、AT&T、AT&T、AT&T
 
 
 ---
