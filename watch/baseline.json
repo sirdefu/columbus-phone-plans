@@ -1,7 +1,7 @@
 {
  "att": {
   "brand": "AT&T",
-  "checked": "2026-11-16 22:46 UTC",
+  "checked": "2026-11-24 00:37 UTC",
   "count": 23,
   "note": "后付费头图价（分档价是客户端渲染的，抓不到，靠下面那条补）",
   "snippets": [
@@ -33,7 +33,7 @@
  },
  "att_bap": {
   "brand": "AT&T",
-  "checked": "2026-11-16 22:46 UTC",
+  "checked": "2026-11-24 00:37 UTC",
   "count": 2,
   "note": "Build-A-Plan 头图价",
   "snippets": [
@@ -44,7 +44,7 @@
  },
  "att_bap_spec": {
   "brand": "AT&T",
-  "checked": "2026-11-16 22:46 UTC",
+  "checked": "2026-11-24 00:37 UTC",
   "count": 89,
   "note": "Build-A-Plan 完整价目矩阵（$15 基础 + 各数据/热点档）",
   "snippets": [
@@ -142,25 +142,24 @@
  },
  "att_prepaid": {
   "brand": "AT&T",
-  "checked": "2026-11-16 22:46 UTC",
-  "count": 9,
+  "checked": "2026-11-24 00:37 UTC",
+  "count": 8,
   "note": "预付费 $240 年付 / $20 月等效 / Level Up",
   "snippets": [
-   "$ 45.00 /mo.",
-   "$ 60.00",
    "AT&T Level Up is a feature that lets you use your payment history to \"level up\" to a new phone on postpaid wireless with $0 down, regardless of your credit score.",
    "After 6 months, plan is $60/mo.",
    "Get 12 months of unlimited for $20/mo.",
-   "Now $45.00.",
+   "Limited time offer Get the latest phones—with a $1 initial payment",
    "Pay $240 today for a year of unlimited talk, text, and data.",
    "SIM or phone purchase, activation on new single line, and $240 prepayment.",
-   "Was $60.00."
+   "Save $15/mo.",
+   "for six months Our best plan for $45/mo."
   ],
   "url": "https://www.att.com/prepaid/"
  },
  "cricket": {
   "brand": "Cricket",
-  "checked": "2026-11-16 22:46 UTC",
+  "checked": "2026-11-24 00:37 UTC",
   "count": 16,
   "note": "四档无限 + Sensible、AutoPay 价",
   "snippets": [
@@ -185,8 +184,8 @@
  },
  "cricket_multi": {
   "brand": "Cricket",
-  "checked": "2026-11-16 22:46 UTC",
-  "count": 67,
+  "checked": "2026-11-24 00:37 UTC",
+  "count": 71,
   "note": "12 个月 $300 年付档是否还在",
   "snippets": [
    "$25/mo.",
@@ -229,10 +228,12 @@
    "Internet Gateway: Activation and use of Cricket Home Internet requires purchase of Cricket Internet Gateway for $49.99 + applicable sales tax.",
    "Max $250 in credits (10 referrals) per calendar year for Referrer.",
    "Multi-line accounts are eligible for only one $5 Auto Pay credit per account.",
+   "Must bring your number to Cricket on a new line on the Supreme Unlimited Plan ($55/mo.",
    "Must bring your number to Cricket on the Supreme Unlimited Plan ($55/mo.",
    "Must bring your number to Cricket on the Supreme Unlimited Plan ($55/mo.after $5/mo.",
    "Must port-in and activate new line on a $60/mo.",
    "No bill for 12 months when you prepay $300 today!",
+   "Pay first three months of $60/mo.",
    "Pay first two months of $60/mo.",
    "Pay in advance and save $300 with a 12 month Multi-Month Unlimited Plan from Cricket Wireless",
    "Referrer & Friend each receive $25 credit to wireless plans after Friend maintains 60 consecutive days of eligible service.",
@@ -247,9 +248,11 @@
    "That comes out to $35/mo.",
    "Up to $25 fee may apply.",
    "You can save up to $105 over 3 months with our Multi-Month Unlimited plans.",
+   "after $5 Auto Pay credit starting second month).",
    "after discounts), Cricket Sensible 10GB phone plan ($35/mo.), and $5 Auto Pay Credit.",
    "discounted from $50/mo",
    "iPhone 12 for $49.99",
+   "iPhone 16e on us or iPhone 17e $99.99",
    "in savings compared to $50/mo.",
    "iphone 12 for $199.99",
    "new line on a $60/mo.",
@@ -261,8 +264,8 @@
  },
  "googlefi": {
   "brand": "Google Fi",
-  "checked": "2026-11-16 22:46 UTC",
-  "count": 61,
+  "checked": "2026-11-24 00:37 UTC",
+  "count": 60,
   "note": "三档无限 + 自带 Pixel 五折促销截止日",
   "snippets": [
    "$100",
@@ -324,14 +327,13 @@
    "You'll be charged for data usage at $10/GB and for any additional charges (e.g.",
    "per line + $10/GB",
    "…d Premium, your Google One membership will be discounted by $1.99/month and monthly charges for your Google One membership…",
-   "…monthly YouTube Premium subscription at the current rate of $15.99/month (rate subject to change) and the monthly charge w…",
    "…significant amounts of high-speed data, you can opt to pay $10/GB to resume high speed for the data you use past the data…"
   ],
   "url": "https://fi.google.com/about/plans"
  },
  "metro": {
   "brand": "Metro",
-  "checked": "2026-11-16 22:46 UTC",
+  "checked": "2026-11-24 00:37 UTC",
   "count": 101,
   "note": "$25/$30/$35/$40/$60 档、税费全含声明",
   "snippets": [
@@ -444,7 +446,7 @@
   "checked": "2026-08-15 03:24 UTC",
   "count": 50,
   "last_error": "HTTP 403",
-  "last_error_at": "2026-11-16 22:46 UTC",
+  "last_error_at": "2026-11-24 00:37 UTC",
   "note": "四档 3/6/12 个月价、$15 促销（预期 403）",
   "snippets": [
    "$ 15 /mo",
@@ -502,13 +504,14 @@
  },
  "tmobile": {
   "brand": "T-Mobile",
-  "checked": "2026-11-16 22:46 UTC",
+  "checked": "2026-11-24 00:37 UTC",
   "count": 62,
   "note": "Essentials/Experience 各档、$4.49 恢复费",
   "snippets": [
    "$0",
    "$0.08–$4.57/line",
    "$0/mo est.",
+   "$10 per line discount with AutoPay enabled & eligible payment method",
    "$10/mo per phone line or home internet line",
    "$10/mo.",
    "$100",
@@ -565,7 +568,6 @@
    "Discount available for new and existing customers while on Experience More/Beyond plans ($85+/mo.",
    "For MI lines $0.12 is applied to the RPF and $2.48 is applied to the TRF.",
    "Of the $5.49 total charge for voice lines, $0.50 is applied to the RPF and $4.99 is applied to the TRF.",
-   "Watch & tablet lines just $5/month",
    "…('TRF') (not a government required tax or charge) totaling $5.49 for Voice Lines and $2.60 for Mobile Internet lines ('MI…",
    "…required tax or charge) totaling $5.49 for Voice Lines and $2.60 for Mobile Internet lines ('MI') (subject to change with…"
   ],
@@ -573,13 +575,14 @@
  },
  "tmobile_stu": {
   "brand": "T-Mobile",
-  "checked": "2026-11-16 22:46 UTC",
+  "checked": "2026-11-24 00:37 UTC",
   "count": 100,
   "note": "学生档 $35/$30 是否仍在",
   "snippets": [
    "$0",
    "$0.08–$4.57/line",
    "$1,200 via bill credits; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.",
+   "$10 per line discount with AutoPay enabled & eligible payment method",
    "$10/mo per phone line or home internet line",
    "$10/mo.",
    "$100",
@@ -665,7 +668,6 @@
    "Up to $300 via bill credits; line on promo must be active and in good standing to receive credits; allow 2 bill cycles.",
    "Up to $400.99 via 24 or 36 monthly bill credits, depending on finance agreement term; line with promo must be active and in good standing to receive credits; allow 2 bill cycles.",
    "Verify student enrollment status for account holder within 45 days, maintain student line, & re-verify annually; otherwise additional cost up to $15/line per month.",
-   "Watch & tablet lines just $5/month",
    "With $20 in monthly bill credits.",
    "discount requires your debit card, bank account, or T-Mobile Visa®, otherwise $10 more/line/mo.",
    "lease purchase option) up to $800 paid by virtual prepaid MasterCard ( no cash access & exp…",
@@ -682,7 +684,7 @@
  },
  "tmobile_switch": {
   "brand": "T-Mobile",
-  "checked": "2026-11-16 22:46 UTC",
+  "checked": "2026-11-24 00:37 UTC",
   "count": 46,
   "note": "Essentials Saver $50 AutoPay 价、$35 设备接入费",
   "snippets": [
@@ -737,7 +739,7 @@
  },
  "total": {
   "brand": "Total Wireless",
-  "checked": "2026-11-16 22:46 UTC",
+  "checked": "2026-11-24 00:37 UTC",
   "count": 25,
   "note": "MAX 5G BYO $25/$20、四档价、5 年锁价",
   "snippets": [
@@ -771,7 +773,7 @@
  },
  "total_byop": {
   "brand": "Total Wireless",
-  "checked": "2026-11-16 22:46 UTC",
+  "checked": "2026-11-24 00:37 UTC",
   "count": 6,
   "note": "BYO 专属价与条件",
   "snippets": [
@@ -786,7 +788,7 @@
  },
  "usmobile": {
   "brand": "US Mobile",
-  "checked": "2026-11-16 22:46 UTC",
+  "checked": "2026-11-24 00:37 UTC",
   "count": 19,
   "note": "Starter/Flex/Premium 年付价、促销档期（预期 403）",
   "snippets": [
@@ -814,7 +816,7 @@
  },
  "verizon": {
   "brand": "Verizon",
-  "checked": "2026-11-16 22:46 UTC",
+  "checked": "2026-11-24 00:37 UTC",
   "count": 35,
   "note": "Simplicity $55/$45/$30",
   "snippets": [
@@ -858,7 +860,7 @@
  },
  "verizon_pre": {
   "brand": "Verizon",
-  "checked": "2026-11-16 22:46 UTC",
+  "checked": "2026-11-24 00:37 UTC",
   "count": 75,
   "note": "预付费各档与忠诚度折扣",
   "snippets": [
@@ -942,7 +944,7 @@
  },
  "visible": {
   "brand": "Visible",
-  "checked": "2026-11-16 22:46 UTC",
+  "checked": "2026-11-24 00:37 UTC",
   "count": 125,
   "note": "三档月费/年费、促销码、税费口径",
   "snippets": [
